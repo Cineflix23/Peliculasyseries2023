@@ -302,8 +302,18 @@ function Asasins(){
 	document.getElementById('p-center1').style.display = 'none';
 	document.getElementById('wrap').style.display = 'none';
 }
+function Titanes2(){
+	document.getElementById('p-center43').style.display = 'block';
+	document.getElementById('p-center1').style.display = 'none';
+	document.getElementById('wrap').style.display = 'none';
+}
 function VLadrones(){
 	document.getElementById('p-center42').style.display = 'block';
+	document.getElementById('p-center1').style.display = 'none';
+	document.getElementById('wrap').style.display = 'none';
+}
+function MisterioV(){
+	document.getElementById('p-center44').style.display = 'block';
 	document.getElementById('p-center1').style.display = 'none';
 	document.getElementById('wrap').style.display = 'none';
 }
