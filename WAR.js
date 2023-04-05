@@ -302,6 +302,11 @@ function Asasins(){
 	document.getElementById('p-center1').style.display = 'none';
 	document.getElementById('wrap').style.display = 'none';
 }
+function VLadrones(){
+	document.getElementById('p-center42').style.display = 'block';
+	document.getElementById('p-center1').style.display = 'none';
+	document.getElementById('wrap').style.display = 'none';
+}
 //Funciones añadiddas para las series cada una y ocultar el wrapp/
 function OcultarP(){
 	document.getElementById('wrap').style.display = 'none';
