@@ -16,17 +16,22 @@
 		<header>
 			<nav>
 				<div class="nav">
-					<div class="logo">
-						<a href="cine.html">CINEFLIX</a>
+					<div class="logoo">
+						<a href="#">CINEFLIX</a>
 					</div>
 					<input type="checkbox"  id="menu" class="nav_input">
 					<ul class="menuu">
-						<li><form action="index.html"><button>Inicio</button></form></li>
-						<li><form action="categorias.html"><button>Peliculas</button></form></li>
-						<li><form action="categorias.html"><button>Series</button></form></li>
-						<li><form action="#Estrenos"><button>Estrenos</button></form></li>
-						<li><form id="logout"><button>CerrarSesion</button></form></li>		
+						<li class="menu-i"><a href="index.html">Inicio</a></li>
+						<li class="menu-i"><a href="#PELICULAS">Peliculas</a></li>
+						<li class="menu-i"><a href="#SERIES">Series</a></li>
+						<li class="menu-i"><a href="#ESTRENOS">Estrenos</a></li>
+						<div class="exit2">
+							<form action="login.html"><button>Cerrar Sesion</button></form>
+						</div>
 					</ul>
+					<div class="exit">
+						<form action="login.html"><button>Cerrar Sesion</button></form>
+					</div>
 					<div class="none">
 						<label for="menu" class="menu-btn">
 							<i class="fas fa-bars"></i>
@@ -43,6 +48,7 @@
 				<div class="h2">
 					<h2>Director: James Gunn</h2>
 					<h2>Género: Acción, Aventura, Comedia</h2>
+					<h2>Actores: Chris Pratt,Zoe Saldaña,Bradley Cooper,Dave Bautista,Karen Gillan</h2>
 				</div>
 		    <div class="but">
 					<form action="categorias.html"><button> VER ONNLINE</button></form>
@@ -51,7 +57,7 @@
 		</div>
 	</div>
 <!--Seccion de peliculas de muestra solamente actualizable-->
-	<div class="section">
+	<div class="section" id="PELICULAS">
 		<div class="topi">
 			<i class="fa-solid fa-film"></i>
 			<h1 class="sec--title">Ver peliculas onnline</h1>
@@ -72,11 +78,11 @@
 				</div>
 				
 				<div class="gallery--item" category="Acción">
-					<img src="imagenes/thesy.jpg" alt="" class="gallery--img">
+					<img src="https://www.latercera.com/resizer/JzHhj0HjOVLt-5SYbHUSz2mzNUk=/800x0/smart/cloudfront-us-east-1.images.arcpublishing.com/copesa/ZPEQXUEQKFELNAMFUTACTVA6NY.jpeg" alt="" class="gallery--img">
 					<div class="gallery--center">
-					<h2 class="g1title">The System</h2>
-					<h2 class="g2title">1hr 37min  2023</h2>
-					<h2 class="g3title">Genero: Acción, Crimen, Suspenso</h2><br>
+					<h2 class="g1title">Super Mario</h2>
+					<h2 class="g2title">1hr 32min  2023</h2>
+					<h2 class="g3title">Genero: Animación,Aventura,Comedia,Estrenos</h2><br>
 					<div class="gbtns">
 						<form action="categorias.html"><button class="gbtn">Ver Ahora</button></form>
 					</div>
@@ -228,7 +234,7 @@
 		</div>
 
 <!--Seccion de series de muestra solamente actualizable-->
-<div class="section">
+<div class="section" id="SERIES">
 	<div class="topi">
 		<i class="fa-solid fa-film"></i>
 		<h1 class="sec--title">Ver Series onnline</h1>
@@ -348,7 +354,7 @@
 </div>
 	</div>
 <!--Seccion de Estrenos 2023 de muestra solamente actualizable -->
-<div class="section" id="Estrenos">
+<div class="section" id="ESTRENOS">
 	<div class="topi">
 		<i class="fa-solid fa-film"></i>
 		<h1 class="sec--title">Estrenos 2023</h1>
@@ -381,11 +387,11 @@
 			
 			</div>
 			<div class="gallery--item">
-				<img src="imagenes/65.jpeg" alt="" class="gallery--img">
+				<img src="https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/styles/1200/public/media/image/2023/04/ghosting-3014824.jpg?itok=k8XZ6gCT" alt="" class="gallery--img">
 				<div class="gallery--center">
-				<h2 class="g1title">65</h2>
-				<h2 class="g2title">1hr 33min  2023</h2>
-				<h2 class="g3title">Genero: Accion, Animado</h2><br>
+				<h2 class="g1title">Ghosting</h2>
+				<h2 class="g2title">2hr 00min  2023</h2>
+				<h2 class="g3title">Genero: Acción,Comedia,Romance</h2><br>
 				<div class="gbtns">
 					<form action="categorias.html"><button class="gbtn">Ver Ahora</button></form>
 				</div>
@@ -536,7 +542,7 @@
 					</div>
 					</div>
 					<footer class="Footer">
-						<div class="Container">
+						<div class="container">
 								<p>
 										Copyright © 2023 
 										

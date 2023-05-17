@@ -317,11 +317,61 @@ function MisterioV(){
 	document.getElementById('p-center1').style.display = 'none';
 	document.getElementById('wrap').style.display = 'none';
 }
-function GDG3(){
-	Document.getElementById('p-center45').style.display = 'block';
-	Document.getElementById('p-center1').style.display = 'none';
-	Document.getElementById('wrap').style.display = 'none';
+function GUARD3(){
+	document.getElementById('p-center45').style.display = 'block';
+	document.getElementById('p-center1').style.display = 'none';
+	document.getElementById('wrap').style.display = 'none';
+	
 }
+function SuperM(){
+	document.getElementById('p-center46').style.display = 'block';
+	document.getElementById('p-center1').style.display = 'none';
+	document.getElementById('wrap').style.display = 'none';
+	
+}
+function CaballerosZ(){
+	document.getElementById('p-center47').style.display = 'block';
+	document.getElementById('p-center1').style.display = 'none';
+	document.getElementById('wrap').style.display = 'none';
+	
+}
+function Ghost(){
+	document.getElementById('p-center48').style.display = 'block';
+	document.getElementById('p-center1').style.display = 'none';
+	document.getElementById('wrap').style.display = 'none';
+	
+}
+function VisitaF(){
+	document.getElementById('p-center49').style.display = 'block';
+	document.getElementById('p-center1').style.display = 'none';
+	document.getElementById('wrap').style.display = 'none';
+	
+}
+function ExtP(){
+	document.getElementById('p-center50').style.display = 'block';
+	document.getElementById('p-center1').style.display = 'none';
+	document.getElementById('wrap').style.display = 'none';
+	
+}
+function PoseI(){
+	document.getElementById('p-center51').style.display = 'block';
+	document.getElementById('p-center1').style.display = 'none';
+	document.getElementById('wrap').style.display = 'none';
+	
+}
+function Sing1(){
+	document.getElementById('p-center52').style.display = 'block';
+	document.getElementById('p-center1').style.display = 'none';
+	document.getElementById('wrap').style.display = 'none';
+}
+function Sing2(){
+	document.getElementById('p-center53').style.display = 'block';
+	document.getElementById('p-center1').style.display = 'none';
+	document.getElementById('wrap').style.display = 'none';
+	
+}
+
+
 
 
 

@@ -12,7 +12,7 @@
   position: fixed;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   width: 100%;
   height: 8vh;
   background: black;
@@ -33,43 +33,73 @@
 .logoo{
   align-items: center;
   justify-content: center;
-  padding: 0 0 10px;
-  padding-left: 30px;
+
 }
 .logoo a{
-  color: white;
-  font-weight: 900;
+  color: red;
+  font-weight: 800;
   text-decoration: none;
+  font-size: 30px;
 }
 .logoo a:hover{
+  color: red;
   text-decoration: none;
-  color: white;
 }
 .menuu{
   display: flex;
+  margin-top: 10px;
+
 }
-.menuu li button{
-  border-radius: 10px;
-  width: 60px;
-  height: 45px;
-  outline: none;
-  border: none;
-  color: white;
-  background: black;
+.menuu li a{
+  text-decoration: none;
   font-weight: 600;
   transition: .2s ease-in-out;
+  color: white;
+  font-size: 18px;
 }
-.menuu li button:hover{
-  color: black;
-  background: white;
+.menuu li:hover .category_list{
+  display: flex;
+}
+.menuu li a:hover{
+  color: rgb(156, 143, 143);
 }
 .menuu li{
   list-style: none;
   margin: 0 15px;
 }
-body{
-  background: rgba(0, 0, 0, 0.781);
+.menuu .category_list{
+  display: none;
+  flex-direction: column;
+  height: auto;
+  width: 200px;
+  background-color: rgb(31, 28, 28);
+  position: absolute;
 }
+.menuu .category_item{
+  text-decoration: none;
+  line-height: 45px;
+  font-size: 15px;
+  color: rgb(177, 168, 168);
+}
+.exit button{
+  width: 115px;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  background-color: red;
+  font-weight: bold;
+  transition: .3s ease-in-out;
+}
+.exit button:hover{
+  color: red;
+  border: 1px solid red;
+  background: white;
+}
+.exit2 button{
+  display: none;
+}
+
 /* personalización del buscador*/
 .buscar{
   display: flex;
@@ -172,7 +202,7 @@ body{
   align-items: center;
 }
 .section .topi i{
-  color: white ;
+  color: red ;
   padding: 10px;
 }
 .section .topi .sec--title{
@@ -181,11 +211,11 @@ body{
 }
 .section .topi .topi--b{
   margin: 10px;
-  color: white;
+  color: red;
   background: transparent;
   outline: none;
   border: none;
-  border: 1px solid white;
+  border: 1px solid red;
   cursor: pointer;
 }
 .gallery--container{
@@ -285,34 +315,9 @@ body{
   display: flex;
   flex-direction: column;
 }
-.category_list{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 100%;
-  align-items: center;
-  padding: 10px;
-}
-.category_list .category_item{
-  display: block;
-  width: 100%;
-  padding: 15px 0;
-  margin: 10px;
-  margin-bottom: 20px;
-  background: transparent;
-  text-align: center;
-  text-decoration: none;
-  background: rgb(31, 31, 31);
-  color: white;
-  border: 3px solid white;
-  border-radius: 4px;
-  font-weight: 600;
-  font-size: 13px;
-  transition: all .3s ease-in-out;
-}
 .category_list .ct_item-active{
-  background: rgb(253, 253, 253);
-  color: black;
+  background: transparent;
+  color: white;
 }
 /* Seccion del buscador interno*/
 #p-centerro{
@@ -467,152 +472,160 @@ body{
 	display: inline-block;
 	margin: 100px auto;
 }
-
-@media  screen and (max-width: 480px){
-  /*MODAL*/
-   .modal-dialog{
-     width: 100%;
-     align-items: initial;
-     justify-content: initial;
-   }
-   .modal-content{
-     display: flex;
-     flex-direction: column;
-     width: 100%;
-   background: black;
-   height: auto;
-   }
-   #directory{
-     display: grid;
-     grid-template-columns: repeat(2, 1fr);
-     padding: 20px;
-     gap: 10px;
-   }
-   .modal-confirm {		
-     color: #636363;
-     width: 100%;
-   }
-   .modal-confirm .modal-content {
-     padding: 20px;
-     border-radius: 5px;
-     border: none;
-     text-align: center;
-     font-size: 14px;
-   }
-   .modal-confirm .modal-header {
-     border-bottom: none;   
-     position: relative;
-   }
-   .modal-confirm h4 {
-     text-align: center;
-     font-size: 26px;
-     margin: 30px 0 -10px;
-   }
-   .modal-confirm .close {
-    color: white;
-    font-size: 35px;
-     position: absolute;
-     top: -5px;
-     right: -2px;
-   }
-   .modal-confirm .modal-body {
-     color: #999;
-   }
-   .modal-confirm .modal-body i{
-     color:red;
-   }
-   .modal-confirm .modal-footer {
-     border: none;
-     text-align: center;		
-     border-radius: 5px;
-     font-size: 13px;
-     padding: 10px 15px 25px;
-   }
-   .modal-confirm .modal-footer a {
-     color: #999;
-   }		
-   .modal-confirm .btn-secondary {
-     background:gray;
-   }
-   .modal-confirm .btn-secondary:hover, .modal-confirm .btn-secondary:focus {
-     background: #a8a8a8;
-   }
-   .trigger-btn {
-     display: inline-block;
-     margin: 100px auto;
-   }
-   
-  
+.Footer .container p{
+  color: rgb(99, 90, 90);
+}
+.Footer .container p span{
+  color: red;
+}
+.Footer .container p strong{
+  color: red;
+}
+.Footer .container p b{
+  color: red;
+}
+ /*MODAL*/
+ .modal-dialog{
+  width: 100%;
+  align-items: initial;
+  justify-content: initial;
+}
+.modal-content{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+background: black;
+height: auto;
+}
+#directory{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 20px;
+  gap: 10px;
+}
+.modal-confirm {		
+  color: #636363;
+  width: 100%;
+}
+.modal-confirm .modal-content {
+  padding: 20px;
+  border-radius: 5px;
+  border: none;
+  text-align: center;
+  font-size: 14px;
+}
+.modal-confirm .modal-header {
+  border-bottom: none;   
+  position: relative;
+}
+.modal-confirm h4 {
+  text-align: center;
+  font-size: 26px;
+  margin: 30px 0 -10px;
+}
+.modal-confirm .close {
+ color: white;
+ font-size: 35px;
+  position: absolute;
+  top: -5px;
+  right: -2px;
+}
+.modal-confirm .modal-body {
+  color: #999;
+}
+.modal-confirm .modal-body i{
+  color:red;
+}
+.modal-confirm .modal-footer {
+  border: none;
+  text-align: center;		
+  border-radius: 5px;
+  font-size: 13px;
+  padding: 10px 15px 25px;
+}
+.modal-confirm .modal-footer a {
+  color: #999;
+}		
+.modal-confirm .btn-secondary {
+  background:gray;
+}
+.modal-confirm .btn-secondary:hover, .modal-confirm .btn-secondary:focus {
+  background: #a8a8a8;
+}
+.trigger-btn {
+  display: inline-block;
+  margin: 100px auto;
 }
 /*sections peliculas para reporudcirlas*/
 .p-center0{
-  width: 100%;
-  height: 600px;
-  background-image: linear-gradient(
-    0deg,
-    rgba(0,0,0,0.5),
-    rgba(0,0,0,0.5)
-  ),url(https://i.blogs.es/77e8a6/guardianes-de-la-galaxia-3/1366_2000.jpeg);
-	display: flex;
-	background-position: top;
-	background-repeat: no-repeat;
-	background-size: cover;
-  align-items: center;
+width: 100%;
+height: 600px;
+background-image: linear-gradient(
+ 0deg,
+ rgba(0,0,0,0.5),
+ rgba(0,0,0,0.5)
+),url(https://i.blogs.es/77e8a6/guardianes-de-la-galaxia-3/1366_2000.jpeg);
+display: flex;
+background-position: top;
+background-repeat: no-repeat;
+background-size: cover;
+align-items: center;
 }
 .p-center{
-	width: 100%;
-  height: 600px;
-  background: black;
-	display: flex;
-	background-position: top;
-	background-repeat: no-repeat;
-	background-size: cover;
-	position: relative;
-	z-index: 100;
-  align-items: center;
+width: 100%;
+height: 600px;
+background: black;
+display: flex;
+background-position: top;
+background-repeat: no-repeat;
+background-size: cover;
+position: relative;
+z-index: 100;
+align-items: center;
 }
 .titulos{
-  color: white;
-  flex-direction: column;
-  display: flex;
-  width: 800px;
-  padding: 0 0 0 30px;
+color: white;
+flex-direction: column;
+display: flex;
+width: 800px;
+padding: 0 0 0 30px;
 }
 .titulos .pe{
-  font-size: 40px;
-  margin-bottom: 10px;
+font-size: 40px;
+margin-bottom: 10px;
 }
 .titulos .re{
-  font-size: 20px;
-  color: rgb(161, 149, 149);
-  margin-bottom: 10px;
+font-size: 20px;
+color: rgb(161, 149, 149);
+margin-bottom: 10px;
 }
 .titulos .h2{
-  font-size: 10px;
-  margin-bottom: 10px;
-  font-weight: 900;
+font-size: 10px;
+margin-bottom: 10px;
+font-weight: 900;
 }
 .titulos .but button{
-  border: none;
-  width: 134px;
-  height: 45px;
-  outline: none;
-  border: 3px solid white;
-  font-weight: 700;
-  border-radius: 10px;
-  background: none;
-  color: white;
-  transition: .3s ease-in-out;
+border: none;
+width: 134px;
+height: 45px;
+outline: none;
+border: 3px solid white;
+font-weight: 700;
+border-radius: 10px;
+background: none;
+color: white;
+transition: .3s ease-in-out;
 }
 .titulos .but button:hover{
-  color: black;
-  background: white;
+color: black;
+background: white;
 }
 .p-center .title{
-  color: white;
-  font-size: 40px;
-  font-weight: 900;
+color: white;
+font-size: 40px;
+font-weight: 900;
 }
+
 
 /*avatar 2 el camino del agua numero 1 configuracaión para todas las peliculas */
 .peliculas{
@@ -845,8 +858,11 @@ body{
   font-weight: 800;
 }
 .series .temporadass{
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 8px;
+  gap: 20px;
+  justify-content: center;
 }
 .series .temporadass .cap1{
   text-align: center;
@@ -873,372 +889,460 @@ body{
 }
 
 
-/* RESPONSIVE ================================*
-        /*adaptación a tablets*/
-@media screen and (max-width: 820px){
-  .nav{
-    position: fixed;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    height: 8vh;
-    background: black;
-    padding: 0 40px;
-  }
-  .nav_input{
-    display: none;
-  }
-  .logo{
-    color: white;
-    font-weight: 900;
-  }
-  .menuu{
-    position: fixed;
-    flex-direction: column;
-    top: 8vh;
-    left: 70%;
-    width: 30%;
-    height: 32%;
-    background: black; 
-    transition: .3s ease-in-out;
-    transform: translateX(100%);
-  }
-  .nav_input:checked + .menuu{
-    transform: translateX(0);
-  }
-  .menuu li button{
-    width: 100%;
-    height: 45px;
-    outline: none;
-    border: none;
-    color: white;
-    background: black;
-  }
-  .menuu li button:hover{
-    color: black;
-    background: white;
-  }
-  .menuu li{
-    list-style: none;
-    margin: 0 15px;
-  }
-  .menu-btn{
-    color: white;
-    display: block;
-    font-size: 23px;
-  }
-  /* personalización del buscador*/
-  .buscar{
-    display: none;
-    justify-content: center;
-    align-items: center;
-    transform: translateX(-50%);
-    padding: 10px;
-    height: 40px;
-    border-radius: 40px;
-  }
-  .none{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .buscars{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .buscar_texto{
-    border: none;
-    outline: none;
-    color: black;
-    font-size: 14px;
-    float: left;
-    line-height: 45px;
-    transition: .3s;
-    width: 0;
-    border-radius: 10px;
-  }
-  .boton{
-    width: 40px;
-    text-decoration: none;
-    color: white;
-    font-size: 23px;
-  }
-  ::-webkit-input-placeholder{
-    color: black;
-  }
-  .buscars:hover > .buscar_texto{
-    width: 190px;
-  
-  }
-  /*Centro de pagina*/
-  .center-b{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-   .titles .title{
-    font-size: 45px;
-   }
-   .titles .subtitle{
-    font-size: 25px;
-   }
-   .center .img{
-    display: none;
-   }
-   /*pelis adaptable*/
-   .gallery--container{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-   }
-   /*Peliculas filtro----------------------------*/
-   #wrap{
-    width: 100%;
-    margin: auto;
-    background: linear-gradient(to right, black, black);
-    position: relative;
-  }
-  #wrap h1{
-    color: white;
-    font-weight: 700;
-    display: flex;
-    flex-direction: column;
-    
-  }
-  .store-wrapper{
-    display: flex;
-    flex-direction: column;
-  }
-  .category_list{
-    background: rgb(0, 0, 0);
-    color: white;
-    display: flex;
-    flex-wrap: wrap;
-    border: 1px solid white;
-    border: none;
-    border-radius: 10px;
-    
-  }
-  .category_list .category_item{
-    width: 100px;
-    height: 45px;
-    text-align: center;
-    justify-content: space-between;
-    margin: 5px 0 0 0;
-    outline: 1px solid white;
-    background: none;
-    color: white;
-  }
-  .category_list .ct_item-active{
-    background: rgb(253, 253, 253);
-    color: black;
-  }
-  /*avatar 2 el camino del agua numero 1 */
-.peliculas{
-	position: fixed;
-	display: none;
-	text-align: center;
-  background: linear-gradient(to right, rgb(20, 19, 19), rgb(27, 25, 25), rgb(22, 20, 20), rgb(39, 37, 37));
-	width: 100%;
-	height: auto;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	position: absolute;
-	z-index: 100;
-  top: 50px;
-  padding-top: 12%;
-}
-.pelicula iframe{
-  margin-left: -15%;
-  width: 130%;
-  height: 200px;
-  background: linear-gradient(
-    0deg,
-    rgba(0,0,0,0.5),
-    rgba(0,0,0,0.5)
-  ), url(/imagenes/);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin-bottom: 5px;
-  
-  
-}
-.btns button{
-  margin: 10px;
-  border: none;
-  outline: none;
-  color: white;
-  background-color: transparent;
-  border:  solid white;
-  width: 134px;
-  height: 45px;
-  border-radius: 5px;
-  font-weight: 900;
-}
-.btns button:hover{
-  color: black;
-  background: white;
-}
-.center-b .setion{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  background: linear-gradient(to right, rgb(20, 19, 19), rgb(27, 25, 25), rgb(22, 20, 20), rgb(39, 37, 37));
-  padding-left: 0px;
-}
-/*Configuracion para todas las series de una sola vez por todas*/
-.serie-center{
-  display: flex;
-  flex-direction: column;
-}
-.series{
-  width: 100%;
-  flex-direction: column;
-  height: auto;
-  display: none;
-  background: black;
-  object-fit: cover;
-  background-position: top;
-  background-size: cover;
-  background-repeat: no-repeat;
-  position: relative;
-  z-index: 101;
-  padding-top: 9%;
-}
-.series .img{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.series .serie-center .img .volver button{
-  background-color: transparent;
-  border: 1px solid white;
-  color: white;
-  width: 100px;
-  height: 35px;
-  border-radius: 10px;
-  outline: none;
-  text-transform: uppercase;
-  font-size: 10px;
-  margin-bottom: 20px;
-  
-}
-.series .serie-center .img .volver button:hover{
-  background: white;
-  color: black;
-  
-}
-.series .img img{
-  width: 300px;
-  height: 350px;
-  margin: 20px;
-}
-.series .title{
-  color: white;
-  font-size: 40px;
-  font-weight: 800;
-  text-align: center;
-}
-.series .subtitle{
-  color: white;
-  padding-bottom: 40px;
-  text-align: center;
-}
-.series .seriesdescrip{
-  color: white;
-  width: 90%;
-  padding-bottom: 20px;
-  font-size: 15px;
-  text-align: center;
-  margin: 20px;
-}
-.series .footer h6{
-  color: white;
-  font-size: 13px;
-  width: 90%;
-  padding-bottom: 20px;
-  text-align: center;
-  margin-left: 20px;
-}
-.series .temporadas .tempos button{
-  width: 140px;
-  height: 35px;
-  font-size: 10px;
-  outline: none;
-  border: none;
-  border-radius: 10px;
-  font-size: 10px;
-  font-weight: 700;
-  text-transform: uppercase;
-  background: transparent;
-  border: 1px solid white;
-  color: white;
-  margin-bottom: 10px;
-}
-.series .temporadas .tempos button:hover{
-  background: white;
-  color: Black;
-}
-.series .temporadas{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  margin-left: 40px;
-}
-.series .temporadas .butonS button{
-  color: white;
-  margin-right: 10px;
-  font-size: 10px;
-  text-transform: uppercase;
-  background: blue;
-  width: 165px;
-  height: 35px;
-  border-radius: 10px;
-  outline: none;
-  border: none;
-  font-weight: 800;
-}
-.series .temporadass{
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-}
-.series .temporadass .cap1{
-  text-align: center;
 
-}
-.series .temporadass .cap1 h6{
-  color: white;
-  font-size: 13px;
-}
-.series .temporadass .cap1 iframe{
-  width: 380px;
-  height: 200px;
-  border-radius: 10px;
-  padding-bottom: 10px;
-  background: rgb(20, 20, 20);
-  object-fit: cover;
-  background-position: center;
-  border: 1px solid white;
-}
-.series .copy{
-  padding-top: 10px;
-  font-size: 10px;
-  color: white;
-  text-align: center;
-}
-}
+
+
+
+
+
 /* RESPONSIVE ================================*
         /*adaptación a tablets*/
-        @media screen and (max-width: 720px){
+        @media screen and (max-width: 820px){
+          .nav{
+            position: fixed;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            height: 10vh;
+            background: black;
+            padding: 0 40px;
+          }
+          .nav_input{
+            display: none;
+          }
+          .logo{
+            color: white;
+            font-weight: 900;
+          }
+          .logoo a{
+            font-size: 20px;
+            margin-left: 20px;
+          }
+          #Category2 .ct_item-active{
+            background: transparent;
+            color: white;
+          }
+          .menuu{
+            position: fixed;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            top: 8vh;
+            left: 0%;
+            width: 75%;
+            height: auto;
+            background: black; 
+            transition: .3s ease-in-out;
+            transform: translateX(150%);
+            line-height: 35px;
+          }
+          .nav_input:checked + .menuu{
+            transform: translateX(0);
+          }
+          .menuu .category_list{
+            display: none;
+          }
+          .menuu #Category2{
+            display: flex;
+            flex-direction: row;
+            position: relative;
+          }
+          .menuu .category_item{
+            border: none;
+            outline: none;
+          }
+          .menuu .menu-i::before{
+            content: '';
+            position: absolute;
+            width: 80%;
+            height: 1px;
+            background: gray;
+          }
+          #Category2 li a{
+            border: none ;
+            outline: none;      
+            font-size: 15px;
+            color: rgb(153, 145, 145);      
+
+          }
+          #Category2{
+            width: auto;
+            background: black;
+            display: flex;
+            flex-wrap: wrap;
+          }
+          #Category2 li{
+            width: 120px;
+            height: 38px;
+            background: rgb(29, 27, 27);
+            border-radius: 10px;
+            margin-bottom: 10px;
+            padding: 0 0 0 10px;
+          }
+
+          
+          .menuu li:hover .category_list{
+            display: none;
+          }
+
+          .menu-btn{
+            color: white;
+            display: block;
+            font-size: 23px;
+          }
+          .exit{
+            display: none;
+          }
+          .exit2{
+            display: flex;
+            align-items: center;
+            padding: 0 0 0 10px;
+            margin-bottom: 10px;
+
+          }
+          .exit2  button{
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            width: 120px;
+            height: 40px;
+            border: 2px solid white;
+            color: white;
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+            border-radius: 5px;
+            background: none;
+          }
+          .exit2 button:hover{
+            color: black;
+            background: white;
+          }
+          /* personalización del buscador*/
+          .buscar{
+            display: none;
+            justify-content: center;
+            align-items: center;
+            transform: translateX(-50%);
+            padding: 10px;
+            height: 40px;
+            border-radius: 40px;
+          }
+          .none{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+          .buscars{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+          .buscar_texto{
+            border: none;
+            outline: none;
+            color: black;
+            font-size: 14px;
+            float: left;
+            line-height: 45px;
+            transition: .3s;
+            width: 0;
+            border-radius: 10px;
+          }
+          .boton{
+            width: 40px;
+            text-decoration: none;
+            color: white;
+            font-size: 23px;
+          }
+          ::-webkit-input-placeholder{
+            color: black;
+          }
+          .buscars:hover > .buscar_texto{
+            width: 190px;
+          
+          }
+          /*Centro de pagina*/
+          .center-b{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+          }
+           .titles .title{
+            font-size: 45px;
+           }
+           .titles .subtitle{
+            font-size: 25px;
+           }
+           .center .img{
+            display: none;
+           }
            /*pelis adaptable*/
            .gallery--container{
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: repeat(3, 1fr);
            }
+           /*Peliculas filtro----------------------------*/
+           #wrap{
+            width: 100%;
+            margin: auto;
+            background: linear-gradient(to right, black, black);
+            position: relative;
+          }
+          #wrap h1{
+            color: white;
+            font-weight: 700;
+            display: flex;
+            flex-direction: column;
+            
+          }
+          .store-wrapper{
+            display: flex;
+            flex-direction: column;
+          }
+          .category_list{
+            background: rgb(0, 0, 0);
+            color: white;
+            display: flex;
+            flex-wrap: wrap;
+            border: 1px solid white;
+            border: none;
+            border-radius: 10px;
+            
+          }
+          .category_list .category_item{
+            width: 100px;
+            height: 45px;
+            text-align: center;
+            justify-content: space-between;
+            margin: 5px 0 0 0;
+            outline: 1px solid white;
+            background: none;
+            color: white;
+          }
+          .category_list .ct_item-active{
+            background: rgb(253, 253, 253);
+            color: black;
+          }
+          /*avatar 2 el camino del agua numero 1 */
+        .peliculas{
+          position: fixed;
+          display: none;
+          text-align: center;
+          background: linear-gradient(to right, rgb(20, 19, 19), rgb(27, 25, 25), rgb(22, 20, 20), rgb(39, 37, 37));
+          width: 100%;
+          height: auto;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          position: absolute;
+          z-index: 100;
+          top: 50px;
+          padding-top: 12%;
         }
+        .pelicula iframe{
+          margin-left: -15%;
+          width: 130%;
+          height: 200px;
+          background: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+          ), url(/imagenes/);
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          margin-bottom: 5px;
+          
+          
+        }
+        .btns button{
+          margin: 10px;
+          border: none;
+          outline: none;
+          color: white;
+          background-color: transparent;
+          border:  solid white;
+          width: 134px;
+          height: 45px;
+          border-radius: 5px;
+          font-weight: 900;
+        }
+        .btns button:hover{
+          color: black;
+          background: white;
+        }
+        .center-b .setion{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          background: linear-gradient(to right, rgb(20, 19, 19), rgb(27, 25, 25), rgb(22, 20, 20), rgb(39, 37, 37));
+          padding-left: 0px;
+        }
+        /*Configuracion para todas las series de una sola vez por todas*/
+        .serie-center{
+          display: flex;
+          flex-direction: column;
+        }
+        .series{
+          width: 100%;
+          flex-direction: column;
+          height: auto;
+          display: none;
+          background: black;
+          object-fit: cover;
+          background-position: top;
+          background-size: cover;
+          background-repeat: no-repeat;
+          position: relative;
+          z-index: 101;
+          padding-top: 9%;
+        }
+        .series .img{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+        .series .serie-center .img .volver button{
+          background-color: transparent;
+          border: 1px solid white;
+          color: white;
+          width: 100px;
+          height: 35px;
+          border-radius: 10px;
+          outline: none;
+          text-transform: uppercase;
+          font-size: 10px;
+          margin-bottom: 20px;
+          
+        }
+        .series .serie-center .img .volver button:hover{
+          background: white;
+          color: black;
+          
+        }
+        .series .img img{
+          width: 300px;
+          height: 350px;
+          margin: 20px;
+        }
+        .series .title{
+          color: white;
+          font-size: 40px;
+          font-weight: 800;
+          text-align: center;
+        }
+        .series .subtitle{
+          color: white;
+          padding-bottom: 40px;
+          text-align: center;
+        }
+        .series .seriesdescrip{
+          color: white;
+          width: 90%;
+          padding-bottom: 20px;
+          font-size: 15px;
+          text-align: center;
+          margin: 20px;
+        }
+        .series .footer h6{
+          color: white;
+          font-size: 13px;
+          width: 90%;
+          padding-bottom: 20px;
+          text-align: center;
+          margin-left: 20px;
+        }
+        .series .temporadas .tempos button{
+          width: 140px;
+          height: 35px;
+          font-size: 10px;
+          outline: none;
+          border: none;
+          border-radius: 10px;
+          font-size: 10px;
+          font-weight: 700;
+          text-transform: uppercase;
+          background: transparent;
+          border: 1px solid white;
+          color: white;
+          margin-bottom: 10px;
+        }
+        .series .temporadas .tempos button:hover{
+          background: white;
+          color: Black;
+        }
+        .series .temporadas{
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          margin-left: 40px;
+        }
+        .series .temporadas .butonS button{
+          color: white;
+          margin-right: 10px;
+          font-size: 10px;
+          text-transform: uppercase;
+          background: blue;
+          width: 165px;
+          height: 35px;
+          border-radius: 10px;
+          outline: none;
+          border: none;
+          font-weight: 800;
+        }
+        .series .temporadass{
+          display: grid;
+          grid-template-columns: repeat(1, 1fr);
+        }
+        .series .temporadass .cap1{
+          text-align: center;
+        
+        }
+        .series .temporadass .cap1 h6{
+          color: white;
+          font-size: 13px;
+        }
+        .series .temporadass .cap1 iframe{
+          width: 380px;
+          height: 200px;
+          border-radius: 10px;
+          padding-bottom: 10px;
+          background: rgb(20, 20, 20);
+          object-fit: cover;
+          background-position: center;
+          border: 1px solid white;
+        }
+        .series .copy{
+          padding-top: 10px;
+          font-size: 10px;
+          color: white;
+          text-align: center;
+        }
+        }
+
+
+        /* RESPONSIVE ================================*
+        /*adaptación a tablets*/
+        @media screen and (max-width: 720px){
+          /*pelis adaptable*/
+          .gallery--container{
+           display: grid;
+           grid-template-columns: repeat(2, 1fr);
+          }
+       }
+
+
+
+
+
+
+
+@media  screen and (max-width: 480px){
+ 
+}

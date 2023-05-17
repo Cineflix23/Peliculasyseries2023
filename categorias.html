@@ -26,16 +26,44 @@
 	<nav>
 		<div class="nav">
 			<div class="logoo">
-				<a href="cine.html">CINEFLIX</a>
+				<a href="#">CINEFLIX</a>
 			</div>
 			<input type="checkbox"  id="menu" class="nav_input">
 			<ul class="menuu">
-				<li><form action="cine.html"><button>Inicio</button></form></li>
-				<li><form action="categorias.html"><button>Peliculas</button></form></li>
-				<li><button onclick="OcultarP();">Series</button></li>
-				<li><form action="#wrap"><button>Estrenos</button></form></li>
-				<li><form action="index.html"><button>Salir</button></form></li>
+				<li class="menu-i"><a href="index.html">Inicio</a></li>
+				<li class="menu-i"><a href="categorias.html">Peliculas</a></li>
+				<li class="menu-i"><a href="categorias.html">Series</a></li>
+				<li class="menu-i"><a href="#">Estrenos</a></li>
+				<li class="menu-i"><a href="#">Generos</a>
+
+					<ul class="category_list">
+						<li><a href="#" class="category_item" category="all">Todo</a></li>
+						<li><a href="#" class="category_item" category="Acción">Acción</a></li>
+						<li><a href="#" class="category_item" category="Comedia">Comedia</a></li>
+						<li><a href="#" class="category_item" category="Terror">Terror</a></li>
+						<li><a href="#" class="category_item" category="C.Ficción">C.Ficción</a></li>
+						<li><a href="#" class="category_item" category="Animadas">Animadas</a></li>
+						<li><a href="#" class="category_item"  category="Drama/Suspenso">Drama/suspenso</a></li>
+					</ul>
+			
+				</li>
+
+				<ul class="category_list" id="Category2">
+					<li><a href="#" class="category_item" category="all">Todo</a></li>
+					<li><a href="#" class="category_item" category="Acción">Acción</a></li>
+					<li><a href="#" class="category_item" category="Comedia">Comedia</a></li>
+					<li><a href="#" class="category_item" category="Terror">Terror</a></li>
+					<li><a href="#" class="category_item" category="C.Ficción">C.Ficción</a></li>
+					<li><a href="#" class="category_item" category="Animadas">Animadas</a></li>
+					<li><a href="#" class="category_item" category="Drama/Suspenso">Drama</a></li>
+				</ul>
+				<div class="exit2">
+					<form action="login.html"><button>Cerrar Sesion</button></form>
+				</div>
 			</ul>
+			<div class="exit">
+				<form action="login.html"><button>Cerrar Sesion</button></form>
+			</div>
 			<div class="none">
 				<label for="menu" class="menu-btn">
 					<i class="fas fa-bars"></i>
@@ -64,15 +92,6 @@
 						</div>
 						<div id="wrap">
 							<div class="store-wrapper">
-								<div class="category_list">
-									<a href="#" class="category_item" category="all">Todo</a>
-									<a href="#" class="category_item" category="Acción">Acción</a>
-									<a href="#" class="category_item" category="Comedia">Comedia</a>
-									<a href="#" class="category_item" category="Terror">Terror</a>
-									<a href="#" class="category_item" category="C.Ficción">C.Ficción</a>
-									<a href="#" class="category_item" category="Animadas">Animadas</a>
-									<a href="#" class="category_item" category="Drama/Suspenso">Drama/suspenso</a>
-								</div>
 								<section class="products-list">
 									<div class="gallery--container">
 										<div class="gallery--item" category="Comedia">
@@ -80,30 +99,86 @@
 											<div class="gallery--center">
 												<h2 class="g1title">Guardianes de la galaxia 3</h2>
 												<h2 class="g2title">2hr 31min  2023</h2>
-												<h2 class="g3title">Genero: Acción, Aventura, Comedia</h2><br>
 												<div class="gbtns">
-													<button onclick="GDG3();" class="gbtn">Ver Ahora</button>
+													<button onclick="GUARD3();" class="gbtn">Ver Ahora</button>
 												</div>
 												</div>
 											</div>
 											
-										<div class="gallery--item" category="Acción">
-											<img src="https://www.lavanguardia.com/peliculas-series/images/movie/poster/2023/3/w1280/9d0rhU1s3VHH84bWxM0F6dEKUm2.jpg" alt="" class="gallery--img">
+										<div class="gallery--item" category="Animadas">
+											<img src="https://www.latercera.com/resizer/JzHhj0HjOVLt-5SYbHUSz2mzNUk=/800x0/smart/cloudfront-us-east-1.images.arcpublishing.com/copesa/ZPEQXUEQKFELNAMFUTACTVA6NY.jpeg" alt="" class="gallery--img">
 											<div class="gallery--center">
-											<h2 class="g1title">El vuelo de los ladrones</h2>
-											<h2 class="g2title">1hr 50min  2023</h2>
-											<h2 class="g3title">Genero: Suspenso, crimen</h2><br>
+											<h2 class="g1title">Super Mario</h2>
+											<h2 class="g2title">1hr 32min  2023</h2>
 											<div class="gbtns">
-												<button onclick="VLadrones();" class="gbtn">Ver Ahora</button>
+												<button onclick="SuperM();" class="gbtn">Ver Ahora</button>
 											</div>
 											</div>
 									</div>
-									<div class="gallery--item" category="Acción">
+								
+
+
+									<div class="gallery--item" category="Comedia">
+										<img src="https://edctrailers.com/img/2023/03/El-visitante-del-futuro-cartel.jpg" alt="" class="gallery--img">
+										<div class="gallery--center">
+										<h2 class="g1title">El visitante del futuro</h2>
+										<h2 class="g2title">1hr 42min  2023</h2>
+										<div class="gbtns">
+											<button onclick="VisitaF();" class="gbtn">Ver Ahora</button>
+										</div>
+										</div>
+								</div>
+
+
+									<div class="gallery--item" category="C.Ficción">
+										<img src="https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/styles/1200/public/media/image/2023/04/ghosting-3014824.jpg?itok=k8XZ6gCT" alt="" class="gallery--img">
+										<div class="gallery--center">
+										<h2 class="g1title">Ghosting</h2>
+										<h2 class="g2title">2hr 00min  2023</h2>
+										<div class="gbtns">
+											<button onclick="Ghost();" class="gbtn">Ver Ahora</button>
+										</div>
+										</div>
+								</div>
+								<div class="gallery--item" category="Drama/Suspenso">
+									<img src="https://www.nacionflix.com/__export/1678388650542/sites/debate/img/2023/03/09/misterio-a-la-vista-netflix-adam-sandler-jeniffer-aniston.jpg_459955865.jpg" alt="" class="gallery--img">
+									<div class="gallery--center">
+									<h2 class="g1title">Misterio a la vista</h2>
+									<h2 class="g2title">1hr 40min  2023</h2>
+									<div class="gbtns">
+										<button onclick="MisterioV();" class="gbtn">Ver Ahora</button>
+									</div>
+									</div>
+							</div>
+
+
+									<div class="gallery--item" category="C.Ficción">
+										<img src="https://static.cinepolis.com/resources/mx/movies/posters/414x603/42099-134368-20230427103539.jpg" alt="" class="gallery--img">
+										<div class="gallery--center">
+										<h2 class="g1title">Caballeros del zodiaco</h2>
+										<h2 class="g2title">1hr 52min  2023</h2>
+										<div class="gbtns">
+											<button onclick="CaballerosZ();" class="gbtn">Ver Ahora</button>
+										</div>
+										</div>
+								</div>
+
+
+									<div class="gallery--item" category="Drama/Suspenso">
+										<img src="https://www.lavanguardia.com/peliculas-series/images/movie/poster/2023/3/w1280/9d0rhU1s3VHH84bWxM0F6dEKUm2.jpg" alt="" class="gallery--img">
+										<div class="gallery--center">
+										<h2 class="g1title">El vuelo de los ladrones</h2>
+										<h2 class="g2title">1hr 50min  2023</h2>
+										<div class="gbtns">
+											<button onclick="VLadrones();" class="gbtn">Ver Ahora</button>
+										</div>
+										</div>
+								</div>
+									<div class="gallery--item" category="C.Ficción">
 										<img src="https://www.tvguide.com/a/img/catalog/provider/1/2/1-12638194696.jpg" alt="" class="gallery--img">
 										<div class="gallery--center">
 										<h2 class="g1title">Assassin</h2>
 										<h2 class="g2title">1hr 27min  2022</h2>
-										<h2 class="g3title">Genero: Acción, Ciencia ficción</h2><br>
 										<div class="gbtns">
 											<button onclick="Asasins();" class="gbtn">Ver Ahora</button>
 										</div>
@@ -114,7 +189,6 @@
 										<div class="gallery--center">
 										<h2 class="g1title">Inspector araña</h2>
 										<h2 class="g2title">1hr 30min  2022</h2>
-										<h2 class="g3title">Genero: Animación, Familia</h2><br>
 										<div class="gbtns">
 											<button onclick="InspectorA();" class="gbtn">Ver Ahora</button>
 										</div>
@@ -125,12 +199,32 @@
 										<div class="gallery--center">
 										<h2 class="g1title">The system</h2>
 										<h2 class="g2title">1hr 37min  2023</h2>
-										<h2 class="g3title">Genero: Acción, Crimen, Suspenso</h2><br>
 										<div class="gbtns">
 											<button onclick="Tsystem();" class="gbtn">Ver Ahora</button>
 										</div>
 										</div>
-								</div>
+								    </div>
+									<div class="gallery--item" category="Animadas">
+										<img src="https://pics.filmaffinity.com/A_Canta-887137050-large.jpg" alt="" class="gallery--img">
+										<div class="gallery--center">
+										<h2 class="g1title">Sing</h2>
+										<h2 class="g2title">1hr 55min  2016</h2>
+										<div class="gbtns">
+											<button onclick="Sing1();" class="gbtn">Ver Ahora</button>
+										</div>
+										</div>
+								    </div>
+									<div class="gallery--item" category="Animadas">
+										<img src="https://m.media-amazon.com/images/M/MV5BMWRiZGQ1NDMtODQ2OS00MDlhLWJkZGYtM2ZmNjlhZThjOWRmXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg" alt="" class="gallery--img">
+										<div class="gallery--center">
+										<h2 class="g1title">Sing 2</h2>
+										<h2 class="g2title">1hr 52min  2021</h2>
+										<div class="gbtns">
+											<button onclick="Sing2();" class="gbtn">Ver Ahora</button>
+										</div>
+										</div>
+								    </div>
+								
 								<div class="gallery--item" category="Terror">
 									<img src="imagenes/geminis.jpg" alt="" class="gallery--img">
 									<div class="gallery--center">
@@ -147,7 +241,6 @@
 								<div class="gallery--center">
 								<h2 class="g1title">Puedes hacerlo Chang</h2>
 								<h2 class="g2title">1hr 48min  2023</h2>
-								<h2 class="g3title">Genero: Familia, Comedia, Drama</h2><br>
 								<div class="gbtns">
 									<button onclick="Pchang();" class="gbtn">Ver Ahora</button>
 								</div>
@@ -158,7 +251,6 @@
 										<div class="gallery--center">
 										<h2 class="g1title">Batman: La Perdición</h2>
 										<h2 class="g2title">1hr 26min  2023</h2>
-										<h2 class="g3title">Genero: Animación, Fantasía, Terror</h2><br>
 										<div class="gbtns">
 											<button onclick="BatP();" class="gbtn">Ver Ahora</button>
 										</div>
@@ -169,7 +261,6 @@
 										<div class="gallery--center">
 										<h2 class="g1title">Black Adam</h2>
 										<h2 class="g2title">1hr 24min  2023</h2>
-										<h2 class="g3title">Genero: Acción, Fantasia</h2><br>
 										<div class="gbtns">
 											<button onclick="Black();" class="gbtn">Ver Ahora</button>
 										</div>
@@ -180,29 +271,46 @@
 										<div class="gallery--center">
 										<h2 class="g1title">Babylon</h2>
 										<h2 class="g2title">3hr 09min  2022</h2>
-										<h2 class="g3title">Genero: Acción, Comedia</h2><br>
 										<div class="gbtns">
 											<button onclick="Babylon();" class="gbtn">Ver Ahora</button>
 										</div>
 										</div>
 								</div>
-									<div class="gallery--item" category="Acción">
+								<div class="gallery--item" category="Terror">
+									<img src="https://www.lahiguera.net/cinemania/pelicula/10631/el_exorcista_del_papa-cartel-10987.jpg" alt="" class="gallery--img">
+									<div class="gallery--center">
+									<h2 class="g1title">EL Exorcista del papa</h2>
+									<h2 class="g2title">1hr 42min  2023</h2>
+									<div class="gbtns">
+										<button onclick="ExtP();" class="gbtn">Ver Ahora</button>
+									</div>
+									</div>
+							</div>
+							<div class="gallery--item" category="Terror">
+								<img src="https://pbs.twimg.com/media/FlkLZP_WQAEYd4W.jpg:large" alt="" class="gallery--img">
+								<div class="gallery--center">
+								<h2 class="g1title">Posesión infernal: El despertar</h2>
+								<h2 class="g2title">1hr 42min  2023</h2>
+								<div class="gbtns">
+									<button onclick="PoseI();" class="gbtn">Ver Ahora</button>
+								</div>
+								</div>
+						</div>
+									<div class="gallery--item" category="Drama/Suspenso">
 										<img src="imagenes/65.jpeg" alt="" class="gallery--img">
 										<div class="gallery--center">
 										<h2 class="g1title">65</h2>
 										<h2 class="g2title">1hr 33min  2023</h2>
-										<h2 class="g3title">Genero: Acción, Estrenos</h2><br>
 										<div class="gbtns">
 											<button onclick="S5();" class="gbtn">Ver Ahora</button>
 										</div>
 										</div>
 								</div>
-								<div class="gallery--item" category="Acción">
+								<div class="gallery--item" category="C.Ficción">
 									<img src="imagenes/AT.jpg" alt="" class="gallery--img">
 									<div class="gallery--center">
 									<h2 class="g1title">Attack on Titan</h2>
 									<h2 class="g2title">1hr 33min  2023</h2>
-									<h2 class="g3title">Genero: Acción, Fantasia</h2><br>
 									<div class="gbtns">
 										<button onclick="Titan();" class="gbtn">Ver Ahora</button>
 									</div>
@@ -213,7 +321,6 @@
 									<div class="gallery--center">
 									<h2 class="g1title">Noche de paz</h2>
 									<h2 class="g2title">1hr 41min  2022</h2>
-									<h2 class="g3title">Genero: Comedia, Crimen</h2><br>
 									<div class="gbtns">
 										<button onclick="NP();" class="gbtn">Ver Ahora</button>
 									</div>
@@ -224,7 +331,6 @@
 								<div class="gallery--center">
 								<h2 class="g1title">¡Shazam!</h2>
 								<h2 class="g2title">2hr 10min  2023</h2>
-								<h2 class="g3title">Genero: Drama, Suspenso</h2><br>
 								<div class="gbtns">
 									<button onclick="Zam();" class="gbtn">Ver Ahora</button>
 								</div>
@@ -235,18 +341,16 @@
 								<div class="gallery--center">
 								<h2 class="g1title">John Wick 4</h2>
 								<h2 class="g2title">2hr 49min  2023</h2>
-								<h2 class="g3title">Genero: Acción, Crimen</h2><br>
 								<div class="gbtns">
 									<button onclick="JW();" class="gbtn">Ver Ahora</button>
 								</div>
 								</div>
 							</div>
-							<div class="gallery--item" category="Acción">
+							<div class="gallery--item" category="Drama/Suspenso">
 								<img src="imagenes/OP.jpg" alt="" class="gallery--img">
 								<div class="gallery--center">
 								<h2 class="g1title">Operación Fortuna</h2>
 								<h2 class="g2title">1hr 54min  2023</h2>
-								<h2 class="g3title">Genero: Acción, Comedia</h2><br>
 								<div class="gbtns">
 									<button onclick="OP();" class="gbtn">Ver Ahora</button>
 								</div>
@@ -257,7 +361,6 @@
 								<div class="gallery--center">
 								<h2 class="g1title">Luther: Cae la noche</h2>
 								<h2 class="g2title">2hr 9min  2023</h2>
-								<h2 class="g3title">Genero: Terror, Suspenso</h2><br>
 								<div class="gbtns">
 									<button onclick="LC();" class="gbtn">Ver Ahora</button>
 								</div>
@@ -268,7 +371,6 @@
 								<div class="gallery--center">
 								<h2 class="g1title">Marlowe</h2>
 								<h2 class="g2title">1hr 49min  2023</h2>
-								<h2 class="g3title">Genero: Acción, Crimen</h2><br>
 								<div class="gbtns">
 									<button onclick="Marlove();" class="gbtn">Ver Ahora</button>
 								</div>
@@ -279,7 +381,6 @@
 								<div class="gallery--center">
 								<h2 class="g1title">Scream Vl</h2>
 								<h2 class="g2title">2hr 03min  2023</h2>
-								<h2 class="g3title">Genero: Terror, Suspenso</h2><br>
 								<div class="gbtns">
 									<button onclick="S6();" class="gbtn">Ver Ahora</button>
 								</div>
@@ -290,7 +391,6 @@
 							<div class="gallery--center">
 							<h2 class="g1title">Creed lll</h2>
 							<h2 class="g2title">1hr 46min 2023</h2>
-							<h2 class="g3title">Genero: Acción, Ciencia ficción</h2><br>
 							<div class="gbtns">
 								<button onclick="Credlll();" class="gbtn">Ver Ahora</button>
 							</div>
@@ -301,7 +401,6 @@
 						<div class="gallery--center">
 						<h2 class="g1title">El peor vecino del mundo</h2>
 						<h2 class="g2title">2hr 6min 2022</h2>
-						<h2 class="g3title">Genero: Comedia</h2><br>
 						<div class="gbtns">
 							<button onclick="PeorV();" class="gbtn">Ver Ahora</button>
 						</div>
@@ -312,7 +411,6 @@
 						<div class="gallery--center">
 						<h2 class="g1title">Llaman a la Puerta</h2>
 						<h2 class="g2title">1hr 40min  202</h2>
-						<h2 class="g3title">Genero: Suspenso, Terror</h2><br>
 						<div class="gbtns">
 							<button onclick="LLamana();" class="gbtn">Ver Ahora</button>
 						</div>
@@ -323,18 +421,16 @@
 					<div class="gallery--center">
 					<h2 class="g1title">Ant-man Quantumania</h2>
 					<h2 class="g2title">38min  2023</h2>
-					<h2 class="g3title">Genero: Acción</h2><br>
 					<div class="gbtns">
 						<button onclick="Antman();" class="gbtn">Ver Ahora</button>
 					</div>
 					</div>
 					</div>
-					<div class="gallery--item" category="Aventura">
+					<div class="gallery--item" category="Animadas">
 					<img src="imagenes/gtb.jpg" alt="" class="gallery--img">
 					<div class="gallery--center">
 					<h2 class="g1title">Gatos con botas: El ultimo deseo</h2>
 					<h2 class="g2title">1hr 44min  2023</h2>
-					<h2 class="g3title">Genero: Aventura, Estrenos</h2><br>
 					<div class="gbtns">
 						<button onclick="GatoB();" class="gbtn">Ver Ahora</button>
 					</div>
@@ -345,7 +441,6 @@
 					<div class="gallery--center">
 					<h2 class="g1title">El piloto</h2>
 					<h2 class="g2title">1hr 47min 2023</h2>
-					<h2 class="g3title">Genero: Drama,Suspenso</h2><br>
 					<div class="gbtns">
 						<button onclick="Piloto();" class="gbtn">Ver Ahora</button>
 					</div>
@@ -356,7 +451,6 @@
 					<div class="gallery--center">
 					<h2 class="g1title">Jurassic World Dominion</h2>
 					<h2 class="g2title">2hr 17min  2022</h2>
-					<h2 class="g3title">Genero: C.ficción, Estrenos</h2><br>
 					<div class="gbtns">
 						<button onclick="JurassicD();" class="gbtn">Ver Ahora</button>
 					</div>
@@ -367,7 +461,6 @@
 						<div class="gallery--center">
 						<h2 class="g1title">Thor Love And Thunder</h2>
 						<h2 class="g2title">1hr 59min  2022</h2>
-						<h2 class="g3title">Genero: Accion, Aventura, Comedia</h2><br>
 						<div class="gbtns">
 						<button onclick="Loveand();" class="gbtn">Ver Ahora</button>
 						</div>
@@ -378,7 +471,6 @@
 								<div class="gallery--center">
 								<h2 class="g1title">Top Gun Maverick</h2>
 								<h2 class="g2title">2hr 11min  2022</h2>
-								<h2 class="g3title">Genero: Acción, Drama</h2><br>
 								<div class="gbtns">
 									<button onclick="TopG();" class="gbtn">Ver Ahora</button>
 								</div>
@@ -389,7 +481,6 @@
 									<div class="gallery--center">
 									<h2 class="g1title">Black Panther: Wakanda Forever</h2>
 									<h2 class="g2title">2hr 42min  2022</h2>
-									<h2 class="g3title">Genero: C.ficción, Estrenos</h2><br>
 									<div class="gbtns">
 										 <button onclick="BlackP();" class="gbtn">Ver Ahora</button>
 									</div>
@@ -400,7 +491,6 @@
 										<div class="gallery--center">
 										<h2 class="g1title">Avatar: The Way of Water</h2>
 										<h2 class="g2title">3hr 12min  2022</h2>
-										<h2 class="g3title">Genero: C.ficción, Aventura, Estrenos</h2><br>
 										<div class="gbtns">
 											<button class="gbtn" onclick="avatar();">Ver Ahora</button>
 											
@@ -412,7 +502,6 @@
 											<div class="gallery--center">
 											<h2 class="g1title">Titanes del Pacifco 2</h2>
 											<h2 class="g2title">1hr 50min  2018</h2>
-											<h2 class="g3title">Genero: Acción, Fantasía, Ciencia ficción</h2><br>
 											<div class="gbtns">
 												<button class="gbtn" onclick="TitanesP();">Ver Ahora</button>
 											</div>
@@ -423,7 +512,6 @@
 												<div class="gallery--center">
 												<h2 class="g1title">La elefanta del Mago</h2>
 												<h2 class="g2title">1hr 47min  2023</h2>
-												<h2 class="g3title">Genero: Animación, Aventura, Familia</h2><br>
 												<div class="gbtns">
 													<button class="gbtn" onclick="ElefantaM();">Ver Ahora</button>
 												</div>
@@ -458,7 +546,7 @@
 		<div class="modal-body">
 			<ul id="directory">
 				<li class="gallery">
-					<div class="gallery--item" category="Drama/Suspenso">
+					<div class="gallery--item">
 						<img src="imagenes/LF.jpeg" alt="" class="gallery--img">
 						<div class="gallery--center">
 							<p class="name mt-3">Lobo Feroz</p><!--ID Unico que sea distinto-->
@@ -470,7 +558,7 @@
 					</div>
 			</li>
 			<li class="gallery">
-				<div class="gallery--item" category="Acción">
+				<div class="gallery--item" >
 					<img src="imagenes/black.jpg" alt="" class="gallery--img">
 					<div class="gallery--center">
 						<p class="name mt-3">Black Adam</p><!--ID Unico que sea distinto-->
@@ -482,7 +570,7 @@
 			</div>
 			</li>
 			<li class="gallery">
-				<div class="gallery--item" category="Acción">
+				<div class="gallery--item" >
 					<img src="imagenes/65.jpeg" alt="" class="gallery--img">
 					<div class="gallery--center">
 						<p class="name mt-3">65</p><!--ID Unico que sea distinto-->
@@ -494,7 +582,7 @@
 			</div>
 			</li>
 			<li class="gallery">
-				<div class="gallery--item" category="Acción">
+				<div class="gallery--item">
 					<img src="imagenes/AT.jpg" alt="" class="gallery--img">
 					<div class="gallery--center">
 						<p class="name mt-3">Attack on titan</p><!--ID Unico que sea distinto-->
@@ -506,7 +594,7 @@
 				</div>
 			</li>
 			<li class="gallery">
-				<div class="gallery--item" category="Comedia">
+				<div class="gallery--item" >
 					<img src="imagenes/NP.jpg" alt="" class="gallery--img">
 					<div class="gallery--center">
 						<p class="name mt-3">Noche de paz</p><!--ID Unico que sea distinto-->
@@ -517,7 +605,7 @@
 					</div>
 			</div>
 			<li class="gallery">
-				<div class="gallery--item" category="Drama/Suspenso">
+				<div class="gallery--item">
 					<img src="imagenes/shazam.jpeg" alt="" class="gallery--img">
 					<div class="gallery--center">
 						<p class="name mt-3">¡Shazam!</p><!--ID Unico que sea distinto-->
@@ -529,7 +617,7 @@
 				</div>
 			</li>
 			<li class="gallery">
-				<div class="gallery--item" category="Drama/Suspenso">
+				<div class="gallery--item">
 					<img src="imagenes/jhon.jpg" alt="" class="gallery--img">
 					<div class="gallery--center">
 						<p class="name mt-3">John Wick 4</p><!--ID Unico que sea distinto-->
@@ -541,7 +629,7 @@
 				</div>
 			</li>
 			<li class="gallery">
-				<div class="gallery--item" category="Drama/Suspenso">
+				<div class="gallery--item">
 					<img src="imagenes/OP.jpg" alt="" class="gallery--img">
 					<div class="gallery--center">
 						<p class="name mt-3">Operación Fortuna</p><!--ID Unico que sea distinto-->
@@ -553,7 +641,7 @@
 				</div>
 			</li>
 			<li class="gallery">
-				<div class="gallery--item" category="Drama/Suspenso">
+				<div class="gallery--item" >
 					<img src="https://www.lavanguardia.com/peliculas-series/images/movie/poster/2023/2/w1280/M1hHE3thiqvAsZ8gpBpV0AwWIb.jpg" alt="" class="gallery--img">
 					<div class="gallery--center">
 						<p class="name mt-3">Luther: Cae la noche</p><!--ID Unico que sea distinto-->
@@ -565,7 +653,7 @@
 				</div>
 			</li>
 			<li class="gallery">
-				<div class="gallery--item" category="Drama/Suspenso">
+				<div class="gallery--item" >
 					<img src="imagenes/SC.jpg" alt="" class="gallery--img">
 					<div class="gallery--center">
 						<p class="name mt-3">Marlove Sombras de un crimen</p><!--ID Unico que sea distinto-->
@@ -576,7 +664,7 @@
 					</div>
 				</div>
 				<li class="gallery">
-					<div class="gallery--item" category="Drama/Suspenso">
+					<div class="gallery--item" >
 						<img src="imagenes/scre.jpeg" alt="" class="gallery--img">
 						<div class="gallery--center">
 							<p class="name mt-3">Scream Vl</p><!--ID Unico que sea distinto-->
@@ -588,7 +676,7 @@
 					</div>
 			</li>
 			<li class="gallery">
-				<div class="gallery--item" category="Drama/Suspenso">
+				<div class="gallery--item">
 					<img src="imagenes/credlll.jpg" alt="" class="gallery--img">
 					<div class="gallery--center">
 						<p class="name mt-3">Creed lll</p><!--ID Unico que sea distinto-->
@@ -600,7 +688,7 @@
 				</div>
 		</li>
 		<li class="gallery">
-			<div class="gallery--item" category="Drama/Suspenso">
+			<div class="gallery--item" >
 				<img src="imagenes/peorv.jpg" alt="" class="gallery--img">
 				<div class="gallery--center">
 					<p class="name mt-3">El peor vecino del mundo</p><!--ID Unico que sea distinto-->
@@ -612,7 +700,7 @@
 			</div>
 	</li>
 	<li class="gallery">
-		<div class="gallery--item" category="Drama/Suspenso">
+		<div class="gallery--item" >
 			<img src="imagenes/ll.jpg" alt="" class="gallery--img">
 			<div class="gallery--center">
 				<p class="name mt-3">Llaman a la Puerta</p><!--ID Unico que sea distinto-->
@@ -624,7 +712,7 @@
 		</div>
   </li>
 	<li class="gallery">
-		<div class="gallery--item" category="Drama/Suspenso">
+		<div class="gallery--item" >
 			<img src="imagenes/antmen.jpg" alt="" class="gallery--img">
 			<div class="gallery--center">
 				<p class="name mt-3">Ant-man Quantumania</p><!--ID Unico que sea distinto-->
@@ -636,7 +724,7 @@
 		</div>
   </li>
 	<li class="gallery">
-		<div class="gallery--item" category="Drama/Suspenso">
+		<div class="gallery--item" >
 			<img src="imagenes/gtb.jpg" alt="" class="gallery--img">
 			<div class="gallery--center">
 				<p class="name mt-3">Gatos con botas: El ultimo deseo</p><!--ID Unico que sea distinto-->
@@ -648,7 +736,7 @@
 		</div>
   </li>
 	<li class="gallery">
-		<div class="gallery--item" category="Drama/Suspenso">
+		<div class="gallery--item" >
 			<img src="imagenes/pilo.jpg" alt="" class="gallery--img">
 			<div class="gallery--center">
 				<p class="name mt-3">El Piloto</p><!--ID Unico que sea distinto-->
@@ -660,7 +748,7 @@
 		</div>
   </li>
 	<li class="gallery">
-		<div class="gallery--item" category="Drama/Suspenso">
+		<div class="gallery--item" >
 			<img src="imagenes/domini.jpg" alt="" class="gallery--img">
 			<div class="gallery--center">
 				<p class="name mt-3">Jurassic World Dominion</p><!--ID Unico que sea distinto-->
@@ -672,7 +760,7 @@
 		</div>
   </li>
 	<li class="gallery">
-		<div class="gallery--item" category="Drama/Suspenso">
+		<div class="gallery--item" >
 			<img src="imagenes/tlv.jpg" alt="" class="gallery--img">
 			<div class="gallery--center">
 				<p class="name mt-3">Thor Love And Thunder</p><!--ID Unico que sea distinto-->
@@ -684,7 +772,7 @@
 		</div>
   </li>
 	<li class="gallery">
-		<div class="gallery--item" category="Drama/Suspenso">
+		<div class="gallery--item" >
 			<img src="imagenes/tg.jpg" alt="" class="gallery--img">
 			<div class="gallery--center">
 				<p class="name mt-3">Top Gun Maverick</p><!--ID Unico que sea distinto-->
@@ -696,7 +784,7 @@
 		</div>
   </li>
 	<li class="gallery">
-		<div class="gallery--item" category="Drama/Suspenso">
+		<div class="gallery--item" >
 			<img src="imagenes/waka.jpg" alt="" class="gallery--img">
 			<div class="gallery--center">
 				<p class="name mt-3">Black Panther: Wakanda Forever</p><!--ID Unico que sea distinto-->
@@ -708,7 +796,7 @@
 		</div>
   </li>
 	<li class="gallery">
-		<div class="gallery--item" category="Drama/Suspenso">
+		<div class="gallery--item" >
 			<img src="imagenes/avatar2.jpg" alt="" class="gallery--img">
 			<div class="gallery--center">
 				<p class="name mt-3">Avatar 2</p><!--ID Unico que sea distinto-->
@@ -720,7 +808,7 @@
 		</div>
   </li>
 	<li class="gallery">
-		<div class="gallery--item" category="Acción">
+		<div class="gallery--item" >
 			<img src="imagenes/Titanesdelp.jpg" alt="" class="gallery--img">
 			<div class="gallery--center">
 				<p class="name mt-3">Titanes del Pacifico 2</p><!--ID Unico que sea distinto-->
@@ -732,7 +820,7 @@
 		</div>
   </li>
 	<li class="gallery">
-		<div class="gallery--item" category="Acción">
+		<div class="gallery--item" >
 			<img src="imagenes/elem.jpg" alt="" class="gallery--img">
 			<div class="gallery--center">
 				<p class="name mt-3">La elefanta del Mago</p><!--ID Unico que sea distinto-->
@@ -744,7 +832,7 @@
 		</div>
   </li>
 	<li class="gallery">
-		<div class="gallery--item" category="Acción">
+		<div class="gallery--item" >
 			<img src="imagenes/Baby.jpg" alt="" class="gallery--img">
 			<div class="gallery--center">
 				<p class="name mt-3">Babylon</p><!--ID Unico que sea distinto-->
@@ -756,7 +844,7 @@
 		</div>
   </li>
 	<li class="gallery">
-		<div class="gallery--item" category="Acción">
+		<div class="gallery--item" >
 			<img src="imagenes/batmant.jpg" alt="" class="gallery--img">
 			<div class="gallery--center">
 				<p class="name mt-3">Batman La perdición</p><!--ID Unico que sea distinto-->
@@ -768,7 +856,7 @@
 		</div>
   </li>
 	<li class="gallery">
-		<div class="gallery--item" category="Acción">
+		<div class="gallery--item" >
 			<img src="imagenes/thesy.jpg" alt="" class="gallery--img">
 			<div class="gallery--center">
 				<p class="name mt-3">The System</p><!--ID Unico que sea distinto-->
@@ -780,7 +868,7 @@
 		</div>
   </li>
 	<li class="gallery">
-		<div class="gallery--item" category="Acción">
+		<div class="gallery--item" >
 			<img src="imagenes/Inspect.jpg" alt="" class="gallery--img">
 			<div class="gallery--center">
 				<p class="name mt-3">Inspector Araña</p><!--ID Unico que sea distinto-->
@@ -792,7 +880,7 @@
 		</div>
   </li>
 	<li class="gallery">
-		<div class="gallery--item" category="Acción">
+		<div class="gallery--item" >
 			<img src="imagenes/chang.jpg" alt="" class="gallery--img">
 			<div class="gallery--center">
 				<p class="name mt-3">Puedes hacerlo Chang</p><!--ID Unico que sea distinto-->
@@ -804,7 +892,7 @@
 		</div>
   </li>
 	<li class="gallery">
-		<div class="gallery--item" category="Acción">
+		<div class="gallery--item" >
 			<img src="imagenes/wick3.jpg.crdownload" alt="" class="gallery--img">
 			<div class="gallery--center">
 				<p class="name mt-3">John Wick 3: Parabellum</p><!--ID Unico que sea distinto-->
@@ -816,7 +904,7 @@
 		</div>
   </li>
 	<li class="gallery">
-		<div class="gallery--item" category="Acción">
+		<div class="gallery--item" >
 			<img src="imagenes/geminis.jpg" alt="" class="gallery--img">
 			<div class="gallery--center">
 				<p class="name mt-3">Geminis: El planeta Oscuro</p><!--ID Unico que sea distinto-->
@@ -828,7 +916,7 @@
 		</div>
   </li>
 	<li class="gallery">
-		<div class="gallery--item" category="Acción">
+		<div class="gallery--item" >
 			<img src="imagenes/wick2.jpg" alt="" class="gallery--img">
 			<div class="gallery--center">
 				<p class="name mt-3">John Wick 2</p><!--ID Unico que sea distinto-->
@@ -840,7 +928,7 @@
 		</div>
   </li>
 	<li class="gallery">
-		<div class="gallery--item" category="Acción">
+		<div class="gallery--item" >
 			<img src="imagenes/wick0.jpg" alt="" class="gallery--img">
 			<div class="gallery--center">
 				<p class="name mt-3">John Wick: Otro Día Para Matar</p><!--ID Unico que sea distinto-->
@@ -852,7 +940,7 @@
 		</div>
   </li>
 	<li class="gallery">
-		<div class="gallery--item" category="Acción">
+		<div class="gallery--item" >
 			<img src="https://pics.filmaffinity.com/Transformers-365863398-large.jpg" alt="" class="gallery--img">
 			<div class="gallery--center">
 				<p class="name mt-3">Transformers 1</p><!--ID Unico que sea distinto-->
@@ -864,7 +952,7 @@
 		</div>
   </li>
 	<li class="gallery">
-		<div class="gallery--item" category="Acción">
+		<div class="gallery--item" >
 			<img src="https://www.themoviedb.org/t/p/original/hDdTUHlxq6AVOsLG6RVeKP6wGM8.jpg" alt="" class="gallery--img">
 			<div class="gallery--center">
 				<p class="name mt-3">Transformers 2</p><!--ID Unico que sea distinto-->
@@ -876,7 +964,7 @@
 		</div>
   </li>
 	<li class="gallery">
-		<div class="gallery--item" category="Acción">
+		<div class="gallery--item" >
 			<img src="https://www.themoviedb.org/t/p/original/fMqXNNgzTaxalU1ve9KevpELiGe.jpg" alt="" class="gallery--img">
 			<div class="gallery--center">
 				<p class="name mt-3">Transformers 3</p><!--ID Unico que sea distinto-->
@@ -888,7 +976,7 @@
 		</div>
   </li>
 	<li class="gallery">
-		<div class="gallery--item" category="Acción">
+		<div class="gallery--item" >
 			<img src="https://pelisplus.love/wp-content/uploads/2020/05/transformers-la-era-de-la-extincion-1972-poster-scaled.jpg" alt="" class="gallery--img">
 			<div class="gallery--center">
 				<p class="name mt-3">Transformers 4</p><!--ID Unico que sea distinto-->
@@ -900,7 +988,7 @@
 		</div>
   </li>
 	<li class="gallery">
-		<div class="gallery--item" category="Acción">
+		<div class="gallery--item" >
 			<img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/A8d76iKmHvNyjzbTGpTqtHelnyy.jpg" alt="" class="gallery--img">
 			<div class="gallery--center">
 				<p class="name mt-3">Transformers 5</p><!--ID Unico que sea distinto-->
@@ -912,7 +1000,7 @@
 		</div>
   </li>
 	<li class="gallery">
-		<div class="gallery--item" category="Acción">
+		<div class="gallery--item" >
 			<img src="https://images.squarespace-cdn.com/content/v1/615bfcf8e37bd223285f0bc0/058880ac-e27b-4fd1-a7ac-c94d425a5323/a4-1+%281%29.jpg" alt="" class="gallery--img">
 			<div class="gallery--center">
 				<p class="name mt-3">Calabozos & Dragones: Honor entre ladrones</p><!--ID Unico que sea distinto-->
@@ -924,7 +1012,7 @@
 		</div>
   </li>
 	<li class="gallery">
-		<div class="gallery--item" category="Acción">
+		<div class="gallery--item" >
 			<img src="https://pbs.twimg.com/media/FrNKuphXgAAbtg2?format=jpg&name=4096x4096" alt="" class="gallery--img">
 			<div class="gallery--center">
 				<p class="name mt-3">The Lake</p><!--ID Unico que sea distinto-->
@@ -936,7 +1024,7 @@
 		</div>
   </li>
 	<li class="gallery">
-		<div class="gallery--item" category="Acción">
+		<div class="gallery--item">
 			<img src="https://www.tvguide.com/a/img/catalog/provider/1/2/1-12638194696.jpg" alt="" class="gallery--img">
 			<div class="gallery--center">
 				<p class="name mt-3">Assassin</p><!--ID Unico que sea distinto-->
@@ -948,7 +1036,7 @@
 		</div>
   </li>
 	<li class="gallery">
-		<div class="gallery--item" category="Acción">
+		<div class="gallery--item" >
 			<img src="https://www.lavanguardia.com/peliculas-series/images/movie/poster/2023/3/w1280/9d0rhU1s3VHH84bWxM0F6dEKUm2.jpg" alt="" class="gallery--img">
 			<div class="gallery--center">
 				<p class="name mt-3">El vuelo de los ladrones</p><!--ID Unico que sea distinto-->
@@ -960,7 +1048,7 @@
 		</div>
   </li>
 	<li class="gallery">
-		<div class="gallery--item" category="Acción">
+		<div class="gallery--item" >
 			<img src="https://www.themoviedb.org/t/p/original/qGu6CHagpxv1XW6Bn3sUJ9SFaH0.jpg" alt="" class="gallery--img">
 			<div class="gallery--center">
 				<p class="name mt-3">Titanes del pacifico</p><!--ID Unico que sea distinto-->
@@ -972,7 +1060,7 @@
 		</div>
   </li>
 	<li class="gallery">
-		<div class="gallery--item" category="Acción">
+		<div class="gallery--item" >
 			<img src="https://cdn.playpilot.tech/3025f06cd0d811eda3df0a58a9feac02/src/img?optimizer=image&quality=75&width=320&aspect_ratio=2%3A3" alt="" class="gallery--img">
 			<div class="gallery--center">
 				<p class="name mt-3">Misterio a la vista</p><!--ID Unico que sea distinto-->
@@ -984,17 +1072,119 @@
 		</div>
   </li>
   <li class="gallery">
-	<div class="gallery--item" category="Acción">
+	<div class="gallery--item" >
 		<img src="https://i0.wp.com/www.universomarvel.com/wp-content/uploads/2023/02/guardians-of-the-galaxy-3-superbowl-poster.jpg?ssl=1" alt="" class="gallery--img">
 		<div class="gallery--center">
 			<p class="name mt-3">Guardianes de la galaxia</p><!--ID Unico que sea distinto-->
 		<h2 class="g2title">2hr 31min 2023</h2>
 		<div class="gbtns">
-			<button onclick="GDG3();" class="gbtn">Ver Ahora</button>
+			<button onclick="GUARD3();" class="gbtn">Ver Ahora</button>
 		</div>
 		</div>
 	</div>
 </li>
+
+<li class="gallery">
+	<div class="gallery--item" >
+		<img src="https://www.latercera.com/resizer/JzHhj0HjOVLt-5SYbHUSz2mzNUk=/800x0/smart/cloudfront-us-east-1.images.arcpublishing.com/copesa/ZPEQXUEQKFELNAMFUTACTVA6NY.jpeg" alt="" class="gallery--img">
+		<div class="gallery--center">
+			<p class="name mt-3">Super Mario</p><!--ID Unico que sea distinto-->
+		<h2 class="g2title">1hr 28min 2023</h2>
+		<div class="gbtns">
+			<button onclick="SuperM();" class="gbtn">Ver Ahora</button>
+		</div>
+		</div>
+	</div>
+</li>
+<li class="gallery">
+	<div class="gallery--item" >
+		<img src="https://static.cinepolis.com/resources/mx/movies/posters/414x603/42099-134368-20230427103539.jpg" alt="" class="gallery--img">
+		<div class="gallery--center">
+			<p class="name mt-3">Caballeros del zodiaco</p><!--ID Unico que sea distinto-->
+		<h2 class="g2title">1hr 52min 2023</h2>
+		<div class="gbtns">
+			<button onclick="CaballerosZ();" class="gbtn">Ver Ahora</button>
+		</div>
+		</div>
+	</div>
+</li>
+<li class="gallery">
+	<div class="gallery--item" >
+		<img src="https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/styles/1200/public/media/image/2023/04/ghosting-3014824.jpg?itok=k8XZ6gCT" alt="" class="gallery--img">
+		<div class="gallery--center">
+			<p class="name mt-3">Ghosting</p><!--ID Unico que sea distinto-->
+		<h2 class="g2title">2hr 0min 2023</h2>
+		<div class="gbtns">
+			<button onclick="Ghost();" class="gbtn">Ver Ahora</button>
+		</div>
+		</div>
+	</div>
+</li>
+<li class="gallery">
+	<div class="gallery--item" >
+		<img src="https://edctrailers.com/img/2023/03/El-visitante-del-futuro-cartel.jpg" alt="" class="gallery--img">
+		<div class="gallery--center">
+			<p class="name mt-3">Visitante del Futuro</p><!--ID Unico que sea distinto-->
+		<h2 class="g2title">1hr 45min 2023</h2>
+		<div class="gbtns">
+			<button onclick="VisitaF();" class="gbtn">Ver Ahora</button>
+		</div>
+		</div>
+	</div>
+</li>
+<li class="gallery">
+	<div class="gallery--item" >
+		<img src="https://pbs.twimg.com/media/FlkLZP_WQAEYd4W.jpg:large" alt="" class="gallery--img">
+		<div class="gallery--center">
+			<p class="name mt-3">Posesión infernal: El despertar</p><!--ID Unico que sea distinto-->
+		<h2 class="g2title">1hr 45min 2023</h2>
+		<div class="gbtns">
+			<button onclick="PoseI();" class="gbtn">Ver Ahora</button>
+		</div>
+		</div>
+	</div>
+</li>
+<li class="gallery">
+	<div class="gallery--item" >
+		<img src="https://www.lahiguera.net/cinemania/pelicula/10631/el_exorcista_del_papa-cartel-10987.jpg" alt="" class="gallery--img">
+		<div class="gallery--center">
+			<p class="name mt-3">El exorcista del papa</p><!--ID Unico que sea distinto-->
+		<h2 class="g2title">1hr 45min 2023</h2>
+		<div class="gbtns">
+			<button onclick="ExtP();" class="gbtn">Ver Ahora</button>
+		</div>
+		</div>
+	</div>
+</li>
+<li class="gallery">
+	<div class="gallery--item" >
+		<img src="https://pics.filmaffinity.com/A_Canta-887137050-large.jpg" alt="" class="gallery--img">
+		<div class="gallery--center">
+			<p class="name mt-3">Sing</p><!--ID Unico que sea distinto-->
+		<h2 class="g2title">1hr 55min 2019</h2>
+		<div class="gbtns">
+			<button onclick="Sing1();" class="gbtn">Ver Ahora</button>
+		</div>
+		</div>
+	</div>
+</li>
+<li class="gallery">
+	<div class="gallery--item" >
+		<img src="https://m.media-amazon.com/images/M/MV5BMWRiZGQ1NDMtODQ2OS00MDlhLWJkZGYtM2ZmNjlhZThjOWRmXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg" alt="" class="gallery--img">
+		<div class="gallery--center">
+			<p class="name mt-3">Sing 2</p><!--ID Unico que sea distinto-->
+		<h2 class="g2title">1hr 52min 2021</h2>
+		<div class="gbtns">
+			<button onclick="Sing2();" class="gbtn">Ver Ahora</button>
+		</div>
+		</div>
+	</div>
+</li>
+
+
+
+
+
 
 
 
@@ -1141,6 +1331,24 @@
 	</div>
 </div>
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 		<div id="p-center1" class="peliculas">
 			<div class="center-b">
 				<div class="btns">
@@ -1148,7 +1356,7 @@
 					<button onclick="avatar();" class="btn2 btn" >CASTELLANO</button>
 				</div>
 					<div class="pelicula">
-						<iframe src="https://player.cuevana.cloud/player.php?h=Y6sEmQFvn74GwDabJO0L2YJZciWB1llaEtebps7vk1BCO1gXyACfNJfyM8wQab5kEuHnSFdutW5jJDOl1GhspMxoXYD_9ltAn5R52nK3uaHZolmraL5RWl.GUhzMVcWq" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+						<iframe src="//pelisplay.cc/play?id=MTY3OTg1&amp;option=castell" scrolling="no" allowfullscreen="" width="560" height="315" frameborder="0"></iframe>
 					</div>
 					<div class="btnss">
 						<form action="categorias.html"><button class="btn">VOLVER</button></form>
@@ -1230,7 +1438,7 @@
 					<button onclick="Black();" class="btn2 btn" >CASTELLANO</button>
 				</div>
 					<div class="pelicula">
-						<iframe src="https://player.cuevana.cloud/player.php?h=Y6sEmQFvn74GwDabJO0L2cWcG_Wmz9h4p0r37uLmE_UjvXzKHpuud08iux0ti39c0.z.63S2amd14WjG._a3X_KD5vrBDG55cwIkO8GsDK27Pvh_Dzju2bpgP6gcEsyo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+						<iframe src="//pelisplay.cc/play?id=MTY2NTk3&amp;option=castell" scrolling="no" allowfullscreen="" width="560" height="315" frameborder="0"></iframe>
 					</div>
 					<div class="btnss">
 						<form action="categorias.html"><button class="btn">VOLVER</button></form>
@@ -1311,7 +1519,7 @@
 					<button onclick="Zam();" class="btn2 btn" >CASTELLANO</button>
 				</div>
 					<div class="pelicula">
-						<iframe src="https://player.cuevana.cloud/player.php?h=h3kgJKgp7rirl22CybxPrdzVBnlXQRSfxCnU3NyHpt_zT1XL95sNKX0gMW8m7U6v" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+						<iframe src="//pelisplay.cc/play?id=MTY4NDQw&amp;option=castell" scrolling="no" allowfullscreen="" width="560" height="315" frameborder="0"></iframe>
 					</div>
 					<div class="btnss">
 						<form action="categorias.html"><button class="btn">VOLVER</button></form>
@@ -2354,6 +2562,7 @@
 					</div>
 			</div>
 		</div>
+
 		<div id="p-center44" class="peliculas">
 			<div class="center-b">
 				<div class="btns">
@@ -2361,7 +2570,7 @@
 					<button onclick="MisterioV();" class="btn2 btn" >CASTELLANO</button>
 				</div>
 					<div class="pelicula">
-						<iframe width="2032" height="879" src="https://player.cuevana.cloud/player.php?h=Y6sEmQFvn74GwDabJO0L2dI_.tR2NMFaqXf_0PY_q2LEOTj7zPW7KkNSrWTlukVHdoKl5ej2diwBVNVrLyelJ8sfb2EMzptvehR7O6j5S1E6JIrNq9KSCndL.l.ed6gt" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+						<iframe src="//pelisplay.cc/play?id=MTY4Njg4&amp;option=latin" scrolling="no" allowfullscreen="" frameborder="0"></iframe>
 					</div>
 					<div class="btnss">
 						<form action="categorias.html"><button class="btn">VOLVER</button></form>
@@ -2386,8 +2595,8 @@
 		<div id="p-center45" class="peliculas">
 			<div class="center-b">
 				<div class="btns">
-					<button  onclick="GDG3();" class="btn">LATINO</button>
-					<button onclick="GDG3();" class="btn2 btn" >CASTELLANO</button>
+					<button  onclick="GUARD3();" class="btn">LATINO</button>
+					<button onclick="GUARD3();" class="btn2 btn" >CASTELLANO</button>
 				</div>
 					<div class="pelicula">
 						<iframe src="//pelisplay.cc/play?id=MTY4NjQz&amp;option=castell" scrolling="no" allowfullscreen="" width="560" height="315" frameborder="0"></iframe>
@@ -2397,13 +2606,14 @@
 					</div>
 					<div class="setion">
 						<div class="title">Guardianes de la galaxia volumen 3</div>
-						<div class="genero">2023 2hr 31min</div>
+						<div class="genero">2023 1hr 31min</div>
 						<div class="descrip">
 							Star-Lord, todavía recuperándose de la pérdida de Gamora, debe reunir a su equipo para defender el universo junto con la protección de uno de los suyos. Una misión que, si no se completa, podría llevar al final de los Guardianes tal como los conocemos.
 						</div>
 						<div class="ayuda">¡Hola! Actualmente estás viendo la pelicula Guardianes de la galaxia 3. Recuerda que si tienes algún problema con la pelicula, no dudes en informarlo en nuestra página de Facebook. En cineflix.com puedes ver peliculas online de forma gratuita y sin ningún tipo de restricción.</div>
 						<div class="generos">
 							<h5>Genero: Acción, Aventura, Comedia</h5>
+							<h5>Actores: Chris Pratt,Zoe Saldaña,Bradley Cooper,Dave Bautista,Karen Gillan</h5>
 						</div>
 						<div class="copy">
 							Copyright © 2022 Cineflix.com Algunos Derechos Reservados | Cineflix no almacena ningún archivo en sus servidores. Todos estos han sido encontrados en sitios de terceros.| Creado Por Andres Rojas
@@ -2411,6 +2621,253 @@
 					</div>
 			</div>
 		</div>
+		<div id="p-center46" class="peliculas">
+			<div class="center-b">
+				<div class="btns">
+					<button  onclick="SuperM();" class="btn">LATINO</button>
+					<button onclick="SuperM();" class="btn2 btn" >CASTELLANO</button>
+				</div>
+					<div class="pelicula">
+						<iframe src="//pelisplay.cc/play?id=MTY4NTA3&amp;option=castell" scrolling="no" allowfullscreen="" width="560" height="315" frameborder="0"></iframe>
+					</div>
+					<div class="btnss">
+						<form action="categorias.html"><button class="btn">VOLVER</button></form>
+					</div>
+					<div class="setion">
+						<div class="title">Super Mario</div>
+						<div class="genero">2023 1hr 32min</div>
+						<div class="descrip">
+							Mientras trabajan en una avería subterránea, los fontaneros de Brooklyn, Mario y su hermano Luigi, viajan por una misteriosa tubería hasta un nuevo mundo mágico. Pero, cuando los hermanos se separan, Mario deberá emprender una épica misión para encontrar a Luigi. Con la ayuda del champiñón local Toad y unas cuantas nociones de combate de la guerrera líder del Reino Champiñón, la princesa Peach, Mario descubre todo el poder que alberga en su interior.
+						</div>
+						<div class="ayuda">¡Hola! Actualmente estás viendo la pelicula Super Mario. Recuerda que si tienes algún problema con la pelicula, no dudes en informarlo en nuestra página de Facebook. En cineflix.com puedes ver peliculas online de forma gratuita y sin ningún tipo de restricción.</div>
+						<div class="generos">
+							<h5>Genero: Acción, Aventura, Comedia</h5>
+							<h5>Actores: Chris Pratt,Anya Taylor-Joy,Charlie Day,Jack Black,Keegan-Michael Key</h5>
+						</div>
+						<div class="copy">
+							Copyright © 2022 Cineflix.com Algunos Derechos Reservados | Cineflix no almacena ningún archivo en sus servidores. Todos estos han sido encontrados en sitios de terceros.| Creado Por Andres Rojas
+						</div>
+					</div>
+			</div>
+		</div>
+
+		<div id="p-center47" class="peliculas">
+			<div class="center-b">
+				<div class="btns">
+					<button  onclick="CaballerosZ();" class="btn">LATINO</button>
+					<button onclick="CaballerosZ();" class="btn2 btn" >CASTELLANO</button>
+				</div>
+					<div class="pelicula">
+						<iframe src="//pelisplay.cc/play?id=MTY4NjE4&amp;option=castell" scrolling="no" allowfullscreen="" width="560" height="315" frameborder="0"></iframe>
+					</div>
+					<div class="btnss">
+						<form action="categorias.html"><button class="btn">VOLVER</button></form>
+					</div>
+					<div class="setion">
+						<div class="title">Los caballeros del Zodiaco</div>
+						<div class="genero">2023 1hr 52min</div>
+						<div class="descrip">
+							Seiya, un testarudo adolescente callejero, se pasa el tiempo luchando por dinero mientras busca a su hermana secuestrada. Cuando en una de sus peleas se le revelan poderes místicos que desconocía, Seiya se ve inmerso en un mundo de santos en guerra, antiguos entrenamientos mágicos y una diosa reencarnada que necesita su protección.
+						</div>
+						<div class="ayuda">¡Hola! Actualmente estás viendo la pelicula Los caballeros del Zodiaco. Recuerda que si tienes algún problema con la pelicula, no dudes en informarlo en nuestra página de Facebook. En cineflix.com puedes ver peliculas online de forma gratuita y sin ningún tipo de restricción.</div>
+						<div class="generos">
+							<h5>Genero: Acción, Aventura, Drama</h5>
+							<h5>Actores: Mackenyu,Famke Janssen,Madison Iseman,Diego Tinoco,Mark Dacascos</h5>
+						</div>
+						<div class="copy">
+							Copyright © 2022 Cineflix.com Algunos Derechos Reservados | Cineflix no almacena ningún archivo en sus servidores. Todos estos han sido encontrados en sitios de terceros.| Creado Por Andres Rojas
+						</div>
+					</div>
+			</div>
+		</div>
+
+		<div id="p-center48" class="peliculas">
+			<div class="center-b">
+				<div class="btns">
+					<button  onclick="Ghost();" class="btn">LATINO</button>
+					<button onclick="Ghost();" class="btn2 btn" >CASTELLANO</button>
+				</div>
+					<div class="pelicula">
+						<iframe src="//pelisplay.cc/play?id=MTY4NTk2&amp;option=latin" scrolling="no" allowfullscreen="" width="560" height="315" frameborder="0"></iframe>
+					</div>
+					<div class="btnss">
+						<form action="categorias.html"><button class="btn">VOLVER</button></form>
+					</div>
+					<div class="setion">
+						<div class="title">Ghosting</div>
+						<div class="genero">2023 1hr 52min</div>
+						<div class="descrip">
+							Cole, un tipo campechano, se enamora perdidamente de la emigmática Sadie, quien, para su enorme sorpresa, resulta ser una agente secreta. Antes de que pueda surgir una segunda cita, los dos deben embarcarse en una aventura internacional para salvar el mundo.
+						</div>
+						<div class="ayuda">¡Hola! Actualmente estás viendo la pelicula Ghosting. Recuerda que si tienes algún problema con la pelicula, no dudes en informarlo en nuestra página de Facebook. En cineflix.com puedes ver peliculas online de forma gratuita y sin ningún tipo de restricción.</div>
+						<div class="generos">
+							<h5>Genero: Acción, Aventura, Comedia</h5>
+							<h5>Actores: Chris Evans,Ana de Armas,Adrien Brody,Mike Moh,Tate Donovan</h5>
+						</div>
+						<div class="copy">
+							Copyright © 2022 Cineflix.com Algunos Derechos Reservados | Cineflix no almacena ningún archivo en sus servidores. Todos estos han sido encontrados en sitios de terceros.| Creado Por Andres Rojas
+						</div>
+					</div>
+			</div>
+		</div>
+
+		<div id="p-center49" class="peliculas">
+			<div class="center-b">
+				<div class="btns">
+					<button  onclick="VisitaF();" class="btn">LATINO</button>
+					<button onclick="VisitaF();" class="btn2 btn" >CASTELLANO</button>
+				</div>
+					<div class="pelicula">
+						<iframe src="//pelisplay.cc/play?id=MTY4NDA3&amp;option=latin" scrolling="no" allowfullscreen="" width="560" height="315" frameborder="0"></iframe>
+					</div>
+					<div class="btnss">
+						<form action="categorias.html"><button class="btn">VOLVER</button></form>
+					</div>
+					<div class="setion">
+						<div class="title">El visitante del Futuro</div>
+						<div class="genero">2022 1hr 42min</div>
+						<div class="descrip">
+							En un futuro devastado, el apocalipsis amenaza la Tierra. La última esperanza recae en un hombre capaz de viajar en el tiempo. Su misión: volver al pasado y cambiar el curso de los acontecimientos. Pero la policía del tiempo lo persigue en cada época. Comienza una carrera contra el tiempo para el Visitante del Futuro…
+						</div>
+						<div class="ayuda">¡Hola! Actualmente estás viendo la pelicula El visitante del futuro. Recuerda que si tienes algún problema con la pelicula, no dudes en informarlo en nuestra página de Facebook. En cineflix.com puedes ver peliculas online de forma gratuita y sin ningún tipo de restricción.</div>
+						<div class="generos">
+							<h5>Genero: Ciencia Ficción, Comedia</h5>
+							<h5>Actores: Florent Dorin,Enya Baroux,Raphaël Descraques,Arnaud Ducret,Slimane-Baptiste Berhoun</h5>
+						</div>
+						<div class="copy">
+							Copyright © 2022 Cineflix.com Algunos Derechos Reservados | Cineflix no almacena ningún archivo en sus servidores. Todos estos han sido encontrados en sitios de terceros.| Creado Por Andres Rojas
+						</div>
+					</div>
+			</div>
+		</div>
+
+		<div id="p-center50" class="peliculas">
+			<div class="center-b">
+				<div class="btns">
+					<button  onclick="ExtP();" class="btn">LATINO</button>
+					<button onclick="ExtP();" class="btn2 btn" >CASTELLANO</button>
+				</div>
+					<div class="pelicula">
+						<iframe src="//pelisplay.cc/play?id=MTY4NTA2" scrolling="no" allowfullscreen="" width="560" height="315" frameborder="0"></iframe>
+					</div>
+					<div class="btnss">
+						<form action="categorias.html"><button class="btn">VOLVER</button></form>
+					</div>
+					<div class="setion">
+						<div class="title">El exorcista del papa</div>
+						<div class="genero">2023 1hr 44min</div>
+						<div class="descrip">
+							Película sobre Gabriele Amorth, un sacerdote que ejerció como exorcista principal del Vaticano, realizando más de cien mil exorcismos a lo largo de su vida. Amorth escribió dos libros de memorias donde detalló sus experiencias luchando contra Satanás.
+						</div>
+						<div class="ayuda">¡Hola! Actualmente estás viendo la pelicula El exorcista del papa. Recuerda que si tienes algún problema con la pelicula, no dudes en informarlo en nuestra página de Facebook. En cineflix.com puedes ver peliculas online de forma gratuita y sin ningún tipo de restricción.</div>
+						<div class="generos">
+							<h5>Genero: Terror, Thriller</h5>
+							<h5>Actores: Russell Crowe,Daniel Zovatto,Alex Essoe,Franco Nero,Laurel Marsden</h5>
+						</div>
+						<div class="copy">
+							Copyright © 2022 Cineflix.com Algunos Derechos Reservados | Cineflix no almacena ningún archivo en sus servidores. Todos estos han sido encontrados en sitios de terceros.| Creado Por Andres Rojas
+						</div>
+					</div>
+			</div>
+		</div>
+
+		<div id="p-center51" class="peliculas">
+			<div class="center-b">
+				<div class="btns">
+					<button  onclick="PoseI();" class="btn">LATINO</button>
+					<button onclick="PoseI();" class="btn2 btn" >CASTELLANO</button>
+				</div>
+					<div class="pelicula">
+						<iframe src="//pelisplay.cc/play?id=MTY4NTc2&amp;option=castell" scrolling="no" allowfullscreen="" width="560" height="315" frameborder="0"></iframe>
+					</div>
+					<div class="btnss">
+						<form action="categorias.html"><button class="btn">VOLVER</button></form>
+					</div>
+					<div class="setion">
+						<div class="title">Posesión infernal: El despertar</div>
+						<div class="genero">2022 1hr 36min</div>
+						<div class="descrip">
+							Historia de dos hermanas separadas cuyo reencuentro se ve interrumpido por el surgimiento de demonios poseedores de carne, empujándolos a una batalla por la supervivencia mientras se enfrentan a la versión de familia más aterradora que se pueda imaginar. Secuela de la trilgía original de ‘Evil Dead’.
+						</div>
+						<div class="ayuda">¡Hola! Actualmente estás viendo la pelicula Posesión infernal: El despertar. Recuerda que si tienes algún problema con la pelicula, no dudes en informarlo en nuestra página de Facebook. En cineflix.com puedes ver peliculas online de forma gratuita y sin ningún tipo de restricción.</div>
+						<div class="generos">
+							<h5>Genero: Terror</h5>
+							<h5>Actores: Lily Sullivan,Alyssa Sutherland,Morgan Davies,Nell Fisher,Gabrielle Echols</h5>
+						</div>
+						<div class="copy">
+							Copyright © 2022 Cineflix.com Algunos Derechos Reservados | Cineflix no almacena ningún archivo en sus servidores. Todos estos han sido encontrados en sitios de terceros.| Creado Por Andres Rojas
+						</div>
+					</div>
+			</div>
+		</div>
+
+		<div id="p-center52" class="peliculas">
+			<div class="center-b">
+				<div class="btns">
+					<button  onclick="Sing1();" class="btn">LATINO</button>
+					<button onclick="Sing1();" class="btn2 btn" >CASTELLANO</button>
+				</div>
+					<div class="pelicula">
+						<iframe src="//pelisplay.cc/play?id=MjY4MDA=&amp;option=latin" scrolling="no" allowfullscreen="" width="560" height="315" frameborder="0"></iframe>
+					</div>
+					<div class="btnss">
+						<form action="categorias.html"><button class="btn">VOLVER</button></form>
+					</div>
+					<div class="setion">
+						<div class="title">Sing: Ven y Canta</div>
+						<div class="genero">2016 1hr 55min</div>
+						<div class="descrip">
+							Les traemos una nueva aventura animada musicalizada muy divertida tanto para los pequeños de la casa como para todos en general. Esta comedia musical animada es el nuevo film de Garth Jennings, la historia nos lleva a un gran show de talentos que es organizado por un koala muy apuestao llamado Buster Moon con experiencia en los show bussines. Buster es un koala muy optimista, el ama al teatro con mucha pasión y es capaz de hacer cualquier cosa por que este se salve. El sueño de su vida está a punto de irse y solo le queda una última oportunidad para salvarlo, lo que tiene que hacer es producir el concurso de canto más grande del mundo. Podrán parar de reír averiguemoslo juntos y disfrutemos de la película.
+						</div>
+						<div class="ayuda">¡Hola! Actualmente estás viendo la pelicula Sing: Ven y Canta. Recuerda que si tienes algún problema con la pelicula, no dudes en informarlo en nuestra página de Facebook. En cineflix.com puedes ver peliculas online de forma gratuita y sin ningún tipo de restricción.</div>
+						<div class="generos">
+							<h5>Genero: Infantil, Musical, Animación</h5>
+							<h5>Actores: Matthew McConaughey,Reese Witherspoon,Seth MacFarlane,Scarlett Johansson,John C. Reilly</h5>
+						</div>
+						<div class="copy">
+							Copyright © 2022 Cineflix.com Algunos Derechos Reservados | Cineflix no almacena ningún archivo en sus servidores. Todos estos han sido encontrados en sitios de terceros.| Creado Por Andres Rojas
+						</div>
+					</div>
+			</div>
+		</div>
+
+		<div id="p-center53" class="peliculas">
+			<div class="center-b">
+				<div class="btns">
+					<button  onclick="Sing2();" class="btn">LATINO</button>
+					<button onclick="Sing2();" class="btn2 btn" >CASTELLANO</button>
+				</div>
+					<div class="pelicula">
+						<iframe src="//pelisplay.cc/play?id=MTY3NzUw&amp;option=castell" scrolling="no" allowfullscreen="" width="560" height="315" frameborder="0"></iframe>
+					</div>
+					<div class="btnss">
+						<form action="categorias.html"><button class="btn">VOLVER</button></form>
+					</div>
+					<div class="setion">
+						<div class="title">Sing 2: Ven y canta de nuevo</div>
+						<div class="genero">2021 1hr 52min</div>
+						<div class="descrip">
+							Buster Moon y sus amigos deben persuadir a la estrella del rock Clay Calloway para que se una a ellos en el estreno de un nuevo espectáculo.
+						</div>
+						<div class="ayuda">¡Hola! Actualmente estás viendo la pelicula ¡Canta! 2. Recuerda que si tienes algún problema con la pelicula, no dudes en informarlo en nuestra página de Facebook. En cineflix.com puedes ver peliculas online de forma gratuita y sin ningún tipo de restricción.</div>
+						<div class="generos">
+							<h5>Genero: Animación, Aventura, Comedia</h5>
+							<h5>Actores: Matthew McConaughey,Reese Witherspoon,Scarlett Johansson,Taron Egerton,Bobby Cannavale</h5>
+						</div>
+						<div class="copy">
+							Copyright © 2022 Cineflix.com Algunos Derechos Reservados | Cineflix no almacena ningún archivo en sus servidores. Todos estos han sido encontrados en sitios de terceros.| Creado Por Andres Rojas
+						</div>
+					</div>
+			</div>
+		</div>
+
+
+
+
+
+
+
+
 
 
 
