@@ -1,36 +1,36 @@
 //seccion del buscador interno con js
 $(document).ready(function () {
-	$("input[type=text]").on("keyup",function () {
-	 option=false;
-	 $("input[type=text]").each(function () {
-	  if (!this.value) {
-	   option=true;
-	  }
-	 });
-	   $("input[type=submit]").attr("disabled",option);
+	$("input[type=text]").on("keyup", function () {
+		option = false;
+		$("input[type=text]").each(function () {
+			if (!this.value) {
+				option = true;
+			}
+		});
+		$("input[type=submit]").attr("disabled", option);
 	});
 });
-$('.Show').click(function() {
+$('.Show').click(function () {
 	$('#target').show(500);
 	$('.Show').hide(0);
 	$('.Hide').show(0);
-  });
-  $('.Hide').click(function() {
+});
+$('.Hide').click(function () {
 	$('#target').hide(500);
 	$('.Show').show(0);
 	$('.Hide').hide(0);
-  });
-  $('.toggle').click(function() {
+});
+$('.toggle').click(function () {
 	$('#target').toggle('slow');
-  });
-$(document).ready(function(){
+});
+$(document).ready(function () {
 
 	// AGREGANDO CLASE ACTIVE AL PRIMER ENLACE ====================
 	$('.category_list .category_item[category="all"]').addClass('ct_item-active');
 
 	// FILTRANDO PRODUCTOS  ============================================
 
-	$('.category_item').click(function(){
+	$('.category_item').click(function () {
 		var catProduct = $(this).attr('category');
 		console.log(catProduct);
 
@@ -40,35 +40,35 @@ $(document).ready(function(){
 
 		// OCULTANDO PRODUCTOS =========================
 		$('.gallery--item').css('transform', 'scale(0)');
-		function hideProduct(){
+		function hideProduct() {
 			$('.gallery--item').hide();
-		} setTimeout(hideProduct,400);
+		} setTimeout(hideProduct, 400);
 
 		// MOSTRANDO PRODUCTOS =========================
-		function showProduct(){
-			$('.gallery--item[category="'+catProduct+'"]').show();
-			$('.gallery--item[category="'+catProduct+'"]').css('transform', 'scale(1)');
-		} setTimeout(showProduct,400);
+		function showProduct() {
+			$('.gallery--item[category="' + catProduct + '"]').show();
+			$('.gallery--item[category="' + catProduct + '"]').css('transform', 'scale(1)');
+		} setTimeout(showProduct, 400);
 	});
 
 	// MOSTRANDO TODOS LOS PRODUCTOS =======================
 
-	$('.category_item[category="all"]').click(function(){
-		function showAll(){
+	$('.category_item[category="all"]').click(function () {
+		function showAll() {
 			$('.gallery--item').show();
 			$('.gallery--item').css('transform', 'scale(1)');
-		} setTimeout(showAll,400);
+		} setTimeout(showAll, 400);
 	});
 });
 
 /*SEction de mostrar y ocultar seecciones de peliculas*/
-function peli1(){
-	document.getElementById('peli1').style.display = 'block';	
+function peli1() {
+	document.getElementById('peli1').style.display = 'block';
 	document.getElementById('peli2').style.display = 'none';
 	document.getElementById('peli3').style.display = 'none';
 
 }
-function avatar(){
+function avatar() {
 	document.getElementById('p-center1').style.display = 'block';
 	document.getElementById('wrap').style.display = 'none';
 	document.getElementById('p-center2').style.display = 'none';
@@ -77,7 +77,7 @@ function avatar(){
 	document.getElementById('p-center6').style.display = 'none';
 }
 
-function LF(){
+function LF() {
 	document.getElementById('p-center1').style.display = 'none';
 	document.getElementById('wrap').style.display = 'none';
 	document.getElementById('p-center2').style.display = 'block';
@@ -87,7 +87,7 @@ function LF(){
 	document.getElementById('p-center6').style.display = 'none';
 }
 
-function S5(){
+function S5() {
 	document.getElementById('p-center1').style.display = 'none';
 	document.getElementById('wrap').style.display = 'none';
 	document.getElementById('p-center2').style.display = 'none';
@@ -96,7 +96,7 @@ function S5(){
 	document.getElementById('p-center5').style.display = 'none';
 	document.getElementById('p-center6').style.display = 'none';
 }
-function Black(){
+function Black() {
 	document.getElementById('p-center1').style.display = 'none';
 	document.getElementById('wrap').style.display = 'none';
 	document.getElementById('p-center2').style.display = 'none';
@@ -104,9 +104,9 @@ function Black(){
 	document.getElementById('p-center4').style.display = 'block';
 	document.getElementById('p-center5').style.display = 'none';
 	document.getElementById('p-center6').style.display = 'none';
-	
+
 }
-function Titan(){
+function Titan() {
 	document.getElementById('p-center1').style.display = 'none';
 	document.getElementById('wrap').style.display = 'none';
 	document.getElementById('p-center2').style.display = 'none';
@@ -116,7 +116,7 @@ function Titan(){
 	document.getElementById('p-center6').style.display = 'none';
 
 }
-function NP(){
+function NP() {
 	document.getElementById('p-center1').style.display = 'none';
 	document.getElementById('wrap').style.display = 'none';
 	document.getElementById('p-center2').style.display = 'none';
@@ -125,250 +125,250 @@ function NP(){
 	document.getElementById('p-center5').style.display = 'none';
 	document.getElementById('p-center6').style.display = 'block';
 }
-function Zam(){
+function Zam() {
 	document.getElementById('p-center1').style.display = 'none';
 	document.getElementById('wrap').style.display = 'none';
 	document.getElementById('p-center7').style.display = 'block';
 }
-function JW(){
+function JW() {
 	document.getElementById('p-center1').style.display = 'none';
 	document.getElementById('wrap').style.display = 'none';
 	document.getElementById('p-center8').style.display = 'block';
 
 }
-function OP(){
+function OP() {
 	document.getElementById('p-center1').style.display = 'none';
 	document.getElementById('wrap').style.display = 'none';
 	document.getElementById('p-center9').style.display = 'block';
 
 }
-function LC(){
+function LC() {
 	document.getElementById('p-center1').style.display = 'none';
 	document.getElementById('wrap').style.display = 'none';
 	document.getElementById('p-center10').style.display = 'block';
 }
-function Marlove(){
+function Marlove() {
 	document.getElementById('p-center1').style.display = 'none';
 	document.getElementById('wrap').style.display = 'none';
 	document.getElementById('p-center11').style.display = 'block';
 }
-function S6(){
+function S6() {
 	document.getElementById('p-center1').style.display = 'none';
 	document.getElementById('wrap').style.display = 'none';
 	document.getElementById('p-center12').style.display = 'block';
 }
-function Credlll(){
+function Credlll() {
 	document.getElementById('p-center1').style.display = 'none';
 	document.getElementById('wrap').style.display = 'none';
 	document.getElementById('p-center13').style.display = 'block';
 }
-function PeorV(){
+function PeorV() {
 	document.getElementById('p-center1').style.display = 'none';
 	document.getElementById('wrap').style.display = 'none';
 	document.getElementById('p-center14').style.display = 'block';
 }
-function LLamana(){
+function LLamana() {
 	document.getElementById('p-center1').style.display = 'none';
 	document.getElementById('wrap').style.display = 'none';
 	document.getElementById('p-center15').style.display = 'block';
 }
-function Antman(){
+function Antman() {
 	document.getElementById('p-center1').style.display = 'none';
 	document.getElementById('wrap').style.display = 'none';
 	document.getElementById('p-center16').style.display = 'block';
 }
-function GatoB(){
+function GatoB() {
 	document.getElementById('p-center1').style.display = 'none';
 	document.getElementById('wrap').style.display = 'none';
 	document.getElementById('p-center17').style.display = 'block';
 }
-function Piloto(){
+function Piloto() {
 	document.getElementById('p-center1').style.display = 'none';
 	document.getElementById('wrap').style.display = 'none';
 	document.getElementById('p-center18').style.display = 'block';
 }
-function JurassicD(){
+function JurassicD() {
 	document.getElementById('p-center1').style.display = 'none';
 	document.getElementById('wrap').style.display = 'none';
 	document.getElementById('p-center19').style.display = 'block';
 }
-function Loveand(){
+function Loveand() {
 	document.getElementById('p-center1').style.display = 'none';
 	document.getElementById('wrap').style.display = 'none';
 	document.getElementById('p-center20').style.display = 'block';
 }
-function TopG(){
+function TopG() {
 	document.getElementById('p-center1').style.display = 'none';
 	document.getElementById('wrap').style.display = 'none';
 	document.getElementById('p-center21').style.display = 'block';
 }
-function BlackP(){
+function BlackP() {
 	document.getElementById('p-center1').style.display = 'none';
 	document.getElementById('wrap').style.display = 'none';
 	document.getElementById('p-center22').style.display = 'block';
 }
-function TitanesP(){
+function TitanesP() {
 	document.getElementById('p-center1').style.display = 'none';
 	document.getElementById('wrap').style.display = 'none';
 	document.getElementById('p-center23').style.display = 'block';
 }
-function ElefantaM(){
+function ElefantaM() {
 	document.getElementById('p-center1').style.display = 'none';
 	document.getElementById('wrap').style.display = 'none';
 	document.getElementById('p-center24').style.display = 'block';
 }
-function Babylon(){
+function Babylon() {
 	document.getElementById('p-center1').style.display = 'none';
 	document.getElementById('wrap').style.display = 'none';
 	document.getElementById('p-center25').style.display = 'block';
 }
-function Tsystem(){
+function Tsystem() {
 	document.getElementById('p-center1').style.display = 'none';
 	document.getElementById('wrap').style.display = 'none';
 	document.getElementById('p-center26').style.display = 'block';
 }
-function BatP(){
+function BatP() {
 	document.getElementById('p-center1').style.display = 'none';
 	document.getElementById('wrap').style.display = 'none';
 	document.getElementById('p-center27').style.display = 'block';
 }
-function InspectorA(){
+function InspectorA() {
 	document.getElementById('p-center1').style.display = 'none';
 	document.getElementById('wrap').style.display = 'none';
 	document.getElementById('p-center28').style.display = 'block';
 }
-function Pchang(){
+function Pchang() {
 	document.getElementById('p-center1').style.display = 'none';
 	document.getElementById('wrap').style.display = 'none';
 	document.getElementById('p-center29').style.display = 'block';
 }
-function Geminis(){
+function Geminis() {
 	document.getElementById('p-center1').style.display = 'none';
 	document.getElementById('wrap').style.display = 'none';
 	document.getElementById('p-center30').style.display = 'block';
 }
-function wick3(){
+function wick3() {
 	document.getElementById('p-center1').style.display = 'none';
 	document.getElementById('wrap').style.display = 'none';
 	document.getElementById('p-center31').style.display = 'block';
 }
-function wick2(){
+function wick2() {
 	document.getElementById('p-center1').style.display = 'none';
 	document.getElementById('wrap').style.display = 'none';
 	document.getElementById('p-center32').style.display = 'block';
 }
-function wick1(){
+function wick1() {
 	document.getElementById('p-center1').style.display = 'none';
 	document.getElementById('wrap').style.display = 'none';
 	document.getElementById('p-center33').style.display = 'block';
 }
-function TFormers1(){
+function TFormers1() {
 	document.getElementById('p-center34').style.display = 'block';
 	document.getElementById('p-center1').style.display = 'none';
 	document.getElementById('wrap').style.display = 'none';
 }
-function TFormers2(){
+function TFormers2() {
 	document.getElementById('p-center35').style.display = 'block';
 	document.getElementById('p-center1').style.display = 'none';
 	document.getElementById('wrap').style.display = 'none';
 }
-function TFormers3(){
+function TFormers3() {
 	document.getElementById('p-center36').style.display = 'block';
 	document.getElementById('p-center1').style.display = 'none';
 	document.getElementById('wrap').style.display = 'none';
 }
-function TFormers4(){
+function TFormers4() {
 	document.getElementById('p-center37').style.display = 'block';
 	document.getElementById('p-center1').style.display = 'none';
 	document.getElementById('wrap').style.display = 'none';
 }
-function TFormers5(){
+function TFormers5() {
 	document.getElementById('p-center38').style.display = 'block';
 	document.getElementById('p-center1').style.display = 'none';
 	document.getElementById('wrap').style.display = 'none';
 }
-function DG23(){
+function DG23() {
 	document.getElementById('p-center39').style.display = 'block';
 	document.getElementById('p-center1').style.display = 'none';
 	document.getElementById('wrap').style.display = 'none';
 }
-function Thelake(){
+function Thelake() {
 	document.getElementById('p-center40').style.display = 'block';
 	document.getElementById('p-center1').style.display = 'none';
 	document.getElementById('wrap').style.display = 'none';
 }
-function Asasins(){
+function Asasins() {
 	document.getElementById('p-center41').style.display = 'block';
 	document.getElementById('p-center1').style.display = 'none';
 	document.getElementById('wrap').style.display = 'none';
 }
-function Titanes2(){
+function Titanes2() {
 	document.getElementById('p-center43').style.display = 'block';
 	document.getElementById('p-center1').style.display = 'none';
 	document.getElementById('wrap').style.display = 'none';
 }
-function VLadrones(){
+function VLadrones() {
 	document.getElementById('p-center42').style.display = 'block';
 	document.getElementById('p-center1').style.display = 'none';
 	document.getElementById('wrap').style.display = 'none';
 }
-function MisterioV(){
+function MisterioV() {
 	document.getElementById('p-center44').style.display = 'block';
 	document.getElementById('p-center1').style.display = 'none';
 	document.getElementById('wrap').style.display = 'none';
 }
-function GUARD3(){
+function GUARD3() {
 	document.getElementById('p-center45').style.display = 'block';
 	document.getElementById('p-center1').style.display = 'none';
 	document.getElementById('wrap').style.display = 'none';
-	
+
 }
-function SuperM(){
+function SuperM() {
 	document.getElementById('p-center46').style.display = 'block';
 	document.getElementById('p-center1').style.display = 'none';
 	document.getElementById('wrap').style.display = 'none';
-	
+
 }
-function CaballerosZ(){
+function CaballerosZ() {
 	document.getElementById('p-center47').style.display = 'block';
 	document.getElementById('p-center1').style.display = 'none';
 	document.getElementById('wrap').style.display = 'none';
-	
+
 }
-function Ghost(){
+function Ghost() {
 	document.getElementById('p-center48').style.display = 'block';
 	document.getElementById('p-center1').style.display = 'none';
 	document.getElementById('wrap').style.display = 'none';
-	
+
 }
-function VisitaF(){
+function VisitaF() {
 	document.getElementById('p-center49').style.display = 'block';
 	document.getElementById('p-center1').style.display = 'none';
 	document.getElementById('wrap').style.display = 'none';
-	
+
 }
-function ExtP(){
+function ExtP() {
 	document.getElementById('p-center50').style.display = 'block';
 	document.getElementById('p-center1').style.display = 'none';
 	document.getElementById('wrap').style.display = 'none';
-	
+
 }
-function PoseI(){
+function PoseI() {
 	document.getElementById('p-center51').style.display = 'block';
 	document.getElementById('p-center1').style.display = 'none';
 	document.getElementById('wrap').style.display = 'none';
-	
+
 }
-function Sing1(){
+function Sing1() {
 	document.getElementById('p-center52').style.display = 'block';
 	document.getElementById('p-center1').style.display = 'none';
 	document.getElementById('wrap').style.display = 'none';
 }
-function Sing2(){
+function Sing2() {
 	document.getElementById('p-center53').style.display = 'block';
 	document.getElementById('p-center1').style.display = 'none';
 	document.getElementById('wrap').style.display = 'none';
-	
+
 }
 
 
@@ -376,11 +376,11 @@ function Sing2(){
 
 
 //Funciones añadiddas para las series cada una y ocultar el wrapp/
-function OcultarP(){
+function OcultarP() {
 	document.getElementById('wrap').style.display = 'none';
 	document.getElementById('p-centerro').style.height = '700px';
 }
-function SuperL(){
+function SuperL() {
 	document.getElementById('serie1').style.display = 'flex';
 	document.getElementById('wrap').style.display = 'none';
 	document.getElementById('CONTENT').style.display = 'none';
@@ -388,22 +388,22 @@ function SuperL(){
 	document.getElementById('temp3').style.display = 'none';
 	document.getElementById('p-centerro').style.display = 'none';
 }
-function 	Temporada1(){
+function Temporada1() {
 	document.getElementById('temp1').style.display = 'grid';
 	document.getElementById('temp2').style.display = 'none';
 	document.getElementById('temp3').style.display = 'none';
 }
-function 	Temporada2(){
+function Temporada2() {
 	document.getElementById('temp1').style.display = 'none';
 	document.getElementById('temp2').style.display = 'grid';
 	document.getElementById('temp3').style.display = 'none';
 }
-function 	Temporada3(){
+function Temporada3() {
 	document.getElementById('temp1').style.display = 'none';
 	document.getElementById('temp2').style.display = 'none';
 	document.getElementById('temp3').style.display = 'grid';
 }
-function Flash(){
+function Flash() {
 	document.getElementById('serie1').style.display = 'none';
 	document.getElementById('serie2').style.display = 'flex'
 	document.getElementById('wrap').style.display = 'none';
@@ -412,7 +412,7 @@ function Flash(){
 	document.getElementById('temp3').style.display = 'none';
 	document.getElementById('p-centerro').style.display = 'none';
 }
-function TrueL(){
+function TrueL() {
 	document.getElementById('serie1').style.display = 'none';
 	document.getElementById('serie3').style.display = 'flex';
 	document.getElementById('wrap').style.display = 'none';
@@ -421,7 +421,7 @@ function TrueL(){
 	document.getElementById('temp3').style.display = 'none';
 	document.getElementById('p-centerro').style.display = 'none';
 }
-function GoK(){
+function GoK() {
 	document.getElementById('serie1').style.display = 'none';
 	document.getElementById('serie4').style.display = 'flex';
 	document.getElementById('wrap').style.display = 'none';
@@ -430,7 +430,7 @@ function GoK(){
 	document.getElementById('temp3').style.display = 'none';
 	document.getElementById('p-centerro').style.display = 'none';
 }
-function TheLOF(){
+function TheLOF() {
 	document.getElementById('serie1').style.display = 'none';
 	document.getElementById('serie5').style.display = 'flex';
 	document.getElementById('wrap').style.display = 'none';
@@ -439,7 +439,7 @@ function TheLOF(){
 	document.getElementById('temp3').style.display = 'none';
 	document.getElementById('p-centerro').style.display = 'none';
 }
-function LaEsca(){
+function LaEsca() {
 	document.getElementById('serie1').style.display = 'none';
 	document.getElementById('serie6').style.display = 'flex';
 	document.getElementById('wrap').style.display = 'none';
@@ -448,7 +448,7 @@ function LaEsca(){
 	document.getElementById('temp3').style.display = 'none';
 	document.getElementById('p-centerro').style.display = 'none';
 }
-function LLTP(){
+function LLTP() {
 	document.getElementById('serie1').style.display = 'none';
 	document.getElementById('serie7').style.display = 'flex';
 	document.getElementById('wrap').style.display = 'none';
@@ -457,7 +457,7 @@ function LLTP(){
 	document.getElementById('temp3').style.display = 'none';
 	document.getElementById('p-centerro').style.display = 'none';
 }
-function TulsaK(){
+function TulsaK() {
 	document.getElementById('serie1').style.display = 'none';
 	document.getElementById('serie8').style.display = 'flex';
 	document.getElementById('wrap').style.display = 'none';
@@ -466,7 +466,7 @@ function TulsaK(){
 	document.getElementById('temp3').style.display = 'none';
 	document.getElementById('p-centerro').style.display = 'none';
 }
-function StartrekP(){
+function StartrekP() {
 	document.getElementById('serie1').style.display = 'none';
 	document.getElementById('serie9').style.display = 'flex';
 	document.getElementById('wrap').style.display = 'none';
@@ -475,7 +475,7 @@ function StartrekP(){
 	document.getElementById('temp3').style.display = 'none';
 	document.getElementById('p-centerro').style.display = 'none';
 }
-function ShadowP(){
+function ShadowP() {
 	document.getElementById('serie1').style.display = 'none';
 	document.getElementById('serie10').style.display = 'flex';
 	document.getElementById('wrap').style.display = 'none';
@@ -484,11 +484,11 @@ function ShadowP(){
 	document.getElementById('tempo1').style.display = 'grid';
 	document.getElementById('tempo2').style.display = 'none';
 }
-function Tempo1(){
+function Tempo1() {
 	document.getElementById('tempo1').style.display = 'grid';
 	document.getElementById('tempo2').style.display = 'none';
 }
-function Tempo2(){
+function Tempo2() {
 	document.getElementById('tempo1').style.display = 'none';
 	document.getElementById('tempo2').style.display = 'grid';
 }
