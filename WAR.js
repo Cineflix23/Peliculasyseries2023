@@ -395,19 +395,19 @@ function SuperL() {
 	document.getElementById('p-centerro').style.display = 'none';
 }
 function Temporada1() {
-	document.getElementById('temp1').style.display = 'grid';
+	document.getElementById('temp1').style.display = 'flex';
 	document.getElementById('temp2').style.display = 'none';
 	document.getElementById('temp3').style.display = 'none';
 }
 function Temporada2() {
 	document.getElementById('temp1').style.display = 'none';
-	document.getElementById('temp2').style.display = 'grid';
+	document.getElementById('temp2').style.display = 'flex';
 	document.getElementById('temp3').style.display = 'none';
 }
 function Temporada3() {
 	document.getElementById('temp1').style.display = 'none';
 	document.getElementById('temp2').style.display = 'none';
-	document.getElementById('temp3').style.display = 'grid';
+	document.getElementById('temp3').style.display = 'flex';
 }
 function Flash() {
 	document.getElementById('serie1').style.display = 'none';
