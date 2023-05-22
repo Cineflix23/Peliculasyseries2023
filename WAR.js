@@ -370,6 +370,12 @@ function Sing2() {
 	document.getElementById('wrap').style.display = 'none';
 
 }
+function FASTX() {
+	document.getElementById('p-center54').style.display = 'block';
+	document.getElementById('p-center1').style.display = 'none';
+	document.getElementById('wrap').style.display = 'none';
+
+}
 
 
 
