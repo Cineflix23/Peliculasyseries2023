@@ -43,7 +43,7 @@
 							<li><a href="#" class="category_item" category="all">Todo</a></li>
 							<li><a href="#" class="category_item" category="Acción">Acción</a></li>
 							<li><a href="#" class="category_item" category="Comedia">Comedia</a></li>
-							<li><a href="#" class="category_item" category="Terror">Terror</a></li>
+							<li><a href="#" class="category_item" category="Crimen">Crimen</a></li>
 							<li><a href="#" class="category_item" category="C.Ficción">C.Ficción</a></li>
 							<li><a href="#" class="category_item" category="Animadas">Animadas</a></li>
 							<li><a href="#" class="category_item" category="Drama/Suspenso">Drama/suspenso</a></li>
@@ -55,7 +55,7 @@
 						<li><a href="#" class="category_item" category="all">Todo</a></li>
 						<li><a href="#" class="category_item" category="Acción">Acción</a></li>
 						<li><a href="#" class="category_item" category="Comedia">Comedia</a></li>
-						<li><a href="#" class="category_item" category="Terror">Terror</a></li>
+						<li><a href="#" class="category_item" category="Crimen">Crimen</a></li>
 						<li><a href="#" class="category_item" category="C.Ficción">C.Ficción</a></li>
 						<li><a href="#" class="category_item" category="Animadas">Animadas</a></li>
 						<li><a href="#" class="category_item" category="Drama/Suspenso">Drama</a></li>
@@ -65,7 +65,7 @@
 					</div>
 				</ul>
 				<div class="exit">
-					<form action="login.html"><button>Cerrar Sesion</button></form>
+					<a href="login.html">Cerrar Sesión</a>
 				</div>
 				<div class="none">
 					<label for="menu" class="menu-btn">
@@ -109,6 +109,58 @@
 										</div>
 									</div>
 								</div>
+
+
+								<div class="gallery--item" category="Comedia">
+									<img src="https://serietvitalia.com/wp-content/uploads/XO-KITTY.jpg" alt=""
+										class="gallery--img">
+									<div class="gallery--center">
+										<h2 class="g1title">Besos, Kitty</h2>
+										<h2 class="g2title">28min 2023</h2>
+										<div class="gbtns">
+											<button onclick="BesosK();" class="gbtn">Ver Ahora</button>
+										</div>
+									</div>
+								</div>
+
+								<div class="gallery--item" category="Acción">
+									<img src="https://resources.ophimhd.com/file/poster-phim/citadel-hd-citadel.jpg?id=NzU4MjA=&data=aHR0cHM6Ly9pbWcub3BoaW0xLmNvbS91cGxvYWRzL21vdmllcy9jaXRhZGVsLXRodW1iLmpwZw=="
+										alt="" class="gallery--img">
+									<div class="gallery--center">
+										<h2 class="g1title">Citadel</h2>
+										<h2 class="g2title">38min 2023</h2>
+										<div class="gbtns">
+											<button onclick="Cita();" class="gbtn">Ver Ahora</button>
+										</div>
+									</div>
+								</div>
+
+
+
+								<div class="gallery--item" category="C.Ficción">
+									<img src="https://www.lavanguardia.com/peliculas-series/images/serie/poster/2023/4/w1280/9EuDaqFRui2nVqE4CixB7Umx9AO.jpg"
+										alt="" class="gallery--img">
+									<div class="gallery--center">
+										<h2 class="g1title">Jane</h2>
+										<h2 class="g2title">25min 2023</h2>
+										<div class="gbtns">
+											<button onclick="Jane();" class="gbtn">Ver Ahora</button>
+										</div>
+									</div>
+								</div>
+								<div class="gallery--item" category="Acción">
+									<img src="https://m.media-amazon.com/images/M/MV5BMzEyNjk4ODItMTM4MS00MzIyLWFmYjYtNDdkOGQ2N2Y1YTc1XkEyXkFqcGdeQXVyMTUyMzg5NzM2._V1_.jpg"
+										alt="" class="gallery--img">
+									<div class="gallery--center">
+										<h2 class="g1title">Black Knight</h2>
+										<h2 class="g2title">48min 2023</h2>
+										<div class="gbtns">
+											<button onclick="BK();" class="gbtn">Ver Ahora</button>
+										</div>
+									</div>
+								</div>
+
+
 
 								<div class="gallery--item" category="C.Ficción">
 									<img src="https://m.media-amazon.com/images/M/MV5BMzdmYjAyODUtMTFkOS00MDg1LTljMDAtNzhiYTg5NjY1NjM5XkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_.jpg"
@@ -159,8 +211,8 @@
 								</div>
 
 								<div class="gallery--item" category="C.Ficción">
-									<img src="https://mx.web.img2.acsta.net/pictures/22/12/07/21/51/1544753.jpg"
-										alt="" class="gallery--img">
+									<img src="https://mx.web.img2.acsta.net/pictures/22/12/07/21/51/1544753.jpg" alt=""
+										class="gallery--img">
 									<div class="gallery--center">
 										<h2 class="g1title">La Leyenda del tesoro perdido</h2>
 										<h2 class="g2title">46min 2022</h2>
@@ -181,6 +233,22 @@
 										</div>
 									</div>
 								</div>
+
+								<div class="gallery--item" category="Crimen">
+									<img src="https://www.lavanguardia.com/peliculas-series/images/serie/poster/2023/5/w1280/4UcfOIHnUVxfPW3lIFhzDgYWZrl.jpg"
+										alt="" class="gallery--img">
+									<div class="gallery--center">
+										<h2 class="g1title">Los Dos Lados del Abismo </h2>
+										<h2 class="g2title">48min 2023</h2>
+										<div class="gbtns">
+											<button onclick="DosL();" class="gbtn">Ver Ahora</button>
+										</div>
+									</div>
+								</div>
+
+
+
+
 								<div class="gallery--item" category="Acción">
 									<img src="https://m.media-amazon.com/images/M/MV5BNDViZWY4MzQtZjVmZC00M2U2LWE2N2ItNDkxZjI3NjkwZTc3XkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_.jpg"
 										alt="" class="gallery--img">
@@ -194,8 +262,8 @@
 								</div>
 
 								<div class="gallery--item" category="C.Ficción">
-									<img src="https://m.media-amazon.com/images/I/81DU8HRiTfL._SY445_.jpg"
-										alt="" class="gallery--img">
+									<img src="https://m.media-amazon.com/images/I/81DU8HRiTfL._SY445_.jpg" alt=""
+										class="gallery--img">
 									<div class="gallery--center">
 										<h2 class="g1title">Star Trek Picard</h2>
 										<h2 class="g2title">44min 2020</h2>
@@ -379,6 +447,77 @@
 								</div>
 							</div>
 						</li>
+						<li class="gallery">
+							<div class="gallery--item" category="Series">
+								<img src="https://serietvitalia.com/wp-content/uploads/XO-KITTY.jpg" alt=""
+									class="gallery--img">
+								<div class="gallery--center">
+									<p class="name mt-3">Besos, kitty</p><!--ID Unico que sea distinto-->
+									<h2 class="g2title"> 32min 2023</h2>
+									<div class="gbtns">
+										<button onclick="BesosK();" class="gbtn">Ver Ahora</button>
+									</div>
+								</div>
+							</div>
+						</li>
+
+						<li class="gallery">
+							<div class="gallery--item" category="Series">
+								<img src="https://www.lavanguardia.com/peliculas-series/images/serie/poster/2023/4/w1280/9EuDaqFRui2nVqE4CixB7Umx9AO.jpg"
+									alt="" class="gallery--img">
+								<div class="gallery--center">
+									<p class="name mt-3">Jane</p><!--ID Unico que sea distinto-->
+									<h2 class="g2title"> 25min 2023</h2>
+									<div class="gbtns">
+										<button onclick="Jane();" class="gbtn">Ver Ahora</button>
+									</div>
+								</div>
+							</div>
+						</li>
+
+						<li class="gallery">
+							<div class="gallery--item" category="Series">
+								<img src="https://m.media-amazon.com/images/M/MV5BMzEyNjk4ODItMTM4MS00MzIyLWFmYjYtNDdkOGQ2N2Y1YTc1XkEyXkFqcGdeQXVyMTUyMzg5NzM2._V1_.jpg"
+									alt="" class="gallery--img">
+								<div class="gallery--center">
+									<p class="name mt-3">Black Knight</p><!--ID Unico que sea distinto-->
+									<h2 class="g2title"> 45min 2023</h2>
+									<div class="gbtns">
+										<button onclick="BK();" class="gbtn">Ver Ahora</button>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="gallery">
+							<div class="gallery--item" category="Series">
+								<img src="https://resources.ophimhd.com/file/poster-phim/citadel-hd-citadel.jpg?id=NzU4MjA=&data=aHR0cHM6Ly9pbWcub3BoaW0xLmNvbS91cGxvYWRzL21vdmllcy9jaXRhZGVsLXRodW1iLmpwZw=="
+									alt="" class="gallery--img">
+								<div class="gallery--center">
+									<p class="name mt-3">Citadel</p><!--ID Unico que sea distinto-->
+									<h2 class="g2title"> 38min 2023</h2>
+									<div class="gbtns">
+										<button onclick="Cita();" class="gbtn">Ver Ahora</button>
+									</div>
+								</div>
+							</div>
+						</li>
+
+						<li class="gallery">
+							<div class="gallery--item" category="Series">
+								<img src="https://www.lavanguardia.com/peliculas-series/images/serie/poster/2023/5/w1280/4UcfOIHnUVxfPW3lIFhzDgYWZrl.jpg"
+									alt="" class="gallery--img">
+								<div class="gallery--center">
+									<p class="name mt-3">Los Dos Lados del Abismo</p><!--ID Unico que sea distinto-->
+									<h2 class="g2title"> 48min 2023</h2>
+									<div class="gbtns">
+										<button onclick="DosL();" class="gbtn">Ver Ahora</button>
+									</div>
+								</div>
+							</div>
+						</li>
+
+
+
 
 
 					</ul>
@@ -459,200 +598,311 @@
 
 		<div class="temporada1 temporadass" id="temp2">
 			<div class="cap1">
-				<iframe src="https://nuuuppp.pics/watch/wYlbxUiD6Eo6I94NcAblBxymkojIW3ay0y1qXdce0?h=" scrolling="no"
-					frameborder="0" allowfullscreen="" webkitallowfullscreen="" mozallowfullscreen=""></iframe>
+				<iframe width="2032" height="879"
+					src="https://player.cuevana.biz/player.php?h=h3kgJKgp7rirl22CybxPrX.SxTUtq9k55h3myvIclCvZiMw4iqiNsrmJBkeWX0jf"
+					frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen=""></iframe>
 				<h6>2x1 Lo que hay debajo</h6>
 			</div>
 			<div class="cap1">
-				<iframe src="https://nuuuppp.pics/watch/GAaiaKLj3jz3h03jz3P8GkXSxYbLGuu3KlELI2Je297FPGDt0?h="
-					scrolling="no" frameborder="0" allowfullscreen="" webkitallowfullscreen=""
-					mozallowfullscreen=""></iframe>
+				<iframe width="2032" height="879"
+					src="https://player.cuevana.biz/player.php?h=h3kgJKgp7rirl22CybxPreP6qUU_KJBQ77bxKz0uhqeBfa5gR.mjoHH6VheVz3UP"
+					frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen=""></iframe>
 				<h6>2x2 Lazos que unen</h6>
 			</div>
 			<div class="cap1">
-				<iframe src="https://nuuuppp.pics/watch/29NieOskpJ8PVhVw6iExTOzSNWTqH2MKPX7kz7EXmdUuZo?h="
-					scrolling="no" frameborder="0" allowfullscreen="" webkitallowfullscreen=""
-					mozallowfullscreen=""></iframe>
+				<iframe width="2032" height="879"
+					src="https://player.cuevana.biz/player.php?h=h3kgJKgp7rirl22CybxPrc.mKYEzk7veZ_kUZi.0hr4tcoPyXlbcI7s5yBXOh28F"
+					frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen=""></iframe>
 				<h6>2x3 La cosa en las minas</h6>
 			</div>
 			<div class="cap1">
-				<iframe src="https://nuuuppp.pics/watch/phIx8N4I9xZNebhJ6PMnoeTwstJqCG3jz3H8gHzSlZc0G0?h="
-					scrolling="no" frameborder="0" allowfullscreen="" webkitallowfullscreen=""
-					mozallowfullscreen=""></iframe>
+				<iframe width="2032" height="879"
+					src="https://player.cuevana.biz/player.php?h=h3kgJKgp7rirl22CybxPrSqFtNU4K7__WsmAHEO7TEw2fRbyrmtRMW3lv6KqlmLC"
+					frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen=""></iframe>
 				<h6>2x4 El método inverso</h6>
 			</div>
 			<div class="cap1">
-				<img src="imagenes/" alt="">
-				<iframe src="https://nuuuppp.pics/watch/xCjlqscGevYjTK1kBBM3d6FtRM92YaggksjiU7kz79PUcE?h="
-					scrolling="no" frameborder="0" allowfullscreen="" webkitallowfullscreen=""
-					mozallowfullscreen=""></iframe>
+				<iframe width="2032" height="879"
+					src="https://player.cuevana.biz/player.php?h=h3kgJKgp7rirl22CybxPrTGIBiBdf8LuoEY8KhPNKl.1cCikWLxrIZrGt_1Ev98S"
+					frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen=""></iframe>
 				<h6>2x5 Chica... Pronto serás una mujer</h6>
 			</div>
 			<div class="cap1">
-				<iframe src="https://nuuuppp.pics/watch/pETZ2rIDRgFDQafdciX62bvNvIedI78S7ESkGccbM?h=" scrolling="no"
-					frameborder="0" allowfullscreen="" webkitallowfullscreen="" mozallowfullscreen=""></iframe>
+				<iframe width="2032" height="879"
+					src="https://player.cuevana.biz/player.php?h=h3kgJKgp7rirl22CybxPrXz53ImyV3t5DEqdtk8kJOiPBf.1lsalO.j0oyRxFyM5"
+					frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen=""></iframe>
 				<h6>2x6 Demostrado</h6>
 			</div>
 			<div class="cap1">
-				<iframe src="https://nuuuppp.pics/watch/NhDpXXKsxJ5kbp4WuLK8mxwc2T8VUS9KWy05E83FdUw?h=" scrolling="no"
-					frameborder="0" allowfullscreen="" webkitallowfullscreen="" mozallowfullscreen=""></iframe>
+				<iframe width="2032" height="879"
+					src="https://player.cuevana.biz/player.php?h=h3kgJKgp7rirl22CybxPrfOcYgEqi1rQ7v.z83cTK04ZWwjcOm1fagnIcc4ZNu2u"
+					frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen=""></iframe>
 				<h6>2x7 Anti-Héroe</h6>
 			</div>
 			<div class="cap1">
-				<iframe src="https://nuuuppp.pics/watch/XgTQK3OXFo67o4PUoHZcFOM0PrZfNpR80j8F6ayJbOg?h=" scrolling="no"
-					frameborder="0" allowfullscreen="" webkitallowfullscreen="" mozallowfullscreen=""></iframe>
+				<iframe width="2032" height="879"
+					src="https://player.cuevana.biz/player.php?h=h3kgJKgp7rirl22CybxPrTd9dSEgvA0duxOIGz78.VcIWHIBeDkQ1Vb.BXz6ipJd"
+					frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen=""></iframe>
 				<h6>2x8 En el olvido</h6>
 			</div>
 			<div class="cap1">
-				<iframe src="https://nuuuppp.pics/watch/AUum7Q3bqaimBtECrfZz3jz3c7WKUCKwLuxu7kz7Q4kO6S8Mk?h="
-					scrolling="no" frameborder="0" allowfullscreen="" webkitallowfullscreen=""
-					mozallowfullscreen=""></iframe>
+				<iframe width="2032" height="879"
+					src="https://player.cuevana.biz/player.php?h=h3kgJKgp7rirl22CybxPrTiSVSvID7zcLTPveDyrJT0lOn5HxiRgaVfQaAgy3vF9"
+					frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen=""></iframe>
 				<h6>2x9 30 días y 30 noches</h6>
 			</div>
 			<div class="cap1">
-				<iframe src="https://nuuuppp.pics/watch/kBh79ywFeKoZvqfmz5NjKhHHt9otoV7kz7YH4LUHgU0Y?h=" scrolling="no"
-					frameborder="0" allowfullscreen="" webkitallowfullscreen="" mozallowfullscreen=""></iframe>
+				<iframe width="2032" height="879"
+					src="https://player.cuevana.biz/player.php?h=h3kgJKgp7rirl22CybxPrd48qIWMABTH4dFsq94f2ZGE_tb8dvKgDXOAJHpVMMlA"
+					frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen=""></iframe>
 				<h6>2x10 Bizarros en un mundo bizarro</h6>
 			</div>
 			<div class="cap1">
-				<iframe src="https://nuuuppp.pics/watch/Tt7C7glc9to5Jp27kz7xSqFQq5yfNQSvYaAj13V0LCkOy4?h="
-					scrolling="no" frameborder="0" allowfullscreen="" webkitallowfullscreen=""
-					mozallowfullscreen=""></iframe>
+				<iframe width="2032" height="879"
+					src="https://player.cuevana.biz/player.php?h=h3kgJKgp7rirl22CybxPrVIdAllLpH.fZ8OzTCKBx3yKfBDbVPmvvcCMZgmvCOQE"
+					frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen=""></iframe>
 				<h6>2x11 Verdad y consecuencias</h6>
 			</div>
 			<div class="cap1">
-				<iframe src="https://nuuuppp.pics/watch/bYXnG0aj2tAknAE7CHdc8vrcKX9SVYkv6kEYxsa3lT4?h=" scrolling="no"
-					frameborder="0" allowfullscreen="" webkitallowfullscreen="" mozallowfullscreen=""></iframe>
+				<iframe width="2032" height="879"
+					src="https://player.cuevana.biz/player.php?h=h3kgJKgp7rirl22CybxPrTYIWpnJH34kv1rJEQrQeOL7uQceus0loh.Ru_1crg0f"
+					frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen=""></iframe>
 				<h6>2x12 Mentiras que atan</h6>
 			</div>
 			<div class="cap1">
-				<iframe src="https://nuuuppp.pics/watch/Nu1D723jz3orWZyIX4V03POCahTmqIh2frMIF1RTyvQ1Zg?h="
-					scrolling="no" frameborder="0" allowfullscreen="" webkitallowfullscreen=""
-					mozallowfullscreen=""></iframe>
+				<iframe width="2032" height="879"
+					src="https://player.cuevana.biz/player.php?h=h3kgJKgp7rirl22CybxPrbzVCpZ5jb9LuFI1xqTdrbPi0DCF4CMaNViFvkjcCvSy"
+					frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen=""></iframe>
 				<h6>2x13 Todo está perdido</h6>
 			</div>
 			<div class="cap1">
-				<iframe src="https://nuuuppp.pics/watch/YXyQpRbHKhnrnxc7kz7gIx20duseiB3uSkI5BjH2UqRVic?h="
-					scrolling="no" frameborder="0" allowfullscreen="" webkitallowfullscreen=""
-					mozallowfullscreen=""></iframe>
+				<iframe width="2032" height="879"
+					src="https://player.cuevana.biz/player.php?h=h3kgJKgp7rirl22CybxPrUjexSB_XaveODSmZntl8czMHdTBRDs2YctJ1rn.HeSP"
+					frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen=""></iframe>
 				<h6>2x14 Guerra mundial bizarra</h6>
 			</div>
 			<div class="cap1">
-				<iframe src="https://nuuuppp.pics/watch/3q0rk5cqWQzdPUeVMADN3nWKXIeDl7kz73jz37SqaTa2PYxcY?h="
-					scrolling="no" frameborder="0" allowfullscreen="" webkitallowfullscreen=""
-					mozallowfullscreen=""></iframe>
+				<iframe width="2032" height="879"
+					src="https://player.cuevana.biz/player.php?h=h3kgJKgp7rirl22CybxPrc0sDehiQOfnnr_JoB0dU64FHy1xtvDI2Kyfij9Jq5Yi"
+					frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen=""></iframe>
 				<h6>2x15 Esperando a Superman</h6>
 			</div>
 		</div>
 		<div class="temporada1 temporadass" id="temp3">
 			<div class="cap1">
-				<iframe
-					src="https://player.cuevana.cloud/player.php?h=h3kgJKgp7rirl22CybxPrQxlv4isGamE2dM4ziExQIeweolWAGNMM24yIKm9pg0H"
+				<iframe width="2032" height="879"
+					src="https://player.cuevana.biz/player.php?h=Y6sEmQFvn74GwDabJO0L2VrbgcypvUs15U9NtOvCdBJ3URGS__YOYBBiB9ceyMhTJGs7ADjjJvlawFLJnDJ7rNBK.0KRJ2wFRwsV41n9m9ItCQ1vpuhuz7I_9hJxdCRy"
 					frameborder="0"
 					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 					allowfullscreen=""></iframe>
 				<h6>3x1</h6>
 			</div>
 			<div class="cap1">
-				<iframe
-					src="https://player.cuevana.cloud/player.php?h=h3kgJKgp7rirl22CybxPrUuSE5N5aVXQV_PEvRxk_kZtQP_os1TtXHe3TlroQtud"
+				<iframe width="2032" height="879"
+					src="https://player.cuevana.biz/player.php?h=Y6sEmQFvn74GwDabJO0L2aGKnEmr5OhMcLvOiP1pS_EKNpExz9w0nazS6LXQ7ovPv_ye50Yozs._jpbmgk2YQ7IRcsEPrYLxGsow0toezXod9b5PcGP0lc3d16mZYPff"
 					frameborder="0"
 					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 					allowfullscreen=""></iframe>
 				<h6>3x2</h6>
 			</div>
 			<div class="cap1">
-				<iframe
-					src="https://player.cuevana.cloud/player.php?h=Y6sEmQFvn74GwDabJO0L2UVoaMiG07CPOpNCaWF_X5SZxeH2M_OTcduKmNNafHVVcO7tiWN4JzhFoZTbCZwWlL__bsx4Ag5.zHBtpSQczwSoMOHxV0S2JaITWKv.BETK"
+				<iframe width="2032" height="879"
+					src="https://player.cuevana.biz/player.php?h=Y6sEmQFvn74GwDabJO0L2anWI6l0dfdmR8Su73z4LS9uxhMk0sfuelV6KJkkqI6VIYGzo_MS7JhGRcChB1KJtRQQJFigdYIAjUQioUQUeWOmq5O9GNGrbQxghRRJ60hF"
 					frameborder="0"
 					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 					allowfullscreen=""></iframe>
 				<h6>3x3</h6>
 			</div>
+			<div class="cap1">
+				<iframe width="2032" height="879"
+					src="https://player.cuevana.biz/player.php?h=Y6sEmQFvn74GwDabJO0L2Y1cYSFgbVBJ5e5l4cAp6pary4S95WYLCFMYfAuPdgiqFLXhXUs2YjhWtbu643CE1iOH.DIJ3PQ681NCaXeGiqu0w6gw2W8ADU_OShM66B9m"
+					frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen=""></iframe>
+				<h6>3x4</h6>
+			</div>
+			<div class="cap1">
+				<iframe width="2032" height="879"
+					src="https://player.cuevana.biz/player.php?h=Y6sEmQFvn74GwDabJO0L2VJvu7tWJ1MK0ZnYlgNx819glfKvQ1ggOy2oP467Lwx8Zir3zCxvwuLtS2MNzOVWrxKU.dj1LKSUJ9S9dftKpZXusoHwXhbCynb2GEhDK7fL"
+					frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen=""></iframe>
+				<h6>3x5</h6>
+			</div>
+			<div class="cap1">
+				<iframe width="2032" height="879"
+					src="https://player.cuevana.biz/player.php?h=Y6sEmQFvn74GwDabJO0L2XOVS0zzWm3C9nIeYmmK4jeRKManHDJSHmBc1bsEBLbACvjg7cFhcmjWkZU9pRj4GqoTEgu59N9On7FlcLG7vkuNHx.h0F33vZqp2Sr_6Ex."
+					frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen=""></iframe>
+				<h6>3x6</h6>
+			</div>
+			<div class="cap1">
+				<iframe width="2032" height="879"
+					src="https://player.cuevana.biz/player.php?h=Y6sEmQFvn74GwDabJO0L2c4VY3Y5xryl1qx3Y5l5BZRyxyBKTDOlUzdFTgjzu_Uer2MPwOM9s5BtEaBVdOfJyT4nubnAP9SfRsBEgE8K7nPwlOdH8Sgl1r6_qNndXFFe"
+					frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen=""></iframe>
+				<h6>3x7</h6>
+			</div>
+			<div class="cap1">
+				<iframe width="2032" height="879"
+					src="https://player.cuevana.biz/player.php?h=Y6sEmQFvn74GwDabJO0L2UHbyY2zUzJgwCHHu2SlVFhPzwtnlm7vrzTXFqH4SlvRsERZlCt7GZ6KcdSVeE.skx98zzJKUHza.FjLb6Tp8ECUFU5CEkbYTP7O1pSMZM.0"
+					frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen=""></iframe>
+				<h6>3x8</h6>
+			</div>
 		</div>
 		<div class="temporada1 temporadass" id="temp1">
 			<div class="cap1">
-				<iframe src="https://nuuuppp.pics/watch/up0ms11GqpEePE1bPucunNHR609PtAMyYhsTYIVbuW8?h=" scrolling="no"
-					frameborder="0" allowfullscreen="" webkitallowfullscreen="" mozallowfullscreen=""></iframe>
+				<iframe width="2032" height="879"
+					src="https://player.cuevana.biz/player.php?h=h3kgJKgp7rirl22CybxPrSZ__lYA7fmFzXh52wxCTMtmwsgtykLzw023yg48cXgH"
+					frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen=""></iframe>
 				<h6>1x1 Piloto</h6>
 			</div>
 			<div class="cap1">
-				<iframe src="https://nuuuppp.pics/watch/hn9L0UFOv3jz3WXYXyp3jz3wdUnImUUgv8tlROXV6pN3US3V8?h="
-					scrolling="no" frameborder="0" allowfullscreen="" webkitallowfullscreen=""
-					mozallowfullscreen=""></iframe>
+				<iframe width="2032" height="879"
+					src="https://player.cuevana.biz/player.php?h=h3kgJKgp7rirl22CybxPrd394ufcaVBGwLB94E3ULauuyLiGjBDD6Q5.b_RYd1Fb"
+					frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen=""></iframe>
 				<h6>1x2 Herencia</h6>
 			</div>
 			<div class="cap1">
-				<iframe src="https://nuuuppp.pics/watch/IQUiL8W83dgSdEzhWnayyLeVVPqHX0MSBoU1KFwXOLg?h=" scrolling="no"
-					frameborder="0" allowfullscreen="" webkitallowfullscreen="" mozallowfullscreen=""></iframe>
+				<iframe width="2032" height="879"
+					src="https://player.cuevana.biz/player.php?h=h3kgJKgp7rirl22CybxPrQxlv4isGamE2dM4ziExQIeweolWAGNMM24yIKm9pg0H"
+					frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen=""></iframe>
 				<h6>1x3 Las ventajas de no ser un marginado</h6>
 			</div>
 			<div class="cap1">
-				<iframe src="https://nuuuppp.pics/watch/Z8VhGRYCcrG90xIpD04Ol2YlGDja7PG90DPRoMlqA?h=" scrolling="no"
-					frameborder="0" allowfullscreen="" webkitallowfullscreen="" mozallowfullscreen=""></iframe>
+				<iframe width="2032" height="879"
+					src="https://player.cuevana.biz/player.php?h=h3kgJKgp7rirl22CybxPrZHgig16ux_.NrWVPORLUBKzY.s25OZGT.GKRYxQ5CHg"
+					frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen=""></iframe>
 				<h6>1x4 Loco</h6>
 			</div>
 			<div class="cap1">
-				<img src="imagenes/" alt="">
-				<iframe src="https://nuuuppp.pics/watch/mLubL0MVrpWe7kz7PvbOBao79N60N7UXA3jz3JCMuETh99oVk?h="
-					scrolling="no" frameborder="0" allowfullscreen="" webkitallowfullscreen=""
-					mozallowfullscreen=""></iframe>
+				<iframe width="2032" height="879"
+					src="https://player.cuevana.biz/player.php?h=h3kgJKgp7rirl22CybxPrVpDuvUkjWBr0yDbEphNDQEz_wctz_QKXRWm_YdOcnSd"
+					frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen=""></iframe>
 				<h6>1x5 Lo mejor de Smallville</h6>
 			</div>
 			<div class="cap1">
-				<iframe src="https://nuuuppp.pics/watch/Mt3QaBe9ccnc3jz39C2Y3jz3K4RBkKa1ixefOMWPfqRodytkM?h="
-					scrolling="no" frameborder="0" allowfullscreen="" webkitallowfullscreen=""
-					mozallowfullscreen=""></iframe>
+				<iframe width="2032" height="879"
+					src="https://player.cuevana.biz/player.php?h=h3kgJKgp7rirl22CybxPrT6zoPCPPUjmi26gEoSR_rkwcysprgsKMkfQxAC2SZaL"
+					frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen=""></iframe>
 				<h6>1x6 Huele a espíritu adolescente</h6>
 			</div>
 			<div class="cap1">
-				<iframe src="https://nuuuppp.pics/watch/HTwVBTlUUnfD2i9kopr4wznW637atJlnbLfEQnMuULk?h=" scrolling="no"
-					frameborder="0" allowfullscreen="" webkitallowfullscreen="" mozallowfullscreen=""></iframe>
+				<iframe width="2032" height="879"
+					src="https://player.cuevana.biz/player.php?h=h3kgJKgp7rirl22CybxPrYDR7lu0n_RAG3i3tfOn5PE728XCKv2usy9qYd5D3deh"
+					frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen=""></iframe>
 				<h6>1x7 Hombre de Acero</h6>
 			</div>
 			<div class="cap1">
-				<iframe src="https://nuuuppp.pics/watch/99vU6X34sRr8PMoVsaf55V4IO7kz7jxi1MZhy3XtAz36Ro?h="
-					scrolling="no" frameborder="0" allowfullscreen="" webkitallowfullscreen=""
-					mozallowfullscreen=""></iframe>
+				<iframe width="2032" height="879"
+					src="https://player.cuevana.biz/player.php?h=h3kgJKgp7rirl22CybxPra4Mpygd04505ZGwmQj0gUPstZ0s5GcPlcYBk3bTRyQx"
+					frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen=""></iframe>
 				<h6>1x8 Verdad y consecuencias</h6>
 			</div>
 			<div class="cap1">
-				<iframe src="https://nuuuppp.pics/watch/NDcNtodUeeNkBUoSXiMuZcORsr4WdH07dG3c7Pukm2A?h=" scrolling="no"
-					frameborder="0" allowfullscreen="" webkitallowfullscreen="" mozallowfullscreen=""></iframe>
+				<iframe width="2032" height="879"
+					src="https://player.cuevana.biz/player.php?h=h3kgJKgp7rirl22CybxPrY0zryp60uFEvQVlNtTJ.ZYE48IhZvuH6oDOuIHHtFBg"
+					frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen=""></iframe>
 				<h6>1x9 Sujetos leales</h6>
 			</div>
 			<div class="cap1">
-				<iframe src="https://nuuuppp.pics/watch/5Z0I96m7kz78cOkhIIfHlCng5gAfuxZimelhVy09VUoY7kz7A?h="
-					scrolling="no" frameborder="0" allowfullscreen="" webkitallowfullscreen=""
-					mozallowfullscreen=""></iframe>
+				<iframe width="2032" height="879"
+					src="https://player.cuevana.biz/player.php?h=h3kgJKgp7rirl22CybxPrRmeB1s3dph3_RXz9BQpQjDceaBNvHZFBR0AaUbZCH_K"
+					frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen=""></iframe>
 				<h6>1x10 Oh Madre, ¿dónde estás?</h6>
 			</div>
 			<div class="cap1">
-				<iframe src="https://nuuuppp.pics/watch/dklmsTEUFzcRpBldEv51Bf4wHdYRbHAYf3ceb7bcXoo?h=" scrolling="no"
-					frameborder="0" allowfullscreen="" webkitallowfullscreen="" mozallowfullscreen=""></iframe>
+				<iframe width="2032" height="879"
+					src="https://player.cuevana.biz/player.php?h=h3kgJKgp7rirl22CybxPrZLRlV58RWFbVAuQ6l.3CmlHNFwA4FzhU1XCHZRVf.un"
+					frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen=""></iframe>
 				<h6>1x11 Una breve reminiscencia entre eventos cataclísmicos</h6>
 			</div>
 			<div class="cap1">
-				<iframe src="https://nuuuppp.pics/watch/hd7B7kz7BKschXZGhai3jz3rorhH5Gjm04xps1rHddd4bGfOM?h="
-					scrolling="no" frameborder="0" allowfullscreen="" webkitallowfullscreen=""
-					mozallowfullscreen=""></iframe>
+				<iframe width="2032" height="879"
+					src="https://player.cuevana.biz/player.php?h=h3kgJKgp7rirl22CybxPrc1Ku.jM6Ne6SQC0Lp1bCtHZeHm3i5NPk5HisMncNRA5"
+					frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen=""></iframe>
 				<h6>1x12 Por el valle de la muerte</h6>
 			</div>
 			<div class="cap1">
-				<iframe src="https://nuuuppp.pics/watch/Gav5gl3gMNEHGzLu7kz7ali6FQejE34BBCB07kz7vu9sm3yrY?h="
-					scrolling="no" frameborder="0" allowfullscreen="" webkitallowfullscreen=""
-					mozallowfullscreen=""></iframe>
+				<iframe width="2032" height="879"
+					src="https://player.cuevana.biz/player.php?h=h3kgJKgp7rirl22CybxPrXzpRubhJRWLrXcoOVrLa.c3cQMrFFoeNsKb0L6q4U1V"
+					frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen=""></iframe>
 				<h6>1x13 A prueba de errores</h6>
 			</div>
 			<div class="cap1">
-				<iframe src="https://nuuuppp.pics/watch/1cRHAbGWN5yMKkYS6Nu5tDUt4Nk4VsFt5qVX3jz317AS7w?h="
-					scrolling="no" frameborder="0" allowfullscreen="" webkitallowfullscreen=""
-					mozallowfullscreen=""></iframe>
+				<iframe width="2032" height="879"
+					src="https://player.cuevana.biz/player.php?h=h3kgJKgp7rirl22CybxPrY_cvR4DujDUjffTv34jHazGKmnnqmdvJxGOnwFGjFqT"
+					frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen=""></iframe>
 				<h6>1x14 El erradicador</h6>
 			</div>
 			<div class="cap1">
-				<iframe src="https://nuuuppp.pics/watch/ug8rlCNq6K73DP8mvvfYfatdq0Yk2Q7kz7gdaN9l71h4?h=" scrolling="no"
-					frameborder="0" allowfullscreen="" webkitallowfullscreen="" mozallowfullscreen=""></iframe>
+				<iframe width="2032" height="879"
+					src="https://player.cuevana.biz/player.php?h=h3kgJKgp7rirl22CybxPrSYVDU.6r3lgXsLJb3qllHlA8t2.kBuIJMjcoe3qil74"
+					frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen=""></iframe>
 				<h6>1x15 Los últimos hijos de Krypton</h6>
 			</div>
 		</div>
@@ -716,7 +966,7 @@
 			</div>
 			<div class="cap1">
 				<iframe width="2032" height="879"
-					src="https://player.cuevana.cloud/player.php?h=h3kgJKgp7rirl22CybxPrZ7gso2.os1qI3xln0vAZDCuExjXYiFYes7ye3vgRMs6"
+					src="https://player.cuevana.biz/player.php?h=h3kgJKgp7rirl22CybxPrZ7gso2.os1qI3xln0vAZDCuExjXYiFYes7ye3vgRMs6"
 					frameborder="0"
 					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 					allowfullscreen=""></iframe>
@@ -740,7 +990,7 @@
 			</div>
 			<div class="cap1">
 				<iframe width="2032" height="879"
-					src="https://player.cuevana.cloud/player.php?h=Y6sEmQFvn74GwDabJO0L2dwgeu.owZl36kfI8RABF0nhSp43lZlRRpLfPIZkuMP6sAg88FZ2GW8eWJjGtRIUQXU7j.eRuATKK4IEVE1K3wphI23KVinS3OD.zJ3aaC_S"
+					src="https://player.cuevana.biz/player.php?h=h3kgJKgp7rirl22CybxPrXqr90eGD7dsU3_w6SY1CatM2XIy3fSGMdxvP30vBzpE"
 					frameborder="0"
 					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 					allowfullscreen=""></iframe>
@@ -748,11 +998,51 @@
 			</div>
 			<div class="cap1">
 				<iframe width="2032" height="879"
-					src="https://player.cuevana.cloud/player.php?h=Y6sEmQFvn74GwDabJO0L2QgfYFEsgsPLMg2tQrNFGlw5OOnersibx62T5Nwr3TtWy4apLDiS4.DiQpNXLJXl.EkhCzsKTZvcYmQfuBzou7HyfFIz5b4Ozg6y5GHmqkab"
+					src="https://player.cuevana.biz/player.php?h=h3kgJKgp7rirl22CybxPrWwvWpwU_G3Y.Aog6mwPPdColnhrM7kidUnpZT_ESs__"
 					frameborder="0"
 					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 					allowfullscreen=""></iframe>
 				<h6>The Flash 9x7</h6>
+			</div>
+			<div class="cap1">
+				<iframe width="2032" height="879"
+					src="https://player.cuevana.biz/player.php?h=h3kgJKgp7rirl22CybxPrTaI7mznK5gqmP0F44ISWVVfxHMjniqekrh_uZ.7kysi"
+					frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen=""></iframe>
+				<h6>The Flash 9x8</h6>
+			</div>
+			<div class="cap1">
+				<iframe width="2032" height="879"
+					src="https://player.cuevana.biz/player.php?h=h3kgJKgp7rirl22CybxPrSy6iDcuxpgNTOcuHldvvQcAyhKqv9r3Ej0xyDhzDaj5"
+					frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen=""></iframe>
+				<h6>The Flash 9x9</h6>
+			</div>
+			<div class="cap1">
+				<iframe width="2032" height="879"
+					src="https://player.cuevana.biz/player.php?h=h3kgJKgp7rirl22CybxPrZVOCoj9_I6gBYNiG_HZFDEK9o76O4VGVF.R5evg.qc2"
+					frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen=""></iframe>
+				<h6>The Flash 9x10</h6>
+			</div>
+			<div class="cap1">
+				<iframe width="2032" height="879"
+					src="https://player.cuevana.biz/player.php?h=Y6sEmQFvn74GwDabJO0L2WVuPt7AMOXINQuwjUZz1pYJuNvYiPOQPbvG578PuBvKDRhbXVpe6LI9ZWBwp_9QtpUEuPNHjNkJ5XlQu5hasSKM2HW3urz6UlF_rHgRHwFr"
+					frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen=""></iframe>
+				<h6>The Flash 9x11</h6>
+			</div>
+			<div class="cap1">
+				<iframe width="2032" height="879"
+					src="https://player.cuevana.biz/player.php?h=Y6sEmQFvn74GwDabJO0L2Z70lvO0TCG8FT98FLGrdsSLKCRvL25fjnrKRrwy234JhO5UlFY5jCFdDdb.Yf0BZ3vw2X5vKokXtq2611BBFJZAFx1n5ZDIrCD.SZAouRJq"
+					frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen=""></iframe>
+				<h6>The Flash 9x12</h6>
 			</div>
 		</div>
 		<div class="copy">
@@ -1611,7 +1901,493 @@
 			Copyright © 2022 Cineflix.com Algunos Derechos Reservados | Cineflix no almacena ningún archivo en sus
 			servidores. Todos estos han sido encontrados en sitios de terceros.| Creado Por Andres Rojas
 		</div>
+	</div>
 
+
+	<div id="serie11" class="series">
+		<div class="serie-center">
+			<div class="img">
+				<img src="https://serietvitalia.com/wp-content/uploads/XO-KITTY.jpg" alt="">
+				<div class="volver">
+					<form action="series.html"><button>volver</button></form>
+				</div>
+			</div>
+			<div class="series-header">
+				<div class="title">Besos kitty</div>
+				<div class="subtitle"> XO, Kitty & 2023</div>
+				<div class="seriesdescrip">La casamentera adolescente Kitty Song Covey cree que sabe todo lo que hay que
+					saber sobre el amor. Pero cuando se muda al otro lado del mundo para reunirse con su novio de larga
+					distancia, pronto se dará cuenta de que las relaciones son mucho más complicadas cuando es tu propio
+					corazón el que está en juego.</div>
+				<div class="footer">
+					<h6>Genero: Comedia, Drama</h6>
+					<h6>Actores: Anna Cathcart, Choi Min-yeong, Gia Kim, Sang Heon Lee, Anthony Keyvan, Regan Aliyah,
+						Peter Thurnwald</h6>
+				</div>
+				<div class="temporadas">
+					<div class="butonS"><button>Seleccionar Temporada</button></div>
+					<div class="tempos">
+						<button id="Temporada1" onclick="Tempo1();">temporada 1</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="temporada1 temporadass" id="tempo1">
+			<div class="cap1">
+				<iframe width="2032" height="879"
+					src="https://player.cuevana.biz/player.php?h=Y6sEmQFvn74GwDabJO0L2TQrkItr6fxX4FdZ7gAsJFhdfgzpJAOcJKMVzab4339hJsX.2DIGh7rXdd6y2AIZgABhMtqPkykosBxABLIi8rVKAFA6yORhJghNtSZ.y6iB"
+					frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen=""></iframe>
+				<h6>Besos, Kitty 1x1</h6>
+			</div>
+			<div class="cap1">
+				<iframe width="2032" height="879"
+					src="https://player.cuevana.biz/player.php?h=Y6sEmQFvn74GwDabJO0L2crxQlZ2FPuTsJmfTA8ZFsA_9PlyPKQNDE8FHGHdwXq7SaICEFIWdeNMoaOeWBdvbVuGsaVqgBo1vul1RLyRcK6Ap5ctdBMaKeD_yC2rfI_w"
+					frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen=""></iframe>
+				<h6>Besos, Kitty 1x2</h6>
+			</div>
+			<div class="cap1">
+				<iframe width="2032" height="879"
+					src="https://player.cuevana.biz/player.php?h=Y6sEmQFvn74GwDabJO0L2YAV7O.9.vpINaZ_UU1XvMKM0m0hgkGAfd9s3INCQ0NYZdfdQ2Yc00OM1mdkbBFfoNGPXf.iX4pBCNSD1OjSrLiNGOmgCxKRjjVqrtkYl85F"
+					frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen=""></iframe>
+				<h6>Besos, Kitty 1x3</h6>
+			</div>
+			<div class="cap1">
+				<iframe width="2032" height="879"
+					src="https://player.cuevana.biz/player.php?h=Y6sEmQFvn74GwDabJO0L2Tgu8MWKT0GEbZB2fX7k5mhy5LJ__G3Hc_oIHPJyak6AnxQKrsI0ASOiS.IrOQ.pw6AtDcXZhBoN9P2KAm9kF5Ikg87MiBbejFYOJA5Jw8Pi"
+					frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen=""></iframe>
+				<h6>Besos, Kitty 1x4</h6>
+			</div>
+			<div class="cap1">
+				<iframe width="2032" height="879"
+					src="https://player.cuevana.biz/player.php?h=Y6sEmQFvn74GwDabJO0L2fZLnQQNwuBVJVCGsUKk_1mnboBkFnuylkm18iR4N57gxaGwf29_nRqgboPeUxPciKax2d.4np_iDMWAoYn74D85TBTBpVKlr.oKo7iqLXa2"
+					frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen=""></iframe>
+				<h6>Besos, Kitty 1x5</h6>
+			</div>
+			<div class="cap1">
+				<iframe width="2032" height="879"
+					src="https://player.cuevana.biz/player.php?h=Y6sEmQFvn74GwDabJO0L2Wa_9iSSNI5a69wyoETmDuJNOPfSD7cXy.y_qs2G6tRZost1JHck8i4pcsRevn15dQCLK_4VRoKumyJkVVOKZqxlvi0fsBah9Da2HnYwC6CY"
+					frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen=""></iframe>
+				<h6>Besos, Kitty 1x6</h6>
+			</div>
+			<div class="cap1">
+				<iframe width="2032" height="879"
+					src="https://player.cuevana.biz/player.php?h=Y6sEmQFvn74GwDabJO0L2aFiCcVyOb6N2zK0vKsC.UL3PMgrPCxqpEctp4Pu00h3MnTwEU8dNHSLn9btHzXzLKMNKYxl5iDyPzU4y5OBmhabqT_k.o_BUqlMMMBFzqrJ"
+					frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen=""></iframe>
+				<h6>Besos, Kitty 1x7</h6>
+			</div>
+			<div class="cap1">
+				<iframe width="2032" height="879"
+					src="https://player.cuevana.biz/player.php?h=Y6sEmQFvn74GwDabJO0L2SuzXS3cE_vTV8kxM5ZcYfvcdHapY0TScp2vJFRHsZrYU9YM8grKNnfkqSsSjh1O9OKnWeTPBtmqb2rxmYRaqAtWGtAXohlgJTY2An0T5Dyp"
+					frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen=""></iframe>
+				<h6>Besos, Kitty 1x8</h6>
+			</div>
+			<div class="cap1">
+				<iframe width="2032" height="879"
+					src="https://player.cuevana.biz/player.php?h=Y6sEmQFvn74GwDabJO0L2Yeqy1LrKFacOEkBxBxCj8Oa0Frxe92zMEBKbSORQtiVS8Semtawe3aZ9VKzIfU1ABGHZ3Qcy9YF38V_3I43.7w.pxgAiRRXKeyVRVP27Uep"
+					frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen=""></iframe>
+				<h6>Besos, Kitty 1x9</h6>
+			</div>
+			<div class="cap1">
+				<iframe width="2032" height="879"
+					src="https://player.cuevana.biz/player.php?h=Y6sEmQFvn74GwDabJO0L2eAXzDW71CYn1P4XgVRWM.04642Uw3oXWtP492LMH8qc0brSMjUlJXZqlHcMEsyPbGMQyVo4xxUpJ1fzJRDQ6rt2quhIT2mz08WstVwO4jud"
+					frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen=""></iframe>
+				<h6>Besos, Kitty 1x10</h6>
+			</div>
+		</div>
+		<div class="copy">
+			Copyright © 2022 Cineflix.com Algunos Derechos Reservados | Cineflix no almacena ningún archivo en sus
+			servidores. Todos estos han sido encontrados en sitios de terceros.| Creado Por Andres Rojas
+		</div>
+	</div>
+
+
+	<div id="serie12" class="series">
+		<div class="serie-center">
+			<div class="img">
+				<img src="https://www.lavanguardia.com/peliculas-series/images/serie/poster/2023/4/w1280/9EuDaqFRui2nVqE4CixB7Umx9AO.jpg"
+					alt="">
+				<div class="volver">
+					<form action="series.html"><button>volver</button></form>
+				</div>
+			</div>
+			<div class="series-header">
+				<div class="title">Jane</div>
+				<div class="subtitle"> Jane - Temporada 1 & 2023</div>
+				<div class="seriesdescrip">La ecologista en ciernes Jane es una niña de 9 años en una búsqueda para
+					salvar animales en peligro de extinción. Usando su poderosa imaginación, Jane lleva a sus mejores
+					amigos David y Greybeard el chimpancé a aventuras épicas para ayudar a proteger a los animales
+					salvajes de todo el mundo.</div>
+				<div class="footer">
+					<h6>Genero: Comedia, Drama</h6>
+					<h6>Actores: Ava Louise Murchison, Mason Blomberg, Tamara Almeida
+					</h6>
+				</div>
+				<div class="temporadas">
+					<div class="butonS"><button>Seleccionar Temporada</button></div>
+					<div class="tempos">
+						<button id="Temporada1" onclick="Tempo1();">temporada 1</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="temporada1 temporadass" id="tempo1">
+			<div class="cap1">
+				<iframe width="2032" height="879"
+					src="https://player.cuevana.biz/player.php?h=Y6sEmQFvn74GwDabJO0L2et3tAIbI01vb5Ce75s4Pyu.JXOVffCzB9yJ3KeYWnNk0Q.3EsOE1vdapwVAKd4tHMMJcnPF5gAJeL1R9OkzvOFlHCoeO8dS53cvFwkynpmZ"
+					frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen=""></iframe>
+				<h6>Jane 1x1</h6>
+			</div>
+			<div class="cap1">
+				<iframe width="2032" height="879"
+					src="https://player.cuevana.biz/player.php?h=Y6sEmQFvn74GwDabJO0L2bRX8.YdYGhPjwh8o1El86S9.dSVZiJYFOlj_idMrXwd4LrXy.6sw.96VrMbKWPwaeHYpF_EeyL4hBIpDC2PrS3MatQ2vtWh8wBv9HFFhkR."
+					frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen=""></iframe>
+				<h6>Jane 1x2</h6>
+			</div>
+			<div class="cap1">
+				<iframe width="2032" height="879"
+					src="https://player.cuevana.biz/player.php?h=Y6sEmQFvn74GwDabJO0L2ey7qQabscj9gTwhNXBbK.zIsrg_jAgvPlVd7kIW9d1v2Re1fGux6AZ5xfPTfqJWYI5SHmVWgs.auoMDxR9xiRvwqoTwAsIEpSApTJ3Jt0WF"
+					frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen=""></iframe>
+				<h6>Jane 1x3</h6>
+			</div>
+			<div class="cap1">
+				<iframe width="2032" height="879"
+					src="https://player.cuevana.biz/player.php?h=Y6sEmQFvn74GwDabJO0L2bovxGu.34sniMCZQImW_.IUo2x.k6F4asCxi0MuC1K0lOgOYfimsiTGr6mKJwfBVUlVeae6F3eMx.L5EfBPr6Euedp_jE10.RItwItiSZb4"
+					frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen=""></iframe>
+				<h6>Jane 1x4</h6>
+			</div>
+			<div class="cap1">
+				<iframe width="2032" height="879"
+					src="https://player.cuevana.biz/player.php?h=Y6sEmQFvn74GwDabJO0L2W_i9t1zRNhNGgdjpvsl483HzNyqWsM.Ompkbt6pTDDqpuV2pPlb_xfq4IbOpvsID1rRpJl0vOhHRkqeuWGl76rrN.HGNFSLUQEft.kE7J93"
+					frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen=""></iframe>
+				<h6>Jane 1x5</h6>
+			</div>
+			<div class="cap1">
+				<iframe width="2032" height="879"
+					src="https://player.cuevana.biz/player.php?h=Y6sEmQFvn74GwDabJO0L2flGQWA4wpitS1z7fasGOO.uc6fYyJN5xXxFO4.KV.kanhnp1AWxcpvw8TlPX6sWmRF3LKubbQQ5LIzI4k4MXT9q2U7qEXQmoMJrksjXmsm0"
+					frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen=""></iframe>
+				<h6>Jane 1x6</h6>
+			</div>
+			<div class="cap1">
+				<iframe width="2032" height="879"
+					src="https://player.cuevana.biz/player.php?h=Y6sEmQFvn74GwDabJO0L2SDUwqyBnY8XjEpuok9EIGrRTU6E1KcoQCUiYgdAQQvHgnq6YmgZC9b4RPWsSqpmlmmK5KUolxklagdU0VtXZ6j6jR95jT_ytN5Q1ejBHpKK"
+					frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen=""></iframe>
+				<h6>Jane 1x7</h6>
+			</div>
+			<div class="cap1">
+				<iframe width="2032" height="879"
+					src="https://player.cuevana.biz/player.php?h=Y6sEmQFvn74GwDabJO0L2Qb9TP0Y22Pgx27tb1DaBW2yGVABsKn3cIJzXWJ3s2MuByh9wlwJZC1VvzWQfyWtVza9XDjQ4rqyRkfZxFC.sqeoKuR0vlK1jMaiMrmbLwfp"
+					frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen=""></iframe>
+				<h6>Jane 1x8</h6>
+			</div>
+			<div class="cap1">
+				<iframe width="2032" height="879"
+					src="https://player.cuevana.biz/player.php?h=Y6sEmQFvn74GwDabJO0L2ezUcvuBXV5Elk7h5ASn04y.xic5m7qUsy5ZSWdAlKh91ow.w1RSBYI35GEGesDM8Q4m3i._JN._og.9KO7GozW.8Y0aRzQlea_D2E3KffaI"
+					frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen=""></iframe>
+				<h6>Jane 1x9</h6>
+			</div>
+			<div class="cap1">
+				<iframe width="2032" height="879"
+					src="https://player.cuevana.biz/player.php?h=Y6sEmQFvn74GwDabJO0L2c.ELEv8ui1VVMDmHhHGrY4TzY2HicGK9I2d8prFoEZGAo9BBiMIckbFlMjK24eWtLXxLkTtbuDwDsWwRjxnn4iogH408iHWFU_ybXcY8d37"
+					frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen=""></iframe>
+				<h6>Jane 1x10</h6>
+			</div>
+		</div>
+		<div class="copy">
+			Copyright © 2022 Cineflix.com Algunos Derechos Reservados | Cineflix no almacena ningún archivo en sus
+			servidores. Todos estos han sido encontrados en sitios de terceros.| Creado Por Andres Rojas
+		</div>
+	</div>
+
+	<div id="serie13" class="series">
+		<div class="serie-center">
+			<div class="img">
+				<img src="https://m.media-amazon.com/images/M/MV5BMzEyNjk4ODItMTM4MS00MzIyLWFmYjYtNDdkOGQ2N2Y1YTc1XkEyXkFqcGdeQXVyMTUyMzg5NzM2._V1_.jpg"
+					alt="">
+				<div class="volver">
+					<form action="series.html"><button>volver</button></form>
+				</div>
+			</div>
+			<div class="series-header">
+				<div class="title">Black Knight</div>
+				<div class="subtitle"> 택배기사 - Temporada 1 & 2023</div>
+				<div class="seriesdescrip">En 2071, en un mundo devastado por la contaminación atmosférica, un refugiado
+					lucha por unirse a los repartidores para tener acceso a la comida y lograr sobrevivir.</div>
+				<div class="footer">
+					<h6>Genero: Ciencia ficción, Fantasía, Acción, Aventura, Drama</h6>
+					<h6>Actores: Kim Woo-bin, Kang Yoo-seok, Esom, Song Seung-heon, Kim Eui-sung, Nam Kyung-eup, Jin
+						Kyung, Roh Yoon-seo, Lee Ju-seung, Lee Sang-jin, Lee E-dam, Lee Soon-won, Heo Hyung-kyu, Bae
+						Myung-jin, Yoo In-hyuk
+					</h6>
+				</div>
+				<div class="temporadas">
+					<div class="butonS"><button>Seleccionar Temporada</button></div>
+					<div class="tempos">
+						<button id="Temporada1" onclick="Tempo1();">temporada 1</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="temporada1 temporadass" id="tempo1">
+			<div class="cap1">
+				<iframe width="2032" height="879"
+					src="https://player.cuevana.biz/player.php?h=Y6sEmQFvn74GwDabJO0L2VyWmzAsrcNH2arQXCiQ4AA5VL.f7TXH0f08.EVJWT_T.6cP8C6kk62RlxN9WowoRRnYQxdinoJuo4IL7NkVPisxPWuo5OKUy.5aQumb.Nq_"
+					frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen=""></iframe>
+				<h6>Black Knight 1x1</h6>
+			</div>
+			<div class="cap1">
+				<iframe width="2032" height="879"
+					src="https://player.cuevana.biz/player.php?h=Y6sEmQFvn74GwDabJO0L2ax1yMBBO7G3G59wPqsu7VXmETJR3RiNmBwgsmBQVzMJZb.DWkJbuuNarZuBQk0PhBiwyw3z.0KHgtQaEqhPul93_pU0c965SxfNOFthow.1"
+					frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen=""></iframe>
+				<h6>Black Knight 1x2</h6>
+			</div>
+			<div class="cap1">
+				<iframe width="2032" height="879"
+					src="https://player.cuevana.biz/player.php?h=Y6sEmQFvn74GwDabJO0L2RXFy1RyGC_GDvQ6wZN.CLPFTkagDZjFTyc_RMpIG0up.IuZbB77bin2wzg6ZQ813kIA4aByZZXfwEWoF1IqTbEIu0IlW4fIwYFDk1kb8Nsq"
+					frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen=""></iframe>
+				<h6>Black Knight 1x3</h6>
+			</div>
+			<div class="cap1">
+				<iframe width="2032" height="879"
+					src="https://player.cuevana.biz/player.php?h=Y6sEmQFvn74GwDabJO0L2VGmsBeYpwQSwqyKSQZnnqIgy2VnJKV1czGjjcJ4YNbxFrCMxCmqfocpNjz7sdcLiC3DLKNpIp.lhZm_TyUwxl_8YX4M1c_sFvx9NuKMV0IG"
+					frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen=""></iframe>
+				<h6>Black Knight 1x4</h6>
+			</div>
+			<div class="cap1">
+				<iframe width="2032" height="879"
+					src="https://player.cuevana.biz/player.php?h=Y6sEmQFvn74GwDabJO0L2Y1XN9g.hXkjkB42WQ5VTK3xIMdAUNCW8QIMe67PtZZPR25GEHuHn_Sw608UfpP0XKWy1OQeaX3BOJOjCGyS0BJVTD80SYPZXodg6Ezj5ORo"
+					frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen=""></iframe>
+				<h6>Black Knight 1x5</h6>
+			</div>
+			<div class="cap1">
+				<iframe width="2032" height="879"
+					src="https://player.cuevana.biz/player.php?h=Y6sEmQFvn74GwDabJO0L2TQAWn7cCVZYpkaNTrmMUuTjV0qk9QNjDWoiD6UsHv8HoILx74ZWKhUr.smCGD1EPIy1uuQamRse2.AGGJfMELTtHkUyOtwg08yfcOQgssJN"
+					frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen=""></iframe>
+				<h6>Black Knight 1x6</h6>
+			</div>
+		</div>
+		<div class="copy">
+			Copyright © 2022 Cineflix.com Algunos Derechos Reservados | Cineflix no almacena ningún archivo en sus
+			servidores. Todos estos han sido encontrados en sitios de terceros.| Creado Por Andres Rojas
+		</div>
+	</div>
+
+	<div id="serie14" class="series">
+		<div class="serie-center">
+			<div class="img">
+				<img src="https://resources.ophimhd.com/file/poster-phim/citadel-hd-citadel.jpg?id=NzU4MjA=&data=aHR0cHM6Ly9pbWcub3BoaW0xLmNvbS91cGxvYWRzL21vdmllcy9jaXRhZGVsLXRodW1iLmpwZw=="
+					alt="">
+				<div class="volver">
+					<form action="series.html"><button>volver</button></form>
+				</div>
+			</div>
+			<div class="series-header">
+				<div class="title">Citadel</div>
+				<div class="subtitle"> Citadel - Temporada 1 & 2023</div>
+				<div class="seriesdescrip">Hace 8 años de la caída de Citadel. La agencia mundial de espionaje
+					independiente, encargada de velar por la seguridad de todos, fue destruida por agentes de Manticore,
+					un poderoso sindicato que manipula el mundo desde las sombras. Tras la caída de Citadel, los agentes
+					de élite Mason Kane (Richard Madden) y Nadia Sinh (Priyanka Chopra Jonas) intentan escapar con vida,
+					pero pierden todos sus recuerdos. Desde entonces han permanecido ocultos, construyendo nuevas vidas
+					con nuevas identidades, sin ser conscientes de su pasado. Hasta que una noche, Mason es localizado
+					por su antiguo colega de Citadel, Bernard Orlick (Stanley Tucci), que necesita desesperadamente su
+					ayuda para impedir que Manticore establezca un nuevo orden mundial.</div>
+				<div class="footer">
+					<h6>Genero: Drama, Crimen, Acción, Aventura</h6>
+					<h6>Actores: Richard Madden, Priyanka Chopra Jonas, Ashleigh Cummings, Roland Møller, Osy Ikhile,
+						Caoilinn Springall, Lesley Manville, Stanley Tucci
+					</h6>
+				</div>
+				<div class="temporadas">
+					<div class="butonS"><button>Seleccionar Temporada</button></div>
+					<div class="tempos">
+						<button id="Temporada1" onclick="Tempo1();">temporada 1</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="temporada1 temporadass" id="tempo1">
+			<div class="cap1">
+				<iframe width="2032" height="879"
+					src="https://player.cuevana.biz/player.php?h=Y6sEmQFvn74GwDabJO0L2TgEBSVl98STwrBTGJB0oNKvtKK0rTu7BH39tk3YmEK.fmDFBqJ5AydiY.oU3k6djzYBAFoQBMUB679XqSELqlGjYYvybSvYWJtLiehrmsML"
+					frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen=""></iframe>
+				<h6>Citadel 1x1</h6>
+			</div>
+			<div class="cap1">
+				<iframe width="2032" height="879"
+					src="https://player.cuevana.biz/player.php?h=Y6sEmQFvn74GwDabJO0L2TAx8Lv_EIWHQH3U.lTChdgFJPNzBzv78O1A68QePdTxEgvwQGUxznNGT58Vg_Yyoaula9mIwOHNvzcD8Ple2D86sgfQHNLOqZZRQViw68Xd"
+					frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen=""></iframe>
+				<h6>Citadel 1x2</h6>
+			</div>
+			<div class="cap1">
+				<iframe width="2032" height="879"
+					src="https://player.cuevana.biz/player.php?h=Y6sEmQFvn74GwDabJO0L2RzuRUU.gUppTAcs10svXMJj3oNckxNhioLepHr6epYuhFmKZOBugy.WhSWinxhA7QGulqN83s.xEfwbgDRu.Ki88X6dPrzMEuegakrRQQqj"
+					frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen=""></iframe>
+				<h6>Citadel 1x3</h6>
+			</div>
+			<div class="cap1">
+				<iframe width="2032" height="879"
+					src="https://player.cuevana.biz/player.php?h=Y6sEmQFvn74GwDabJO0L2XMCYsRldx4zfi1eGFlwhKyBNL.B0QVWCf_TODqdhLK4uCIIo8w9S7BVRQedT4YDMIVZyfJlIvqDi866YlcLZimv0blf_596g2mnakVnC5q6"
+					frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen=""></iframe>
+				<h6>Citadel 1x4</h6>
+			</div>
+			<div class="cap1">
+				<iframe width="2032" height="879"
+					src="https://player.cuevana.biz/player.php?h=Y6sEmQFvn74GwDabJO0L2aixgZnc_a_2AERKFoLP8hFY20KdR6sVfzjrReZvY1Nl_Bp0Mc681jh3XB4bEm3vk1UZHFK6y4kGysN7U31iLRVTHYH5sfC7FR34mG3_Ss7c"
+					frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen=""></iframe>
+				<h6>Citadel 1x5</h6>
+			</div>
+		</div>
+		<div class="copy">
+			Copyright © 2022 Cineflix.com Algunos Derechos Reservados | Cineflix no almacena ningún archivo en sus
+			servidores. Todos estos han sido encontrados en sitios de terceros.| Creado Por Andres Rojas
+		</div>
+	</div>
+
+	<div id="serie15" class="series">
+		<div class="serie-center">
+			<div class="img">
+				<img src="https://www.lavanguardia.com/peliculas-series/images/serie/poster/2023/5/w1280/4UcfOIHnUVxfPW3lIFhzDgYWZrl.jpg"
+					alt="">
+				<div class="volver">
+					<form action="series.html"><button>volver</button></form>
+				</div>
+			</div>
+			<div class="series-header">
+				<div class="title">Los Dos Lados del Abismo</div>
+				<div class="subtitle"> Zwei Seiten des Abgrunds - Temporada 1 & 2023</div>
+				<div class="seriesdescrip">Cuando el asesino de su hija sale de prisión antes de tiempo, una policía
+					enfurecida empieza a investigar el oscuro pasado del criminal.</div>
+				<div class="footer">
+					<h6>Genero: Drama, Crimen</h6>
+					<h6>Actores: Anne Ratte-Polle, Anton Dreger, Lea van Acken, Senita Huskić, Dirk Martens, Renato
+						Schuch, Ann-Kathrin Kramer, Claudia Eisinger, Maximilian Brauer, Josephine Thiesen, Kristin
+						Derfler
+					</h6>
+				</div>
+				<div class="temporadas">
+					<div class="butonS"><button>Seleccionar Temporada</button></div>
+					<div class="tempos">
+						<button id="Temporada1" onclick="Tempo1();">temporada 1</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="temporada1 temporadass" id="tempo1">
+			<div class="cap1">
+				<iframe width="2032" height="879"
+					src="https://player.cuevana.biz/player.php?h=Y6sEmQFvn74GwDabJO0L2UtnCNLEdEBa8bEABrBQqIkLXUJAk2bWhcP2E32g4RqnGgirar73.ke_QCNIV9RFfcZBvFEU.KtiyVJo4T7WclLoG.IdlroRxsIg4PKmTdS0"
+					frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen=""></iframe>
+				<h6>1x1</h6>
+			</div>
+			<div class="cap1">
+				<iframe width="2032" height="879"
+					src="https://player.cuevana.biz/player.php?h=Y6sEmQFvn74GwDabJO0L2ejxzPXtsdhMf.zIZFV4Cr1AYP7rgus4tA239CR0htHRMigbnZJsp.L8iWaREyLyO98PfVref_OsrNJsFPbK5gLFoJRUtpixSbNnq9oMR8CL"
+					frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen=""></iframe>
+				<h6>1x2</h6>
+			</div>
+			<div class="cap1">
+				<iframe width="2032" height="879"
+					src="https://player.cuevana.biz/player.php?h=Y6sEmQFvn74GwDabJO0L2Vth.giH_58zEDscXGz8ZWqxOCqbpKiFMRRy4y.mBoE_KBxQ.diMLZ5UHhOlEodvIS.G1pqXe8LCfUrpsxj5Y30eXr61O8wn5.h8b8pcTMdx"
+					frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen=""></iframe>
+				<h6>1x3</h6>
+			</div>
+			<div class="cap1">
+				<iframe width="2032" height="879"
+					src="https://player.cuevana.biz/player.php?h=Y6sEmQFvn74GwDabJO0L2Tbudp..BiwvDNR1aD9bw3dVcnSqtou9pfZSEXXlrEPErJWF1.U.ruRoeufGATQSNkQcrzF38RGszXgM0bXf6zFzR.DHJoS5AzTj9rreG3pE"
+					frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen=""></iframe>
+				<h6>1x4</h6>
+			</div>
+			<div class="cap1">
+				<iframe width="2032" height="879"
+					src="https://player.cuevana.biz/player.php?h=Y6sEmQFvn74GwDabJO0L2RhrodxKHdDlNSzIUWM9z.MNCNorCKQdbHE7HnPSVwZ4SWcqVUfWmXcEA.QlftK1q2NuklbNgx5r5gEZqmTUirdoje4nHBFa1u0ME.NydZcb"
+					frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen=""></iframe>
+				<h6>1x5</h6>
+			</div>
+			<div class="cap1">
+				<iframe width="2032" height="879"
+					src="https://player.cuevana.biz/player.php?h=Y6sEmQFvn74GwDabJO0L2QkTwTzj_NsPUxMolr7UaqUj.gIQyG4_MLitvNBAyWHBqIOmicEAuh.V7gWa22CO75S5ZV8czZLz9tYSlOV8JlqnIW6foByw245BWdaVNZrD"
+					frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen=""></iframe>
+				<h6>1x6</h6>
+			</div>
+		</div>
+		<div class="copy">
+			Copyright © 2022 Cineflix.com Algunos Derechos Reservados | Cineflix no almacena ningún archivo en sus
+			servidores. Todos estos han sido encontrados en sitios de terceros.| Creado Por Andres Rojas
+		</div>
 	</div>
 	<!--Termina seriess-->
 

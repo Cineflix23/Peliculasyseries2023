@@ -498,3 +498,48 @@ function Tempo2() {
 	document.getElementById('tempo1').style.display = 'none';
 	document.getElementById('tempo2').style.display = 'grid';
 }
+function BesosK() {
+	document.getElementById('serie1').style.display = 'none';
+	document.getElementById('serie11').style.display = 'flex';
+	document.getElementById('wrap').style.display = 'none';
+	document.getElementById('CONTENT').style.display = 'none';
+	document.getElementById('p-centerro').style.display = 'none';
+	document.getElementById('tempo1').style.display = 'grid';
+	document.getElementById('tempo2').style.display = 'none';
+}
+function Jane() {
+	document.getElementById('serie1').style.display = 'none';
+	document.getElementById('serie12').style.display = 'flex';
+	document.getElementById('wrap').style.display = 'none';
+	document.getElementById('CONTENT').style.display = 'none';
+	document.getElementById('p-centerro').style.display = 'none';
+	document.getElementById('tempo1').style.display = 'grid';
+	document.getElementById('tempo2').style.display = 'none';
+}
+function BK() {
+	document.getElementById('serie1').style.display = 'none';
+	document.getElementById('serie13').style.display = 'flex';
+	document.getElementById('wrap').style.display = 'none';
+	document.getElementById('CONTENT').style.display = 'none';
+	document.getElementById('p-centerro').style.display = 'none';
+	document.getElementById('tempo1').style.display = 'grid';
+	document.getElementById('tempo2').style.display = 'none';
+}
+function Cita() {
+	document.getElementById('serie1').style.display = 'none';
+	document.getElementById('serie14').style.display = 'flex';
+	document.getElementById('wrap').style.display = 'none';
+	document.getElementById('CONTENT').style.display = 'none';
+	document.getElementById('p-centerro').style.display = 'none';
+	document.getElementById('tempo1').style.display = 'grid';
+	document.getElementById('tempo2').style.display = 'none';
+}
+function DosL() {
+	document.getElementById('serie1').style.display = 'none';
+	document.getElementById('serie15').style.display = 'flex';
+	document.getElementById('wrap').style.display = 'none';
+	document.getElementById('CONTENT').style.display = 'none';
+	document.getElementById('p-centerro').style.display = 'none';
+	document.getElementById('tempo1').style.display = 'grid';
+	document.getElementById('tempo2').style.display = 'none';
+}
