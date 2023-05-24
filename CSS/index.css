@@ -104,6 +104,7 @@
 }
 .exit a:hover{
   color: white;
+  text-decoration: none;
 }
 
 .exit button {
