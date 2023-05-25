@@ -414,10 +414,19 @@ function Flash() {
 	document.getElementById('serie2').style.display = 'flex'
 	document.getElementById('wrap').style.display = 'none';
 	document.getElementById('CONTENT').style.display = 'none';
-	document.getElementById('temp2').style.display = 'none';
-	document.getElementById('temp3').style.display = 'none';
+	document.getElementById('tempos8').style.display = 'flex';
+	document.getElementById('tempos9').style.display = 'none';
 	document.getElementById('p-centerro').style.display = 'none';
 }
+function Temporadas8() {
+	document.getElementById('tempos8').style.display = 'flex';
+	document.getElementById('tempos9').style.display = 'none';
+}
+function Temporadas9() {
+	document.getElementById('tempos8').style.display = 'none';
+	document.getElementById('tempos9').style.display = 'flex';
+}
+
 function TrueL() {
 	document.getElementById('serie1').style.display = 'none';
 	document.getElementById('serie3').style.display = 'flex';
