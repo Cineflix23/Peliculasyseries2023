@@ -1450,8 +1450,48 @@
     text-align: center;
     background: linear-gradient(to right, rgb(20, 19, 19), rgb(27, 25, 25), rgb(22, 20, 20), rgb(39, 37, 37));
     padding-left: 0px;
+    margin: 10px;
   }
-
+  .center-b .setion .title {
+    color: rgba(255, 255, 255, 0.925);
+    font-size: 30px;
+    margin-top: 10px;
+    font-weight: 700;
+    margin-bottom: 0px;
+  }
+  
+  .center-b .setion .genero {
+    color: violet;
+    margin-bottom: 15px;
+  }
+  
+  .center-b .setion .descrip {
+    color: rgba(255, 255, 255, 0.911);
+    margin-bottom: 15px;
+    font-weight: 0;
+    font-size: 14px;
+  }
+  
+  .center-b .setion .ayuda {
+    color: rgba(255, 255, 255, 0.863);
+    margin-bottom: 15px;
+    font-size: 14px;
+  }
+  
+  .center-b .setion .generos {
+    margin-bottom: 60px;
+  }
+  .center-b .setion .generos h5{
+    color: rgb(207, 204, 204);
+    font-size: 15px;
+    text-align: center;
+  }
+  
+  .center-b .setion .copy {
+    color: rgb(206, 192, 192);
+    text-align: center;
+    font-size: 10px;
+  }
 
 
   /*Configuracion para todas las series de una sola vez por todas*/
@@ -1521,7 +1561,7 @@
   }
 
   .series .seriesdescrip {
-    color: white;
+    color: rgba(255, 255, 255, 0.815);
     width: 90%;
     padding-bottom: 20px;
     font-size: 15px;
@@ -1530,7 +1570,7 @@
   }
 
   .series .footer h6 {
-    color: white;
+    color: rgba(255, 255, 255, 0.815);
     font-size: 13px;
     width: 90%;
     padding-bottom: 20px;
@@ -1591,7 +1631,7 @@
   }
 
   .series .temporadass .cap1 h6 {
-    color: white;
+    color: rgba(255, 255, 255, 0.815);
     font-size: 13px;
   }
 
@@ -1607,7 +1647,7 @@
   }
 
   .series .copy {
-    padding-top: 10px;
+    padding-top: 12px;
     font-size: 10px;
     color: white;
     text-align: center;
