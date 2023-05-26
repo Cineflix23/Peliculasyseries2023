@@ -937,6 +937,7 @@
 
 }
 
+
 .series .img img {
   width: 300px;
   height: 350px;
@@ -946,7 +947,7 @@
 
 .series .title {
   color: white;
-  font-size: 40px;
+  font-size: 35px;
   font-weight: 800;
 }
 
