@@ -1078,7 +1078,12 @@
 
   .logoo a {
     font-size: 20px;
-    margin-left: 20px;
+    margin-left: -15px;
+  }
+  .logoo .logito{
+    display: flex;
+    margin-left: 25px;
+    margin-top: -10px;
   }
 
   #Category2 .ct_item-active {
@@ -1662,6 +1667,7 @@
   }
   .series .volveras{
     display: block;
+    flex-wrap: wrap;
   }
   .series .volveras .title{
     font-size: 25px;
