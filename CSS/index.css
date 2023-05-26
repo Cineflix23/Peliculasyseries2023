@@ -983,6 +983,9 @@
   border: 1px solid white;
   color: white;
 }
+.series .volveras{
+  display: none;
+}
 
 .series .temporadas .tempos button:hover {
   background: white;
@@ -1503,11 +1506,11 @@
 
   .series .img {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
   }
 
-  .series .serie-center .img .volver button {
+  .series .serie-center .img button {
     background-color: transparent;
     border: 1px solid white;
     color: white;
@@ -1521,16 +1524,16 @@
 
   }
 
-  .series .serie-center .img .volver button:hover {
+  .series .serie-center .img button:hover {
     background: white;
     color: black;
 
   }
 
   .series .img img {
-    width: 300px;
-    height: 350px;
-    margin: 20px;
+    width: 150px;
+    height: 320px;
+    margin-left: 30px;
   }
 
   .series .title {
@@ -1637,6 +1640,35 @@
     font-size: 10px;
     color: white;
     text-align: center;
+  }
+  /*personalización del volver*/
+  .series-header .title{
+    display: none;
+  }
+  .series .img1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .series-header .subtitle{
+    display: none;
+  }
+  .series .volver{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .series .volveras{
+    display: block;
+  }
+  .series .volveras .title{
+    font-size: 25px;
+  }
+  .series .volveras .subtitle{
+    color: red;
+    font-size: 13px;
   }
 }
 
