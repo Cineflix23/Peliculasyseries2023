@@ -376,6 +376,12 @@ function FASTX() {
 	document.getElementById('wrap').style.display = 'none';
 
 }
+function THET() {
+	document.getElementById('p-center55').style.display = 'block';
+	document.getElementById('p-center1').style.display = 'none';
+	document.getElementById('wrap').style.display = 'none';
+
+}
 
 
 

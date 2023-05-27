@@ -1494,6 +1494,10 @@
     display: flex;
     flex-direction: column;
   }
+  .series-header{
+    margin-top: -50px;
+    padding: 0;
+  }
 
   .series {
     width: 100%;
