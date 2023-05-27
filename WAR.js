@@ -496,7 +496,7 @@ function ShadowP() {
 	document.getElementById('wrap').style.display = 'none';
 	document.getElementById('CONTENT').style.display = 'none';
 	document.getElementById('p-centerro').style.display = 'none';
-	document.getElementById('tempo1').style.display = 'grid';
+	document.getElementById('tempo1').style.display = 'flex';
 	document.getElementById('tempo2').style.display = 'none';
 }
 function Tempo1() {
