@@ -21,14 +21,12 @@
   z-index: 120;
 }
 
-.nav_input {
+.close_bars{
   display: none;
 }
-
-.menu-btn {
+.open_bars{
   display: none;
 }
-
 .logo a {
   color: white;
   font-weight: 900;
@@ -1067,11 +1065,31 @@
     background: black;
     padding: 0 40px;
   }
-
-  .nav_input {
+.open_bars{
+    display: block;
+    margin-right: -20px;
+}
+.open_bars.ocultar{
     display: none;
-  }
-
+}
+.close_bars{
+    display: none;
+    margin-right: -20px;
+}
+.close_bars.mostrar{
+    display: block;
+}
+.close_bars i{
+    color: white;
+    cursor: pointer;
+    font-size: 25px;
+    margin-right: 15px;
+}
+.open_bars i{
+    color: white;
+    font-size: 25px;
+    margin-right: 15px;
+}
   .logo {
     color: white;
     font-weight: 900;
@@ -1083,8 +1101,8 @@
   }
   .logoo .logito{
     display: flex;
-    margin-left: 25px;
-    margin-top: -10px;
+    margin-left: 28px;
+    margin-top: -5px;
   }
 
   #Category2 .ct_item-active {
@@ -1103,13 +1121,16 @@
     height: auto;
     background: black;
     transition: .3s ease-in-out;
-    transform: translateX(150%);
     line-height: 35px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(150%);
   }
-
-  .nav_input:checked+.menuu {
-    transform: translateX(0);
-  }
+  .menuu.visible{
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0%);
+}
 
   .menuu .category_list {
     display: none;
@@ -1162,13 +1183,6 @@
   .menuu li:hover .category_list {
     display: none;
   }
-
-  .menu-btn {
-    color: white;
-    display: block;
-    font-size: 23px;
-  }
-
   .exit {
     display: none;
   }

@@ -21,8 +21,7 @@
 				<div class="logoo">
 					<a href="#">CINEFLIX</a>
 				</div>
-				<input type="checkbox" id="menu" class="nav_input">
-				<ul class="menuu">
+				<ul class="menuu" id="menuu">
 					<li class="menu-i"><a href="#INICIO">Inicio</a></li>
 					<li class="menu-i"><a href="categorias.html">Peliculas</a></li>
 					<li class="menu-i"><a href="series.html">Series</a></li>
@@ -34,10 +33,11 @@
 				<div class="exit">
 					<a href="login.html">Cerrar Sesión</a>
 				</div>
-				<div class="none">
-					<label for="menu" class="menu-btn">
-						<i class="fas fa-bars"></i>
-					</label>
+				<div class="open_bars" id="abrir">
+					<i class="fa-solid fa-bars"></i>
+				</div>
+				<div class="close_bars" id="cerrar">
+					<i class="fa-sharp fa-solid fa-xmark"></i>
 				</div>
 			</div>
 		</nav>
@@ -669,6 +669,7 @@
 				</footer>
 				<script src="WAR.js"></script>
 				<script src="js/index.js"></script>
+				<script src="checker.js"></script>
 </body>
 
 </html>
