@@ -69,7 +69,7 @@ function peli1() {
 
 }
 function avatar() {
-	document.getElementById('p-center1').style.display = 'block';
+	document.getElementById('p-center1').style.display = 'flex';
 	document.getElementById('wrap').style.display = 'none';
 	document.getElementById('p-center2').style.display = 'none';
 	document.getElementById('p-center3').style.display = 'none';
@@ -80,7 +80,7 @@ function avatar() {
 function LF() {
 	document.getElementById('p-center1').style.display = 'none';
 	document.getElementById('wrap').style.display = 'none';
-	document.getElementById('p-center2').style.display = 'block';
+	document.getElementById('p-center2').style.display = 'flex';
 	document.getElementById('p-center3').style.display = 'none';
 	document.getElementById('p-center4').style.display = 'none';
 	document.getElementById('p-center5').style.display = 'none';
@@ -91,7 +91,7 @@ function S5() {
 	document.getElementById('p-center1').style.display = 'none';
 	document.getElementById('wrap').style.display = 'none';
 	document.getElementById('p-center2').style.display = 'none';
-	document.getElementById('p-center3').style.display = 'block';
+	document.getElementById('p-center3').style.display = 'flex';
 	document.getElementById('p-center4').style.display = 'none';
 	document.getElementById('p-center5').style.display = 'none';
 	document.getElementById('p-center6').style.display = 'none';
@@ -101,7 +101,7 @@ function Black() {
 	document.getElementById('wrap').style.display = 'none';
 	document.getElementById('p-center2').style.display = 'none';
 	document.getElementById('p-center3').style.display = 'none';
-	document.getElementById('p-center4').style.display = 'block';
+	document.getElementById('p-center4').style.display = 'flex';
 	document.getElementById('p-center5').style.display = 'none';
 	document.getElementById('p-center6').style.display = 'none';
 
@@ -112,7 +112,7 @@ function Titan() {
 	document.getElementById('p-center2').style.display = 'none';
 	document.getElementById('p-center3').style.display = 'none';
 	document.getElementById('p-center4').style.display = 'none';
-	document.getElementById('p-center5').style.display = 'block';
+	document.getElementById('p-center5').style.display = 'flex';
 	document.getElementById('p-center6').style.display = 'none';
 
 }
@@ -123,261 +123,272 @@ function NP() {
 	document.getElementById('p-center3').style.display = 'none';
 	document.getElementById('p-center4').style.display = 'none';
 	document.getElementById('p-center5').style.display = 'none';
-	document.getElementById('p-center6').style.display = 'block';
+	document.getElementById('p-center6').style.display = 'flex';
 }
 function Zam() {
 	document.getElementById('p-center1').style.display = 'none';
 	document.getElementById('wrap').style.display = 'none';
-	document.getElementById('p-center7').style.display = 'block';
+	document.getElementById('p-center7').style.display = 'flex';
 }
 function JW() {
 	document.getElementById('p-center1').style.display = 'none';
 	document.getElementById('wrap').style.display = 'none';
-	document.getElementById('p-center8').style.display = 'block';
+	document.getElementById('p-center8').style.display = 'flex';
 
 }
 function OP() {
 	document.getElementById('p-center1').style.display = 'none';
 	document.getElementById('wrap').style.display = 'none';
-	document.getElementById('p-center9').style.display = 'block';
+	document.getElementById('p-center9').style.display = 'flex';
 
 }
 function LC() {
 	document.getElementById('p-center1').style.display = 'none';
 	document.getElementById('wrap').style.display = 'none';
-	document.getElementById('p-center10').style.display = 'block';
+	document.getElementById('p-center10').style.display = 'flex';
 }
 function Marlove() {
 	document.getElementById('p-center1').style.display = 'none';
 	document.getElementById('wrap').style.display = 'none';
-	document.getElementById('p-center11').style.display = 'block';
+	document.getElementById('p-center11').style.display = 'flex';
 }
 function S6() {
 	document.getElementById('p-center1').style.display = 'none';
 	document.getElementById('wrap').style.display = 'none';
-	document.getElementById('p-center12').style.display = 'block';
+	document.getElementById('p-center12').style.display = 'flex';
 }
 function Credlll() {
 	document.getElementById('p-center1').style.display = 'none';
 	document.getElementById('wrap').style.display = 'none';
-	document.getElementById('p-center13').style.display = 'block';
+	document.getElementById('p-center13').style.display = 'flex';
 }
 function PeorV() {
 	document.getElementById('p-center1').style.display = 'none';
 	document.getElementById('wrap').style.display = 'none';
-	document.getElementById('p-center14').style.display = 'block';
+	document.getElementById('p-center14').style.display = 'flex';
 }
 function LLamana() {
 	document.getElementById('p-center1').style.display = 'none';
 	document.getElementById('wrap').style.display = 'none';
-	document.getElementById('p-center15').style.display = 'block';
+	document.getElementById('p-center15').style.display = 'flex';
 }
 function Antman() {
 	document.getElementById('p-center1').style.display = 'none';
 	document.getElementById('wrap').style.display = 'none';
-	document.getElementById('p-center16').style.display = 'block';
+	document.getElementById('p-center16').style.display = 'flex';
 }
 function GatoB() {
 	document.getElementById('p-center1').style.display = 'none';
 	document.getElementById('wrap').style.display = 'none';
-	document.getElementById('p-center17').style.display = 'block';
+	document.getElementById('p-center17').style.display = 'flex';
 }
 function Piloto() {
 	document.getElementById('p-center1').style.display = 'none';
 	document.getElementById('wrap').style.display = 'none';
-	document.getElementById('p-center18').style.display = 'block';
+	document.getElementById('p-center18').style.display = 'flex';
 }
 function JurassicD() {
 	document.getElementById('p-center1').style.display = 'none';
 	document.getElementById('wrap').style.display = 'none';
-	document.getElementById('p-center19').style.display = 'block';
+	document.getElementById('p-center19').style.display = 'flex';
 }
 function Loveand() {
 	document.getElementById('p-center1').style.display = 'none';
 	document.getElementById('wrap').style.display = 'none';
-	document.getElementById('p-center20').style.display = 'block';
+	document.getElementById('p-center20').style.display = 'flex';
 }
 function TopG() {
 	document.getElementById('p-center1').style.display = 'none';
 	document.getElementById('wrap').style.display = 'none';
-	document.getElementById('p-center21').style.display = 'block';
+	document.getElementById('p-center21').style.display = 'flex';
 }
 function BlackP() {
 	document.getElementById('p-center1').style.display = 'none';
 	document.getElementById('wrap').style.display = 'none';
-	document.getElementById('p-center22').style.display = 'block';
+	document.getElementById('p-center22').style.display = 'flex';
 }
 function TitanesP() {
 	document.getElementById('p-center1').style.display = 'none';
 	document.getElementById('wrap').style.display = 'none';
-	document.getElementById('p-center23').style.display = 'block';
+	document.getElementById('p-center23').style.display = 'flex';
 }
 function ElefantaM() {
 	document.getElementById('p-center1').style.display = 'none';
 	document.getElementById('wrap').style.display = 'none';
-	document.getElementById('p-center24').style.display = 'block';
+	document.getElementById('p-center24').style.display = 'flex';
 }
 function Babylon() {
 	document.getElementById('p-center1').style.display = 'none';
 	document.getElementById('wrap').style.display = 'none';
-	document.getElementById('p-center25').style.display = 'block';
+	document.getElementById('p-center25').style.display = 'flex';
 }
 function Tsystem() {
 	document.getElementById('p-center1').style.display = 'none';
 	document.getElementById('wrap').style.display = 'none';
-	document.getElementById('p-center26').style.display = 'block';
+	document.getElementById('p-center26').style.display = 'flex';
 }
 function BatP() {
 	document.getElementById('p-center1').style.display = 'none';
 	document.getElementById('wrap').style.display = 'none';
-	document.getElementById('p-center27').style.display = 'block';
+	document.getElementById('p-center27').style.display = 'flex';
 }
 function InspectorA() {
 	document.getElementById('p-center1').style.display = 'none';
 	document.getElementById('wrap').style.display = 'none';
-	document.getElementById('p-center28').style.display = 'block';
+	document.getElementById('p-center28').style.display = 'flex';
 }
 function Pchang() {
 	document.getElementById('p-center1').style.display = 'none';
 	document.getElementById('wrap').style.display = 'none';
-	document.getElementById('p-center29').style.display = 'block';
+	document.getElementById('p-center29').style.display = 'flex';
 }
 function Geminis() {
 	document.getElementById('p-center1').style.display = 'none';
 	document.getElementById('wrap').style.display = 'none';
-	document.getElementById('p-center30').style.display = 'block';
+	document.getElementById('p-center30').style.display = 'flex';
 }
 function wick3() {
 	document.getElementById('p-center1').style.display = 'none';
 	document.getElementById('wrap').style.display = 'none';
-	document.getElementById('p-center31').style.display = 'block';
+	document.getElementById('p-center31').style.display = 'flex';
 }
 function wick2() {
 	document.getElementById('p-center1').style.display = 'none';
 	document.getElementById('wrap').style.display = 'none';
-	document.getElementById('p-center32').style.display = 'block';
+	document.getElementById('p-center32').style.display = 'flex';
 }
 function wick1() {
 	document.getElementById('p-center1').style.display = 'none';
 	document.getElementById('wrap').style.display = 'none';
-	document.getElementById('p-center33').style.display = 'block';
+	document.getElementById('p-center33').style.display = 'flex';
 }
 function TFormers1() {
-	document.getElementById('p-center34').style.display = 'block';
+	document.getElementById('p-center34').style.display = 'flex';
 	document.getElementById('p-center1').style.display = 'none';
 	document.getElementById('wrap').style.display = 'none';
 }
 function TFormers2() {
-	document.getElementById('p-center35').style.display = 'block';
+	document.getElementById('p-center35').style.display = 'flex';
 	document.getElementById('p-center1').style.display = 'none';
 	document.getElementById('wrap').style.display = 'none';
 }
 function TFormers3() {
-	document.getElementById('p-center36').style.display = 'block';
+	document.getElementById('p-center36').style.display = 'flex';
 	document.getElementById('p-center1').style.display = 'none';
 	document.getElementById('wrap').style.display = 'none';
 }
 function TFormers4() {
-	document.getElementById('p-center37').style.display = 'block';
+	document.getElementById('p-center37').style.display = 'flex';
 	document.getElementById('p-center1').style.display = 'none';
 	document.getElementById('wrap').style.display = 'none';
 }
 function TFormers5() {
-	document.getElementById('p-center38').style.display = 'block';
+	document.getElementById('p-center38').style.display = 'flex';
 	document.getElementById('p-center1').style.display = 'none';
 	document.getElementById('wrap').style.display = 'none';
 }
 function DG23() {
-	document.getElementById('p-center39').style.display = 'block';
+	document.getElementById('p-center39').style.display = 'flex';
 	document.getElementById('p-center1').style.display = 'none';
 	document.getElementById('wrap').style.display = 'none';
 }
 function Thelake() {
-	document.getElementById('p-center40').style.display = 'block';
+	document.getElementById('p-center40').style.display = 'flex';
 	document.getElementById('p-center1').style.display = 'none';
 	document.getElementById('wrap').style.display = 'none';
 }
 function Asasins() {
-	document.getElementById('p-center41').style.display = 'block';
+	document.getElementById('p-center41').style.display = 'flex';
 	document.getElementById('p-center1').style.display = 'none';
 	document.getElementById('wrap').style.display = 'none';
 }
 function Titanes2() {
-	document.getElementById('p-center43').style.display = 'block';
+	document.getElementById('p-center43').style.display = 'flex';
 	document.getElementById('p-center1').style.display = 'none';
 	document.getElementById('wrap').style.display = 'none';
 }
 function VLadrones() {
-	document.getElementById('p-center42').style.display = 'block';
+	document.getElementById('p-center42').style.display = 'flex';
 	document.getElementById('p-center1').style.display = 'none';
 	document.getElementById('wrap').style.display = 'none';
 }
 function MisterioV() {
-	document.getElementById('p-center44').style.display = 'block';
+	document.getElementById('p-center44').style.display = 'flex';
 	document.getElementById('p-center1').style.display = 'none';
 	document.getElementById('wrap').style.display = 'none';
 }
 function GUARD3() {
-	document.getElementById('p-center45').style.display = 'block';
+	document.getElementById('p-center45').style.display = 'flex';
 	document.getElementById('p-center1').style.display = 'none';
 	document.getElementById('wrap').style.display = 'none';
 
 }
 function SuperM() {
-	document.getElementById('p-center46').style.display = 'block';
+	document.getElementById('p-center46').style.display = 'flex';
 	document.getElementById('p-center1').style.display = 'none';
 	document.getElementById('wrap').style.display = 'none';
 
 }
 function CaballerosZ() {
-	document.getElementById('p-center47').style.display = 'block';
+	document.getElementById('p-center47').style.display = 'flex';
 	document.getElementById('p-center1').style.display = 'none';
 	document.getElementById('wrap').style.display = 'none';
 
 }
 function Ghost() {
-	document.getElementById('p-center48').style.display = 'block';
+	document.getElementById('p-center48').style.display = 'flex';
 	document.getElementById('p-center1').style.display = 'none';
 	document.getElementById('wrap').style.display = 'none';
 
 }
 function VisitaF() {
-	document.getElementById('p-center49').style.display = 'block';
+	document.getElementById('p-center49').style.display = 'flex';
 	document.getElementById('p-center1').style.display = 'none';
 	document.getElementById('wrap').style.display = 'none';
 
 }
 function ExtP() {
-	document.getElementById('p-center50').style.display = 'block';
+	document.getElementById('p-center50').style.display = 'flex';
 	document.getElementById('p-center1').style.display = 'none';
 	document.getElementById('wrap').style.display = 'none';
 
 }
 function PoseI() {
-	document.getElementById('p-center51').style.display = 'block';
+	document.getElementById('p-center51').style.display = 'flex';
 	document.getElementById('p-center1').style.display = 'none';
 	document.getElementById('wrap').style.display = 'none';
 
 }
 function Sing1() {
-	document.getElementById('p-center52').style.display = 'block';
+	document.getElementById('p-center52').style.display = 'flex';
 	document.getElementById('p-center1').style.display = 'none';
 	document.getElementById('wrap').style.display = 'none';
 }
 function Sing2() {
-	document.getElementById('p-center53').style.display = 'block';
+	document.getElementById('p-center53').style.display = 'flex';
 	document.getElementById('p-center1').style.display = 'none';
 	document.getElementById('wrap').style.display = 'none';
 
 }
 function FASTX() {
-	document.getElementById('p-center54').style.display = 'block';
+	document.getElementById('p-center54').style.display = 'flex';
 	document.getElementById('p-center1').style.display = 'none';
 	document.getElementById('wrap').style.display = 'none';
 
 }
 function THET() {
-	document.getElementById('p-center55').style.display = 'block';
+	document.getElementById('p-center55').style.display = 'flex';
+	document.getElementById('p-center1').style.display = 'none';
+	document.getElementById('wrap').style.display = 'none';
+
+}
+function Spider() {
+	document.getElementById('p-center56').style.display = 'flex';
+	document.getElementById('p-center1').style.display = 'none';
+	document.getElementById('wrap').style.display = 'none';
+}
+function Siren() {
+	document.getElementById('p-center57').style.display = 'flex';
 	document.getElementById('p-center1').style.display = 'none';
 	document.getElementById('wrap').style.display = 'none';
 
