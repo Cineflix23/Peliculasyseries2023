@@ -36,9 +36,9 @@
 					<li class="menu-i"><a href="categorias.html">Peliculas</a></li>
 					<li class="menu-i"><a href="series.html">Series</a></li>
 					<li class="menu-i"><a href="#">Estrenos</a></li>
-					<li class="menu-i"><a href="#">Generos</a>
+					<li class="menu-i"><a href="categorias.html">Generos</a>
 
-						<ul class="category_list">
+						<ul class="category_list" id="Category1">
 							<li><a href="#" class="category_item" category="all">Todo</a></li>
 							<li><a href="#" class="category_item" category="Acción">Acción</a></li>
 							<li><a href="#" class="category_item" category="Comedia">Comedia</a></li>
@@ -165,6 +165,18 @@
 
 
 								<div class="gallery--item" category="Comedia">
+									<img src="https://www.lavanguardia.com/peliculas-series/images/movie/poster/2023/6/w1280/xdAVVJT8TtC3S1VVHzh5eIX0CzQ.jpg" alt=""
+										class="gallery--img">
+									<div class="gallery--center">
+										<h2 class="g1title"> Ricos de Amor 2</h2>
+										<h2 class="g2title">1hr 29min 2023</h2>
+										<div class="gbtns">
+											<button onclick="RA();" class="gbtn">Ver Ahora</button>
+										</div>
+									</div>
+								</div>
+
+								<div class="gallery--item" category="Comedia">
 									<img src="https://edctrailers.com/img/2023/03/El-visitante-del-futuro-cartel.jpg" alt=""
 										class="gallery--img">
 									<div class="gallery--center">
@@ -209,6 +221,19 @@
 
 								<div class="gallery--item" category="Drama/Suspenso">
 									<img
+										src="https://image.tmdb.org/t/p/original/325sMn8WmtFsbtROkmqJseBWnAz.jpg"
+										alt="" class="gallery--img">
+									<div class="gallery--center">
+										<h2 class="g1title">Un año inolvidable : Verano</h2>
+										<h2 class="g2title">1hr 40min 2023</h2>
+										<div class="gbtns">
+											<button onclick="UNA();" class="gbtn">Ver Ahora</button>
+										</div>
+									</div>
+								</div>
+
+								<div class="gallery--item" category="Drama/Suspenso">
+									<img
 										src="https://www.nacionflix.com/__export/1678388650542/sites/debate/img/2023/03/09/misterio-a-la-vista-netflix-adam-sandler-jeniffer-aniston.jpg_459955865.jpg"
 										alt="" class="gallery--img">
 									<div class="gallery--center">
@@ -242,6 +267,19 @@
 										<h2 class="g2title">1hr 50min 2023</h2>
 										<div class="gbtns">
 											<button onclick="VLadrones();" class="gbtn">Ver Ahora</button>
+										</div>
+									</div>
+								</div>
+
+								<div class="gallery--item" category="Terror">
+									<img src="https://culturademancos.com/wp-content/uploads/2023/04/WMG2F7CNTVAKXGKHRVTSRKUT7M-scaled.jpg" alt=""
+										class="gallery--img">
+									<div class="gallery--center">
+										<h2 class="g1title">Boogeyman: Tu miedo es real</h2>
+										<h2 class="g2title">1hr 39min 2023</h2>
+										<h2 class="g3title">Genero: Ciencia ficción, Terror</h2><br>
+										<div class="gbtns">
+											<button onclick="BG();" class="gbtn">Ver Ahora</button>
 										</div>
 									</div>
 								</div>
@@ -1437,6 +1475,48 @@
 									<h2 class="g2title">2hr 15min 2023</h2>
 									<div class="gbtns">
 										<button onclick="Siren();" class="gbtn">Ver Ahora</button>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="gallery">
+							<div class="gallery--item">
+								<img
+									src="https://www.lavanguardia.com/peliculas-series/images/movie/poster/2023/6/w1280/xdAVVJT8TtC3S1VVHzh5eIX0CzQ.jpg"
+									alt="" class="gallery--img">
+								<div class="gallery--center">
+									<p class="name mt-3">Ricos de Amor 2</p><!--ID Unico que sea distinto-->
+									<h2 class="g2title">1hr 29min 2023</h2>
+									<div class="gbtns">
+										<button onclick="RA();" class="gbtn">Ver Ahora</button>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="gallery">
+							<div class="gallery--item">
+								<img
+									src="https://image.tmdb.org/t/p/original/325sMn8WmtFsbtROkmqJseBWnAz.jpg"
+									alt="" class="gallery--img">
+								<div class="gallery--center">
+									<p class="name mt-3">Un año inolvidable</p><!--ID Unico que sea distinto-->
+									<h2 class="g2title">1hr 40min 2023</h2>
+									<div class="gbtns">
+										<button onclick="UNA();" class="gbtn">Ver Ahora</button>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="gallery">
+							<div class="gallery--item">
+								<img
+									src="https://culturademancos.com/wp-content/uploads/2023/04/WMG2F7CNTVAKXGKHRVTSRKUT7M-scaled.jpg"
+									alt="" class="gallery--img">
+								<div class="gallery--center">
+									<p class="name mt-3">Boogeyman: Tu miedo es real</p><!--ID Unico que sea distinto-->
+									<h2 class="g2title">1hr 39min 2023</h2>
+									<div class="gbtns">
+										<button onclick="BG();" class="gbtn">Ver Ahora</button>
 									</div>
 								</div>
 							</div>
@@ -5271,6 +5351,171 @@
 				<iframe width="2032" height="879" src="https://player.cuevana.biz/player.php?h=h3kgJKgp7rirl22CybxPreAF1GL8rnbLp77VetZI9T98E7WxGO65kVr9CaIIah3V" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
 			</div>
 			<div class="ayuda">¡Hola! Actualmente estás viendo la pelicula La sirenita. Recuerda que si tienes
+				algún
+				problema con la pelicula, no dudes en informarlo en nuestra página de Facebook. En cineflix.com
+				puedes ver peliculas online de forma gratuita y sin ningún tipo de restricción.</div>
+			<div class="copy">
+				Copyright © 2022 Cineflix.com Algunos Derechos Reservados | Cineflix no almacena ningún archivo en
+				sus servidores. Todos estos han sido encontrados en sitios de terceros.| Creado Por Andres Rojas
+			</div>
+		</div>
+	</div>
+	<div class="peliculas" id="p-center58">
+		<div class="peli_principal">
+			<div class="pelis_center">
+				<div class="img">
+					<img src="https://www.lavanguardia.com/peliculas-series/images/movie/poster/2023/6/w1280/xdAVVJT8TtC3S1VVHzh5eIX0CzQ.jpg" alt="">
+					<form action="categorias.html"><button>volver</button></form>
+				</div>
+				<div class="pelis_main">
+					<div class="title">Ricos de Amor 2</div>
+					<div class="subtitle">Ricos de Amor 2
+					</div>
+					<div class="resubtitle">
+						1hr 29min | 2023
+					</div>
+					<div class="description_images" id="images_laptop">
+						<div class="descripcion">
+							Cuando Paula se va de Río de Janeiro para retomar su programa de voluntariado médico en el Amazonas, Teto improvisa un plan para seguirla... y se desata el caos.
+						</div>
+						<div class="generos">
+							Genero: Romance, Comedia
+						</div>
+						<div class="actor">
+							Actores: Danilo Mesquita, Giovanna Lancellotti, Jaffar Bambirra, Lellê, Fernanda Paes Leme, Ernani Moraes, Aline Dias, Kay Sara, Adanilo Reis, Roney Villela, Julia Uchôa, Maíra Oliveira
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="description_images" id="images_phone">
+				<div class="descripcion">
+					Cuando Paula se va de Río de Janeiro para retomar su programa de voluntariado médico en el Amazonas, Teto improvisa un plan para seguirla... y se desata el caos.
+				</div>
+				<div class="generos">
+					Genero: Romance, Comedia
+				</div>
+				<div class="actor">
+					Actores: Danilo Mesquita, Giovanna Lancellotti, Jaffar Bambirra, Lellê, Fernanda Paes Leme, Ernani Moraes, Aline Dias, Kay Sara, Adanilo Reis, Roney Villela, Julia Uchôa, Maíra Oliveira
+				</div>
+			</div>
+			<div class="btns">
+				<button onclick="RA();" class="btn">LATINO</button>
+				<button onclick="RA();" class="btn2 btn">CASTELLANO</button>
+			</div>
+			<div class="pelicula">
+				<iframe width="2032" height="879" src="https://player.cuevana.biz/player.php?h=h3kgJKgp7rirl22CybxPrbovNfwPzpN48X8S3W181rKnoK0NRmEP6FJ4tF.6B2zo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+			</div>
+			<div class="ayuda">¡Hola! Actualmente estás viendo la pelicula Ricos de Amor 2. Recuerda que si tienes
+				algún
+				problema con la pelicula, no dudes en informarlo en nuestra página de Facebook. En cineflix.com
+				puedes ver peliculas online de forma gratuita y sin ningún tipo de restricción.</div>
+			<div class="copy">
+				Copyright © 2022 Cineflix.com Algunos Derechos Reservados | Cineflix no almacena ningún archivo en
+				sus servidores. Todos estos han sido encontrados en sitios de terceros.| Creado Por Andres Rojas
+			</div>
+		</div>
+	</div>
+	<div class="peliculas" id="p-center59">
+		<div class="peli_principal">
+			<div class="pelis_center">
+				<div class="img">
+					<img src="https://image.tmdb.org/t/p/original/325sMn8WmtFsbtROkmqJseBWnAz.jpg" alt="">
+					<form action="categorias.html"><button>volver</button></form>
+				</div>
+				<div class="pelis_main">
+					<div class="title">Um Ano Inesquecível: Verão</div>
+					<div class="subtitle">Um Ano Inesquecível: Verão
+					</div>
+					<div class="resubtitle">
+						1hr 40min | 2023
+					</div>
+					<div class="description_images" id="images_laptop">
+						<div class="descripcion">
+							Para estudiar moda en el tan deseado París, una joven que odia el carnaval viaja a Río de Janeiro para intentar conseguir el apoyo de la diseñadora más famosa de Brasil. Empeñada en entrar en el equipo de costura de una de las escuelas de samba más grandes, descubrirá que el Carnaval solo dura una semana, pero una historia de amor puede cambiar su vida por completo.
+						</div>
+						<div class="generos">
+							Genero: Drama, Romance
+						</div>
+						<div class="actor">
+							Actores: Lívia Inhudes, Micael Borges, Mariana Rios, Júlia Gomes, Diego Martins, Isaías Silva, André Mattos, Késia Estácio, Duda Santos, Regina Sampaio, Patrícia Ramos, Guilherme Dellorto, Emerson Carlos, Isaque Falcão, Pedro Henrique
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="description_images" id="images_phone">
+				<div class="descripcion">
+					Para estudiar moda en el tan deseado París, una joven que odia el carnaval viaja a Río de Janeiro para intentar conseguir el apoyo de la diseñadora más famosa de Brasil. Empeñada en entrar en el equipo de costura de una de las escuelas de samba más grandes, descubrirá que el Carnaval solo dura una semana, pero una historia de amor puede cambiar su vida por completo.
+				</div>
+				<div class="generos">
+					Genero: Drama, Romance
+				</div>
+				<div class="actor">
+					Actores: Lívia Inhudes, Micael Borges, Mariana Rios, Júlia Gomes, Diego Martins, Isaías Silva, André Mattos, Késia Estácio, Duda Santos, Regina Sampaio, Patrícia Ramos, Guilherme Dellorto, Emerson Carlos, Isaque Falcão, Pedro Henrique
+				</div>
+			</div>
+			<div class="btns">
+				<button onclick="UNA();" class="btn">LATINO</button>
+				<button onclick="UNA();" class="btn2 btn">CASTELLANO</button>
+			</div>
+			<div class="pelicula">
+				<iframe width="2032" height="879" src="https://player.cuevana.biz/player.php?h=h3kgJKgp7rirl22CybxPrTAXnGYwTRCjZ4ix.ZVsRHnTRpqMgUFg9Hvf6J14tbG." frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+			</div>
+			<div class="ayuda">¡Hola! Actualmente estás viendo la pelicula Um Ano Inesquecível: Verão. Recuerda que si tienes
+				algún
+				problema con la pelicula, no dudes en informarlo en nuestra página de Facebook. En cineflix.com
+				puedes ver peliculas online de forma gratuita y sin ningún tipo de restricción.</div>
+			<div class="copy">
+				Copyright © 2022 Cineflix.com Algunos Derechos Reservados | Cineflix no almacena ningún archivo en
+				sus servidores. Todos estos han sido encontrados en sitios de terceros.| Creado Por Andres Rojas
+			</div>
+		</div>
+	</div>
+	<div class="peliculas" id="p-center60">
+		<div class="peli_principal">
+			<div class="pelis_center">
+				<div class="img">
+					<img src="https://culturademancos.com/wp-content/uploads/2023/04/WMG2F7CNTVAKXGKHRVTSRKUT7M-scaled.jpg" alt="">
+					<form action="categorias.html"><button>volver</button></form>
+				</div>
+				<div class="pelis_main">
+					<div class="title">Boogeyman: Tu miedo es real</div>
+					<div class="subtitle">The Boogeyman
+					</div>
+					<div class="resubtitle">
+						1hr 40min | 2023
+					</div>
+					<div class="description_images" id="images_laptop">
+						<div class="descripcion">
+							Dos hermanas se ven amenazadas por un ser sobrenatural, mientras que su padre intenta mantener a flote a la familia después de la trágica muerte de su esposa y madre.
+						</div>
+						<div class="generos">
+							Genero: Terror, Misterio
+						</div>
+						<div class="actor">
+							Actores: Sophie Thatcher, Vivien Lyra Blair, Chris Messina, David Dastmalchian, Marin Ireland, Madison Hu, Maddie Nichols, Mabel Tyler, Leeann Ross, Rio Sarah Machado, Shauna Rappold, LisaGay Hamilton, Cristala Carter, Shayla Bagir, Han Soto
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="description_images" id="images_phone">
+				<div class="descripcion">
+					Dos hermanas se ven amenazadas por un ser sobrenatural, mientras que su padre intenta mantener a flote a la familia después de la trágica muerte de su esposa y madre.
+				</div>
+				<div class="generos">
+					Genero: Terror, Misterio
+				</div>
+				<div class="actor">
+					Actores: Sophie Thatcher, Vivien Lyra Blair, Chris Messina, David Dastmalchian, Marin Ireland, Madison Hu, Maddie Nichols, Mabel Tyler, Leeann Ross, Rio Sarah Machado, Shauna Rappold, LisaGay Hamilton, Cristala Carter, Shayla Bagir, Han Soto
+				</div>
+			</div>
+			<div class="btns">
+				<button onclick="BG();" class="btn">LATINO</button>
+				<button onclick="BG();" class="btn2 btn">CASTELLANO</button>
+			</div>
+			<div class="pelicula">
+				<iframe width="2032" height="879" src="https://player.cuevana.biz/player.php?h=h3kgJKgp7rirl22CybxPra64eNwoP5OM22t7GbHeX74AzQOwadXAs0uVC1K.sJ7E" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+			</div>
+			<div class="ayuda">¡Hola! Actualmente estás viendo la pelicula The Boogeyman. Recuerda que si tienes
 				algún
 				problema con la pelicula, no dudes en informarlo en nuestra página de Facebook. En cineflix.com
 				puedes ver peliculas online de forma gratuita y sin ningún tipo de restricción.</div>
