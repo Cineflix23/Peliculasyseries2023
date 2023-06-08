@@ -669,10 +669,10 @@
   width: 100%;
   height: 600px;
   background-image: linear-gradient(0deg,
-      rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.5)), url(https://phantom-marca-mx.unidadeditorial.es/9407afa5a8e519d29241aade66e1d417/resize/1320/f/jpg/mx/assets/multimedia/imagenes/2023/04/15/16815385483724.jpg);
+      rgba(0, 0, 0, 0.623),
+      rgba(0, 0, 0, 0.637)), url(https://surtido.pe/wp-content/uploads/2023/04/Transformers-El-Despertar-de-las-Bestias-presenta-al-villano-de-la-pelicula-en-su-nuevo-trailer-Unicron-Villano-02.jpg);
   display: flex;
-  background-position: top;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   align-items: center;
@@ -1357,9 +1357,6 @@
 .p-center0 {
   width: 100%;
   height: 600px;
-  background-image: linear-gradient(0deg,
-      rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.5)), url(https://phantom-marca-mx.unidadeditorial.es/9407afa5a8e519d29241aade66e1d417/resize/1320/f/jpg/mx/assets/multimedia/imagenes/2023/04/15/16815385483724.jpg);
   display: flex;
   background-position: top;
   background-repeat: no-repeat;
