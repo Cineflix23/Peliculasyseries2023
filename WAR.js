@@ -527,6 +527,13 @@ function BG() {
 	document.getElementById('wrap').style.display = 'none';
 	document.getElementById('Category1').style.display = 'none';
 }
+function Tformers6() {
+	document.getElementById('p-center61').style.display = 'flex';
+	document.getElementById('p-center1').style.display = 'none';
+	document.getElementById('Category2').style.display = 'none';
+	document.getElementById('wrap').style.display = 'none';
+	document.getElementById('Category1').style.display = 'none';
+}
 
 
 
