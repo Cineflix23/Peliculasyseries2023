@@ -534,6 +534,14 @@ function Tformers6() {
 	document.getElementById('wrap').style.display = 'none';
 	document.getElementById('Category1').style.display = 'none';
 }
+function Rally() {
+	document.getElementById('p-center62').style.display = 'flex';
+	document.getElementById('p-center1').style.display = 'none';
+	document.getElementById('Category2').style.display = 'none';
+	document.getElementById('wrap').style.display = 'none';
+	document.getElementById('Category1').style.display = 'none';
+}
+
 
 
 
