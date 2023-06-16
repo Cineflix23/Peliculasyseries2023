@@ -91,8 +91,13 @@ function toggleSection(sectionId){
 		openButton.style.display = 'flex';
 	}
 }
-
-
+/*Funciones para redireccionar a las pagina de destino usando una en formato img*/
+function Series(){
+	location.href = 'series.html';
+}
+function Peliculas(){
+	location.href = 'categorias.html';
+}
 
 
 
