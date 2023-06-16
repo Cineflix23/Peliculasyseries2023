@@ -74,12 +74,15 @@ function toggleSection(sectionId){
 	const openButton = section.previousElementSibling.querySelector('.toggle-button:nth-child(1)');
 	const closeButton = section.previousElementSibling.querySelector('.toggle-button:nth-child(2)');
 	const BUSCADOR = document.getElementById('p-centerro');
-	const Buscar = document.getElementById('mymodal');
+	const Buscar = document.getElementById('Ocultame');
+	const Modal = document.querySelector('.modal-backdrop');
 	const Category1 = document.getElementById('Category1');
 	const Category2 = document.getElementById('Category2');
 	if(section.style.display === 'none'){
 		section.style.display = 'flex';
 		BUSCADOR.style.display = 'none';
+		Buscar.style.display = 'none';
+		Modal.style.display = 'none';
 		Category1.style.display = 'none';
 		Category2.style.display = 'none';
 		openButton.style.display = 'none';
