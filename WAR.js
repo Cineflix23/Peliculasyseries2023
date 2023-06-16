@@ -82,9 +82,9 @@ function toggleSection(sectionId){
 		section.style.display = 'flex';
 		BUSCADOR.style.display = 'none';
 		Buscar.style.display = 'none';
-		Modal.style.display = 'none';
 		Category1.style.display = 'none';
 		Category2.style.display = 'none';
+		Modal.style.display = 'none';
 		openButton.style.display = 'none';
 	}else{
 		section.style.display = 'none';

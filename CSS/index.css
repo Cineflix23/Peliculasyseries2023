@@ -452,6 +452,7 @@
 }
 
 /*MODAL*/
+
 .contenido {
   padding-top: 90px;
   height: 300px;
@@ -484,7 +485,7 @@
 
 #directory {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   padding: 20px;
   gap: 10px;
   background: black;
