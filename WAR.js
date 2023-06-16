@@ -541,6 +541,14 @@ function Rally() {
 	document.getElementById('wrap').style.display = 'none';
 	document.getElementById('Category1').style.display = 'none';
 }
+function TFlash() {
+	document.getElementById('p-center63').style.display = 'flex';
+	document.getElementById('p-center1').style.display = 'none';
+	document.getElementById('Category2').style.display = 'none';
+	document.getElementById('wrap').style.display = 'none';
+	document.getElementById('Category1').style.display = 'none';
+}
+
 
 
 
