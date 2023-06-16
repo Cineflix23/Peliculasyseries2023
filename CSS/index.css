@@ -1047,6 +1047,31 @@
   color: white;
   text-align: center;
 }
+/*Personalizacion del cierre de las serie de superman y lois*/
+#temp1{
+  display: flex;
+}
+#temp2{
+  display: none;
+}
+#temp3{
+  display: none;
+}
+/*Personalizacion del cierre de las serie de the flash*/
+#tempos8{
+  display: flex;
+}
+#tempos9{
+  display: none;
+}
+/*Personalizacion del cierre de las serie de the flash*/
+#tempo1{
+  display: flex;
+}
+#tempo2{
+  display: none;
+}
+
 
 
 
