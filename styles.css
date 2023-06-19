@@ -26,7 +26,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background: linear-gradient(to right, black, blue, white, black);
+    background: linear-gradient(to right, black, rgb(0, 174, 255), white, black);
     background-size: 500%;
     border-radius: 20px;
     animation: fondo 10s infinite;
