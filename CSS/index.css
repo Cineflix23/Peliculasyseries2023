@@ -16,7 +16,7 @@
   justify-content: space-around;
   width: 100%;
   height: 10vh;
-  background: black;
+  background: rgb(1, 3, 17);
   padding: 0 40px;
   z-index: 120;
 }
@@ -40,14 +40,14 @@
 }
 
 .logoo a {
-  color: rgba(255, 0, 0, 0.932);
+  color: white;
   font-weight: 800;
   text-decoration: none;
   font-size: 23px;
 }
 
 .logoo a:hover {
-  color: red;
+  color: rgb(8, 174, 224);
   text-decoration: none;
 }
 
@@ -60,18 +60,28 @@
   text-decoration: none;
   font-weight: 600;
   transition: .2s ease-in-out;
+  position: relative;
   color: white;
   font-size: 15px;
+}
+.menuu li a::after {
+  content: '';
+  position: absolute;
+  background: white;
+  height: 2px;
+  width: 100%;
+  left: 0;
+  bottom: -3px;
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+}
+.menuu li a:hover::after {
+  opacity: 1;
 }
 
 .menuu li:hover .category_list {
   display: flex;
 }
-
-.menuu li a:hover {
-  color: rgb(156, 143, 143);
-}
-
 .menuu li {
   list-style: none;
   margin-left: 15px;
@@ -82,7 +92,7 @@
   flex-direction: column;
   height: auto;
   width: 200px;
-  background-color: rgb(31, 28, 28);
+  background: rgb(1, 3, 17);
   position: absolute;
 }
 
@@ -94,14 +104,14 @@
 }
 .exit a{
   text-decoration: none;
-  color: red;
+  color: white;
   font-weight: bold;
   font-size: 15px;
   transition: .3s ease-in-out;
   cursor: pointer;
 }
 .exit a:hover{
-  color: white;
+  color: aqua;
   text-decoration: none;
 }
 
@@ -233,7 +243,7 @@
 
 /*SECCION DE PELICULAS DESPUES DEL INICIO*/
 .section {
-  background: linear-gradient(to right, rgb(29, 26, 26), rgb(36, 33, 33));
+  background: rgb(1, 3, 17);
 }
 
 .section .topi {
@@ -243,7 +253,7 @@
 }
 
 .section .topi i {
-  color: red;
+  color: rgb(8, 174, 224);
   padding: 10px;
 }
 
@@ -254,11 +264,11 @@
 
 .section .topi .topi--b {
   margin: 10px;
-  color: red;
+  color: rgb(8, 174, 224);
   background: transparent;
   outline: none;
   border: none;
-  border: 1px solid red;
+  border: 1px solid #0099cc;
   cursor: pointer;
 }
 
@@ -355,7 +365,7 @@
 #wrap {
   width: 100%;
   margin: auto;
-  background: linear-gradient(to right, black, black);
+  background: rgb(1, 3, 17);
   padding: 20px 0 0 0;
 }
 
@@ -412,7 +422,7 @@
 .contenido .principal {
   width: 100%;
   height: 40px;
-  background: transparent;
+  background: rgb(1, 3, 17);
 }
 
 .contenido .principal .img {
@@ -456,7 +466,7 @@
 .contenido {
   padding-top: 90px;
   height: 300px;
-  background: transparent;
+  background: rgb(1, 3, 17);
 }
 
 .modal-title {
@@ -488,7 +498,7 @@
   grid-template-columns: repeat(2, 1fr);
   padding: 20px;
   gap: 10px;
-  background: black;
+  background: rgb(1, 3, 17);
 }
 
 .modal-confirm {
@@ -502,7 +512,7 @@
   border: none;
   text-align: center;
   font-size: 14px;
-  background: black;
+  background: rgb(1, 3, 17);
 
 }
 
@@ -566,15 +576,15 @@
 }
 
 .Footer .container p span {
-  color: red;
+  color: #0099cc;
 }
 
 .Footer .container p strong {
-  color: red;
+  color: #0099cc;
 }
 
 .Footer .container p b {
-  color: red;
+  color: #0099cc;
 }
 
 /*MODAL*/
@@ -682,7 +692,7 @@
 .p-center {
   width: 100%;
   height: 600px;
-  background: black;
+  background: rgb(1, 3, 17);
   display: flex;
   background-position: top;
   background-repeat: no-repeat;
@@ -712,7 +722,7 @@
   margin-bottom: 10px;
 }
 .titulos .per{
-  color: rgb(219, 15, 192);
+  color: #0099ccbd;
   font-weight: bold;
   font-size: 20px;
   margin-bottom: 25px;
@@ -738,8 +748,9 @@
 }
 
 .titulos .but button:hover {
-  color: black;
-  background: white;
+  color: white;
+  background: #0099cc;
+  border: 3px solid #0099cc;
 }
 
 .p-center .title {
@@ -753,7 +764,7 @@
   display: none;
   align-items: center;
   justify-content: center;
-  background-color: black;
+  background-color: rgb(1, 3, 17);
   width: 100%;
   height: auto;
   z-index: 100;
@@ -812,7 +823,7 @@
   font-weight: bold;
 }
 .pelis_main .subtitle{
-  color: rgb(245, 15, 15);
+  color: #0099cc;
   font-size: 20px;
   margin-bottom: 14px;
 }
@@ -874,7 +885,7 @@
 .pelicula iframe {
   width: 100%;
   height: 500px;
-  background: rgb(10, 10, 10);
+  background: rgba(10, 10, 10, 0.363);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -902,7 +913,7 @@
   flex-direction: column;
   height: auto;
   display: none;
-  background: black;
+  background: rgb(1, 3, 17);
   object-fit: cover;
   background-position: top;
   background-size: cover;
@@ -1036,7 +1047,7 @@
   height: 200px;
   border-radius: 10px;
   padding-bottom: 10px;
-  background: rgb(20, 20, 20);
+  background: rgba(10, 10, 10, 0.178);
   object-fit: cover;
   background-position: center;
   border: 1px solid white;
@@ -1108,7 +1119,6 @@
     justify-content: space-between;
     width: 100%;
     height: 10vh;
-    background: black;
     padding: 0 40px;
   }
 .open_bars{
@@ -1165,7 +1175,7 @@
     left: 0%;
     width: 75%;
     height: auto;
-    background: black;
+    background: rgb(1, 3, 17);
     transition: .3s ease-in-out;
     line-height: 35px;
     opacity: 0;
@@ -1211,7 +1221,7 @@
 
   #Category2 {
     width: auto;
-    background: black;
+    background: rgb(1, 3, 17);
     display: flex;
     flex-wrap: wrap;
   }
@@ -1219,7 +1229,7 @@
   #Category2 li {
     width: 120px;
     height: 38px;
-    background: rgb(29, 27, 27);
+    background: rgba(29, 27, 29, 0.192);
     border-radius: 10px;
     margin-bottom: 10px;
     padding: 0 0 0 10px;
@@ -1255,6 +1265,7 @@
     text-transform: uppercase;
     border-radius: 5px;
     background: none;
+    transition: .3s ease-in-out;
   }
 
   .exit2 button:hover {
@@ -1343,7 +1354,7 @@
   #wrap {
     width: 100%;
     margin: auto;
-    background: linear-gradient(to right, black, black);
+    background: rgb(1, 3, 17);
     position: relative;
   }
 
@@ -1439,34 +1450,10 @@
   color: rgba(245, 245, 245, 0.925);
 }
 
-.titulos .but button {
-  border: none;
-  width: 134px;
-  height: 45px;
-  outline: none;
-  border: 3px solid white;
-  font-weight: 700;
-  border-radius: 10px;
-  background: none;
-  color: white;
-  transition: .3s ease-in-out;
-}
-
-.titulos .but button:hover {
-  color: black;
-  background: white;
-}
-
-.p-center .title {
-  color: white;
-  font-size: 40px;
-  font-weight: 900;
-}
-
   /*avatar 2 el camino del agua numero 1 */
   .peliculas{
     display: none;
-    background: black;
+    background: rgb(1, 3, 17);
     width: 100%;
     height: auto;
     justify-content: center;
@@ -1508,7 +1495,7 @@
     margin-right: 10px;
   }
   .pelis_main .subtitle{
-    color: rgb(224, 10, 10);
+    color: #0099cc;
     font-size: 15px;
     margin-bottom: 15px;
   }
@@ -1580,7 +1567,6 @@
   .pelicula iframe {
     width: 90%;
     height: 250px;
-    background: rgb(10, 10, 10);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1619,7 +1605,7 @@
     flex-direction: column;
     height: auto;
     display: none;
-    background: black;
+    background: rgb(1, 3, 17);
     object-fit: cover;
     background-position: top;
     background-size: cover;
@@ -1751,7 +1737,7 @@
     height: 200px;
     border-radius: 10px;
     padding-bottom: 10px;
-    background: rgb(20, 20, 20);
+    background: rgba(20, 20, 20, 0.185);
     object-fit: cover;
     background-position: center;
     border: 1px solid white;
@@ -1791,7 +1777,7 @@
     font-size: 25px;
   }
   .series .volveras .subtitle{
-    color: red;
+    color: #0099cc;
     font-size: 13px;
   }
 }
@@ -1807,11 +1793,3 @@
     grid-template-columns: repeat(2, 1fr);
   }
 }
-
-
-
-
-
-
-
-@media screen and (max-width: 480px) {}
