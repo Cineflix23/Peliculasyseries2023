@@ -144,7 +144,7 @@
     font-size: 12px;
     margin-left: 10px;
 }
-@media screen and (max-with: 800px) {
+@media screen and (max-width: 800px) {
     .center_login{
         height: 94vh;
     }
