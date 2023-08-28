@@ -78,12 +78,14 @@ function toggleSection(sectionId){
 	const Modal = document.querySelector('.modal-backdrop');
 	const Category1 = document.getElementById('Category1');
 	const Category2 = document.getElementById('Category2');
+	const Buscarme = document.getElementById('Buscarme');
 	if(section.style.display === 'none'){
 		section.style.display = 'flex';
 		BUSCADOR.style.display = 'none';
 		Buscar.style.display = 'none';
 		Category1.style.display = 'none';
 		Category2.style.display = 'none';
+		Buscarme.style.display ='none';
 		Modal.style.display = 'none';
 		openButton.style.display = 'none';
 	}else{
@@ -111,12 +113,14 @@ function toggleSerie(sectionId){
 	const Modal = document.querySelector('.modal-backdrop');
 	const Category1 = document.getElementById('Category1');
 	const Category2 = document.getElementById('Category2');
+	const Buscarme = document.getElementById('Buscarme');
 	if(section.style.display === 'none'){
 		section.style.display = 'flex';
 		BUSCADOR.style.display = 'none';
 		Buscar.style.display = 'none';
 		Category1.style.display = 'none';
 		Category2.style.display = 'none';
+		Buscarme.style.display = 'none';
 		Modal.style.display = 'none';
 		openButton.style.display = 'none';
 	}else{
